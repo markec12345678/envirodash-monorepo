@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, lazy, Suspense } from 'react'
-import { Activity, Wind, Flame, Waves, Mountain, CloudSun, Snowflake, Fish, Droplets, Sun, Globe, Sparkles, Store, Shield, FileText, Map, Download } from 'lucide-react'
+import { Activity, Wind, Flame, Waves, Mountain, CloudSun, Snowflake, Fish, Droplets, Sun, Globe, Sparkles, Store, Shield, FileText, Map, Download, Layout } from 'lucide-react'
 import { AIAssistant } from './_components/AIAssistant'
 import { UserMenuWrapper } from './_components/UserMenu'
 import { Marketplace } from './_components/Marketplace'
@@ -9,6 +9,7 @@ import { AlertCenter } from './_components/AlertCenter'
 import { GeofenceManager } from './_components/GeofenceManager'
 import { MapView } from './_components/MapView'
 import { ExportDialog } from './_components/ExportDialog'
+import { DashboardEditor } from './_components/DashboardEditor'
 
 // Lazy-load monitor packages — only the active monitor is compiled and shipped
 const AirQualityMonitor = lazy(() => import('@envirodash/monitor-air-quality').then((m) => ({ default: m.AirQualityMonitor })))
@@ -63,6 +64,7 @@ export default function Home() {
   const [showGeofences, setShowGeofences] = useState(false)
   const [showMap, setShowMap] = useState(false)
   const [showExport, setShowExport] = useState(false)
+  const [showDashboardEditor, setShowDashboardEditor] = useState(false)
   const [aiQuery, setAiQuery] = useState<{ monitor: MonitorId; params: any } | null>(null)
 
   // When AI assistant returns an action, set the active monitor
@@ -90,6 +92,14 @@ export default function Home() {
           </div>
           <div className="flex items-center gap-3">
             <AlertCenter />
+            <button
+              onClick={() => setShowDashboardEditor(true)}
+              className="flex items-center gap-2 rounded-lg bg-zinc-900 px-3 py-1.5 text-xs font-medium text-white hover:bg-zinc-700 dark:bg-zinc-100 dark:text-zinc-900"
+              title="Customize your dashboard"
+            >
+              <Layout className="h-4 w-4" />
+              <span className="hidden sm:inline">Customize</span>
+            </button>
             <button
               onClick={() => setShowExport(true)}
               className="flex items-center gap-2 rounded-lg bg-zinc-100 px-3 py-1.5 text-xs font-medium text-zinc-700 hover:bg-zinc-200 dark:bg-zinc-800 dark:text-zinc-300"
@@ -235,6 +245,11 @@ export default function Home() {
       {/* Export Dialog */}
       {showExport && (
         <ExportDialog onClose={() => setShowExport(false)} />
+      )}
+
+      {/* Dashboard Editor */}
+      {showDashboardEditor && (
+        <DashboardEditor onClose={() => setShowDashboardEditor(false)} />
       )}
 
       {/* Footer */}

@@ -1,0 +1,23 @@
+{
+  "cards": [
+    {
+      "id": "c1",
+      "type": "air-quality",
+      "title": "Ljubljana Air",
+      "params": {
+        "country": "SI"
+      },
+      "order": 0
+    },
+    {
+      "id": "c2",
+      "type": "earthquake",
+      "title": "Recent Quakes",
+      "params": {
+        "limit": 5
+      },
+      "order": 1
+    }
+  ],
+  "updatedAt": "2026-07-18T06:47:20.202Z"
+}
