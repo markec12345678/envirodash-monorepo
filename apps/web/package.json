@@ -12,6 +12,7 @@
     "clean": "rm -rf .next .turbo"
   },
   "dependencies": {
+    "@auth/core": "^0.34.3",
     "@envirodash/core": "*",
     "@envirodash/monitor-air-quality": "*",
     "@envirodash/monitor-coral-reef": "*",
