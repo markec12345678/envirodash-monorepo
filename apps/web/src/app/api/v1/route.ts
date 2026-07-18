@@ -1,6 +1,8 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { validateApiKey } from '../user/api-keys/route'
 import { fetchJson } from '@envirodash/core'
+import { checkRateLimit, getClientIdentifier, getTierFromPlan } from '@/lib/rate-limit'
+import { track } from '@/lib/analytics'
 
 /**
  * EnviroDash REST API v1
@@ -54,6 +56,27 @@ export async function GET(request: NextRequest) {
     )
   }
 
+  // Determine rate limit tier (default: free for valid API keys)
+  const tier = getTierFromPlan('free')
+  const identifier = getClientIdentifier(request, keyId)
+
+  // Check rate limit
+  const rateLimit = checkRateLimit(identifier, tier)
+  if (!rateLimit.allowed) {
+    return NextResponse.json(
+      {
+        error: 'Rate limit exceeded',
+        limit: rateLimit.limit,
+        reset: rateLimit.reset,
+        retryAfter: rateLimit.retryAfter,
+      },
+      {
+        status: 429,
+        headers: rateLimit.headers,
+      }
+    )
+  }
+
   const { searchParams } = new URL(request.url)
   const type = searchParams.get('type') || 'air-quality'
 
@@ -74,6 +97,14 @@ export async function GET(request: NextRequest) {
       cache: 'no-store',
     })
 
+    // Track API call for analytics
+    track({
+      type: 'api_call',
+      name: type,
+      userId,
+      properties: { keyId, responseTimeMs: Date.now() - startTime },
+    })
+
     const response = NextResponse.json({
       apiVersion: 'v1',
       type,
@@ -84,10 +115,10 @@ export async function GET(request: NextRequest) {
       responseTimeMs: Date.now() - startTime,
     })
 
-    // Rate limit headers (informational only — actual rate limiting requires Redis in production)
-    response.headers.set('X-RateLimit-Limit', '1000')
-    response.headers.set('X-RateLimit-Remaining', '999')
-    response.headers.set('X-RateLimit-Reset', String(Math.floor(Date.now() / 1000) + 3600))
+    // Apply rate limit headers
+    Object.entries(rateLimit.headers).forEach(([k, v]) => {
+      response.headers.set(k, v)
+    })
 
     return response
   } catch (e: any) {

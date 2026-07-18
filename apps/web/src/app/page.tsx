@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, lazy, Suspense } from 'react'
-import { Activity, Wind, Flame, Waves, Mountain, CloudSun, Snowflake, Fish, Droplets, Sun, Globe, Sparkles, Store, Shield, FileText, Map, Download, Layout, Key } from 'lucide-react'
+import { Activity, Wind, Flame, Waves, Mountain, CloudSun, Snowflake, Fish, Droplets, Sun, Globe, Sparkles, Store, Shield, FileText, Map, Download, Layout, Key, BarChart3, Webhook } from 'lucide-react'
 import { AIAssistant } from './_components/AIAssistant'
 import { UserMenuWrapper } from './_components/UserMenu'
 import { Marketplace } from './_components/Marketplace'
@@ -12,6 +12,8 @@ import { ExportDialog } from './_components/ExportDialog'
 import { DashboardEditor } from './_components/DashboardEditor'
 import { ApiKeyManager } from './_components/ApiKeyManager'
 import { LanguageSelector } from './_components/LanguageSelector'
+import { AnalyticsDashboard } from './_components/AnalyticsDashboard'
+import { WebhookManager } from './_components/WebhookManager'
 import { useLanguage } from './_components/LanguageProvider'
 
 // Lazy-load monitor packages — only the active monitor is compiled and shipped
@@ -70,6 +72,8 @@ export default function Home() {
   const [showExport, setShowExport] = useState(false)
   const [showDashboardEditor, setShowDashboardEditor] = useState(false)
   const [showApiKeys, setShowApiKeys] = useState(false)
+  const [showAnalytics, setShowAnalytics] = useState(false)
+  const [showWebhooks, setShowWebhooks] = useState(false)
   const [aiQuery, setAiQuery] = useState<{ monitor: MonitorId; params: any } | null>(null)
 
   // When AI assistant returns an action, set the active monitor
@@ -97,6 +101,14 @@ export default function Home() {
           </div>
           <div className="flex items-center gap-3">
             <AlertCenter />
+            <button
+              onClick={() => setShowAnalytics(true)}
+              className="flex items-center gap-2 rounded-lg bg-zinc-100 px-3 py-1.5 text-xs font-medium text-zinc-700 hover:bg-zinc-200 dark:bg-zinc-800 dark:text-zinc-300"
+              title="Analytics dashboard"
+            >
+              <BarChart3 className="h-4 w-4" />
+              <span className="hidden sm:inline">Analytics</span>
+            </button>
             <LanguageSelector />
             <button
               onClick={() => setShowDashboardEditor(true)}
@@ -113,6 +125,14 @@ export default function Home() {
             >
               <Key className="h-4 w-4" />
               <span className="hidden sm:inline">{t('btn.apiKeys')}</span>
+            </button>
+            <button
+              onClick={() => setShowWebhooks(!showWebhooks)}
+              className="flex items-center gap-2 rounded-lg bg-purple-100 px-3 py-1.5 text-xs font-medium text-purple-700 hover:bg-purple-200 dark:bg-purple-950/50 dark:text-purple-300"
+              title="Webhooks for external integrations"
+            >
+              <Webhook className="h-4 w-4" />
+              <span className="hidden sm:inline">Webhooks</span>
             </button>
             <button
               onClick={() => setShowExport(true)}
@@ -269,6 +289,16 @@ export default function Home() {
       {/* API Key Manager */}
       {showApiKeys && (
         <ApiKeyManager onClose={() => setShowApiKeys(false)} />
+      )}
+
+      {/* Analytics Dashboard */}
+      {showAnalytics && (
+        <AnalyticsDashboard onClose={() => setShowAnalytics(false)} />
+      )}
+
+      {/* Webhook Manager */}
+      {showWebhooks && (
+        <WebhookManager onClose={() => setShowWebhooks(false)} />
       )}
 
       {/* Footer */}
