@@ -1,9 +1,10 @@
 'use client'
 
 import { useState, lazy, Suspense } from 'react'
-import { Activity, Wind, Flame, Waves, Mountain, CloudSun, Snowflake, Fish, Droplets, Sun, Globe, Sparkles } from 'lucide-react'
+import { Activity, Wind, Flame, Waves, Mountain, CloudSun, Snowflake, Fish, Droplets, Sun, Globe, Sparkles, Store } from 'lucide-react'
 import { AIAssistant } from './_components/AIAssistant'
 import { UserMenuWrapper } from './_components/UserMenu'
+import { Marketplace } from './_components/Marketplace'
 
 // Lazy-load monitor packages — only the active monitor is compiled and shipped
 const AirQualityMonitor = lazy(() => import('@envirodash/monitor-air-quality').then((m) => ({ default: m.AirQualityMonitor })))
@@ -45,15 +46,16 @@ const MONITORS: MonitorMeta[] = [
   { id: 'volcano', name: 'Volcano', icon: Mountain, color: 'bg-rose-500', realData: true, description: 'USGS' },
   { id: 'earthquake', name: 'Earthquakes', icon: Activity, color: 'bg-amber-500', realData: true, description: 'USGS (24h)' },
   { id: 'weather', name: 'Weather', icon: CloudSun, color: 'bg-sky-500', realData: true, description: 'Open-Meteo' },
-  { id: 'glacier', name: 'Glacier', icon: Snowflake, color: 'bg-cyan-500', realData: false, description: 'Planned v1.1' },
-  { id: 'coral-reef', name: 'Coral Reef', icon: Fish, color: 'bg-pink-500', realData: false, description: 'Planned v1.1' },
-  { id: 'flood', name: 'Flood', icon: Droplets, color: 'bg-sky-500', realData: false, description: 'Planned v1.1' },
-  { id: 'drought', name: 'Drought', icon: Sun, color: 'bg-amber-500', realData: false, description: 'Planned v1.1' },
+  { id: 'glacier', name: 'Glacier', icon: Snowflake, color: 'bg-cyan-500', realData: true, description: 'Open-Meteo (glacier weather)' },
+  { id: 'coral-reef', name: 'Coral Reef', icon: Fish, color: 'bg-pink-500', realData: true, description: 'Open-Meteo Marine (SST)' },
+  { id: 'flood', name: 'Flood', icon: Droplets, color: 'bg-sky-500', realData: true, description: 'Open-Meteo (precip)' },
+  { id: 'drought', name: 'Drought', icon: Sun, color: 'bg-amber-500', realData: true, description: 'Open-Meteo (soil moist)' },
 ]
 
 export default function Home() {
   const [activeMonitor, setActiveMonitor] = useState<MonitorId | null>('air-quality')
   const [showAI, setShowAI] = useState(false)
+  const [showMarketplace, setShowMarketplace] = useState(false)
   const [aiQuery, setAiQuery] = useState<{ monitor: MonitorId; params: any } | null>(null)
 
   // When AI assistant returns an action, set the active monitor
@@ -80,6 +82,13 @@ export default function Home() {
             </div>
           </div>
           <div className="flex items-center gap-3">
+            <button
+              onClick={() => setShowMarketplace(true)}
+              className="flex items-center gap-2 rounded-lg bg-emerald-100 px-3 py-1.5 text-xs font-medium text-emerald-700 hover:bg-emerald-200 dark:bg-emerald-950/50 dark:text-emerald-300"
+            >
+              <Store className="h-4 w-4" />
+              Marketplace
+            </button>
             <button
               onClick={() => setShowAI(!showAI)}
               className={`flex items-center gap-2 rounded-lg px-3 py-1.5 text-xs font-medium transition-colors ${
@@ -161,6 +170,11 @@ export default function Home() {
       {/* AI Assistant — floating bottom-right panel */}
       {showAI && (
         <AIAssistant onClose={() => setShowAI(false)} onAction={handleAIAction} />
+      )}
+
+      {/* Marketplace — full-screen modal */}
+      {showMarketplace && (
+        <Marketplace onClose={() => setShowMarketplace(false)} />
       )}
 
       {/* Footer */}
