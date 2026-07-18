@@ -19,6 +19,7 @@ import { ChatPanel } from './_components/ChatPanel'
 import { VisionAnalyzer } from './_components/VisionAnalyzer'
 import { MonitorCodeEditor } from './_components/MonitorCodeEditor'
 import { CollaborativeMap } from './_components/CollaborativeMap'
+import { MonitorSandbox } from './_components/MonitorSandbox'
 import { useLanguage } from './_components/LanguageProvider'
 
 // Lazy-load monitor packages — only the active monitor is compiled and shipped
@@ -84,6 +85,7 @@ export default function Home() {
   const [showVision, setShowVision] = useState(false)
   const [showCodeEditor, setShowCodeEditor] = useState(false)
   const [showCollabMap, setShowCollabMap] = useState(false)
+  const [showSandbox, setShowSandbox] = useState(false)
   const [aiQuery, setAiQuery] = useState<{ monitor: MonitorId; params: any } | null>(null)
 
   // When AI assistant returns an action, set the active monitor
@@ -223,6 +225,14 @@ export default function Home() {
             >
               <Code2 className="h-4 w-4" />
               <span className="hidden sm:inline">Create</span>
+            </button>
+            <button
+              onClick={() => setShowSandbox(true)}
+              className="flex items-center gap-2 rounded-lg bg-emerald-100 px-3 py-1.5 text-xs font-medium text-emerald-700 hover:bg-emerald-200 dark:bg-emerald-950/50 dark:text-emerald-300"
+              title="Browse community-published monitors"
+            >
+              <Eye className="h-4 w-4" />
+              <span className="hidden sm:inline">Sandbox</span>
             </button>
             <button
               onClick={() => setShowAI(!showAI)}
@@ -382,6 +392,11 @@ export default function Home() {
       {/* Collaborative Map */}
       {showCollabMap && (
         <CollaborativeMap onClose={() => setShowCollabMap(false)} />
+      )}
+
+      {/* Monitor Sandbox */}
+      {showSandbox && (
+        <MonitorSandbox onClose={() => setShowSandbox(false)} />
       )}
 
       {/* Footer */}
