@@ -1,0 +1,17 @@
+{
+  "geofences": [
+    {
+      "id": "a4c52025-0a51-4fc2-ae09-9b1f032c6201",
+      "name": "Home Ljubljana",
+      "lat": 46.0569,
+      "lng": 14.5058,
+      "radiusKm": 25,
+      "thresholds": {
+        "aqi": 100,
+        "fwi": 40,
+        "magnitude": 4
+      },
+      "createdAt": "2026-07-18T06:27:10.687Z"
+    }
+  ]
+}

@@ -1,11 +1,12 @@
 'use client'
 
 import { useState, lazy, Suspense } from 'react'
-import { Activity, Wind, Flame, Waves, Mountain, CloudSun, Snowflake, Fish, Droplets, Sun, Globe, Sparkles, Store } from 'lucide-react'
+import { Activity, Wind, Flame, Waves, Mountain, CloudSun, Snowflake, Fish, Droplets, Sun, Globe, Sparkles, Store, Shield } from 'lucide-react'
 import { AIAssistant } from './_components/AIAssistant'
 import { UserMenuWrapper } from './_components/UserMenu'
 import { Marketplace } from './_components/Marketplace'
 import { AlertCenter } from './_components/AlertCenter'
+import { GeofenceManager } from './_components/GeofenceManager'
 
 // Lazy-load monitor packages — only the active monitor is compiled and shipped
 const AirQualityMonitor = lazy(() => import('@envirodash/monitor-air-quality').then((m) => ({ default: m.AirQualityMonitor })))
@@ -57,6 +58,7 @@ export default function Home() {
   const [activeMonitor, setActiveMonitor] = useState<MonitorId | null>('air-quality')
   const [showAI, setShowAI] = useState(false)
   const [showMarketplace, setShowMarketplace] = useState(false)
+  const [showGeofences, setShowGeofences] = useState(false)
   const [aiQuery, setAiQuery] = useState<{ monitor: MonitorId; params: any } | null>(null)
 
   // When AI assistant returns an action, set the active monitor
@@ -85,11 +87,22 @@ export default function Home() {
           <div className="flex items-center gap-3">
             <AlertCenter />
             <button
+              onClick={() => setShowGeofences(!showGeofences)}
+              className={`flex items-center gap-2 rounded-lg px-3 py-1.5 text-xs font-medium transition-colors ${
+                showGeofences
+                  ? 'bg-emerald-600 text-white'
+                  : 'bg-emerald-100 text-emerald-700 hover:bg-emerald-200 dark:bg-emerald-950/50 dark:text-emerald-300'
+              }`}
+            >
+              <Shield className="h-4 w-4" />
+              <span className="hidden sm:inline">Geofences</span>
+            </button>
+            <button
               onClick={() => setShowMarketplace(true)}
               className="flex items-center gap-2 rounded-lg bg-emerald-100 px-3 py-1.5 text-xs font-medium text-emerald-700 hover:bg-emerald-200 dark:bg-emerald-950/50 dark:text-emerald-300"
             >
               <Store className="h-4 w-4" />
-              Marketplace
+              <span className="hidden sm:inline">Marketplace</span>
             </button>
             <button
               onClick={() => setShowAI(!showAI)}
@@ -100,11 +113,11 @@ export default function Home() {
               }`}
             >
               <Sparkles className="h-4 w-4" />
-              AI Assistant
+              <span className="hidden sm:inline">AI</span>
             </button>
             <UserMenuWrapper />
             <div className="hidden text-xs text-zinc-500 md:block">
-              {MONITORS.filter((m) => m.realData).length} real-data monitors · {MONITORS.length} total
+              {MONITORS.filter((m) => m.realData).length} real · {MONITORS.length} total
             </div>
           </div>
         </div>
@@ -177,6 +190,11 @@ export default function Home() {
       {/* Marketplace — full-screen modal */}
       {showMarketplace && (
         <Marketplace onClose={() => setShowMarketplace(false)} />
+      )}
+
+      {/* Geofence Manager — floating panel */}
+      {showGeofences && (
+        <GeofenceManager onClose={() => setShowGeofences(false)} />
       )}
 
       {/* Footer */}
