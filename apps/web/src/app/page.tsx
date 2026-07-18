@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, lazy, Suspense } from 'react'
-import { Activity, Wind, Flame, Waves, Mountain, CloudSun, Snowflake, Fish, Droplets, Sun, Globe, Sparkles, Store, Shield, FileText, Map, Download, Layout, Key, BarChart3, Webhook } from 'lucide-react'
+import { Activity, Wind, Flame, Waves, Mountain, CloudSun, Snowflake, Fish, Droplets, Sun, Globe, Sparkles, Store, Shield, FileText, Map, Download, Layout, Key, BarChart3, Webhook, Mail } from 'lucide-react'
 import { AIAssistant } from './_components/AIAssistant'
 import { UserMenuWrapper } from './_components/UserMenu'
 import { Marketplace } from './_components/Marketplace'
@@ -14,6 +14,7 @@ import { ApiKeyManager } from './_components/ApiKeyManager'
 import { LanguageSelector } from './_components/LanguageSelector'
 import { AnalyticsDashboard } from './_components/AnalyticsDashboard'
 import { WebhookManager } from './_components/WebhookManager'
+import { EmailSubscriptionManager } from './_components/EmailSubscriptionManager'
 import { useLanguage } from './_components/LanguageProvider'
 
 // Lazy-load monitor packages — only the active monitor is compiled and shipped
@@ -74,6 +75,7 @@ export default function Home() {
   const [showApiKeys, setShowApiKeys] = useState(false)
   const [showAnalytics, setShowAnalytics] = useState(false)
   const [showWebhooks, setShowWebhooks] = useState(false)
+  const [showEmailSubs, setShowEmailSubs] = useState(false)
   const [aiQuery, setAiQuery] = useState<{ monitor: MonitorId; params: any } | null>(null)
 
   // When AI assistant returns an action, set the active monitor
@@ -133,6 +135,14 @@ export default function Home() {
             >
               <Webhook className="h-4 w-4" />
               <span className="hidden sm:inline">Webhooks</span>
+            </button>
+            <button
+              onClick={() => setShowEmailSubs(!showEmailSubs)}
+              className="flex items-center gap-2 rounded-lg bg-blue-100 px-3 py-1.5 text-xs font-medium text-blue-700 hover:bg-blue-200 dark:bg-blue-950/50 dark:text-blue-300"
+              title="Email alert subscriptions"
+            >
+              <Mail className="h-4 w-4" />
+              <span className="hidden sm:inline">Email</span>
             </button>
             <button
               onClick={() => setShowExport(true)}
@@ -299,6 +309,11 @@ export default function Home() {
       {/* Webhook Manager */}
       {showWebhooks && (
         <WebhookManager onClose={() => setShowWebhooks(false)} />
+      )}
+
+      {/* Email Subscription Manager */}
+      {showEmailSubs && (
+        <EmailSubscriptionManager onClose={() => setShowEmailSubs(false)} />
       )}
 
       {/* Footer */}
