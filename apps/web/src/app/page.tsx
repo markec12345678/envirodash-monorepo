@@ -1,7 +1,8 @@
 'use client'
 
 import { useState, lazy, Suspense } from 'react'
-import { Activity, Wind, Flame, Waves, Mountain, CloudSun, Snowflake, Fish, Droplets, Sun, Globe } from 'lucide-react'
+import { Activity, Wind, Flame, Waves, Mountain, CloudSun, Snowflake, Fish, Droplets, Sun, Globe, Sparkles } from 'lucide-react'
+import { AIAssistant } from './_components/AIAssistant'
 
 // Lazy-load monitor packages — only the active monitor is compiled and shipped
 const AirQualityMonitor = lazy(() => import('@envirodash/monitor-air-quality').then((m) => ({ default: m.AirQualityMonitor })))
@@ -51,6 +52,17 @@ const MONITORS: MonitorMeta[] = [
 
 export default function Home() {
   const [activeMonitor, setActiveMonitor] = useState<MonitorId | null>('air-quality')
+  const [showAI, setShowAI] = useState(false)
+  const [aiQuery, setAiQuery] = useState<{ monitor: MonitorId; params: any } | null>(null)
+
+  // When AI assistant returns an action, set the active monitor
+  const handleAIAction = (monitor: string, params: any) => {
+    if (MONITORS.some((m) => m.id === monitor)) {
+      setActiveMonitor(monitor as MonitorId)
+      setAiQuery({ monitor: monitor as MonitorId, params })
+      setShowAI(false)
+    }
+  }
 
   return (
     <main className="relative min-h-screen bg-gradient-to-br from-zinc-50 to-zinc-100 dark:from-zinc-950 dark:to-zinc-900">
@@ -66,8 +78,21 @@ export default function Home() {
               <p className="text-[10px] text-zinc-500">Real-time environmental monitoring</p>
             </div>
           </div>
-          <div className="hidden text-xs text-zinc-500 md:block">
-            {MONITORS.filter((m) => m.realData).length} real-data monitors · {MONITORS.length} total
+          <div className="flex items-center gap-3">
+            <button
+              onClick={() => setShowAI(!showAI)}
+              className={`flex items-center gap-2 rounded-lg px-3 py-1.5 text-xs font-medium transition-colors ${
+                showAI
+                  ? 'bg-violet-600 text-white'
+                  : 'bg-violet-100 text-violet-700 hover:bg-violet-200 dark:bg-violet-950/50 dark:text-violet-300'
+              }`}
+            >
+              <Sparkles className="h-4 w-4" />
+              AI Assistant
+            </button>
+            <div className="hidden text-xs text-zinc-500 md:block">
+              {MONITORS.filter((m) => m.realData).length} real-data monitors · {MONITORS.length} total
+            </div>
           </div>
         </div>
       </header>
@@ -129,6 +154,11 @@ export default function Home() {
           {activeMonitor === 'flood' && <FloodMonitor onClose={() => setActiveMonitor(null)} />}
           {activeMonitor === 'drought' && <DroughtMonitor onClose={() => setActiveMonitor(null)} />}
         </Suspense>
+      )}
+
+      {/* AI Assistant — floating bottom-right panel */}
+      {showAI && (
+        <AIAssistant onClose={() => setShowAI(false)} onAction={handleAIAction} />
       )}
 
       {/* Footer */}
