@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, lazy, Suspense } from 'react'
-import { Activity, Wind, Flame, Waves, Mountain, CloudSun, Snowflake, Fish, Droplets, Sun, Globe, Sparkles, Store, Shield, FileText, Map, Download, Layout, Key, BarChart3, Webhook, Mail, MessageSquare, Eye, Code2, Share2 } from 'lucide-react'
+import { Activity, Wind, Flame, Waves, Mountain, CloudSun, Snowflake, Fish, Droplets, Sun, Globe, Sparkles, Store, Shield, FileText, Map, Download, Layout, Key, BarChart3, Webhook, Mail, MessageSquare, Eye, Code2, Share2, TrendingUp } from 'lucide-react'
 import { AIAssistant } from './_components/AIAssistant'
 import { UserMenuWrapper } from './_components/UserMenu'
 import { Marketplace } from './_components/Marketplace'
@@ -20,6 +20,7 @@ import { VisionAnalyzer } from './_components/VisionAnalyzer'
 import { MonitorCodeEditor } from './_components/MonitorCodeEditor'
 import { CollaborativeMap } from './_components/CollaborativeMap'
 import { MonitorSandbox } from './_components/MonitorSandbox'
+import { AdvancedAnalyticsDashboard } from './_components/AdvancedAnalyticsDashboard'
 import { useLanguage } from './_components/LanguageProvider'
 
 // Lazy-load monitor packages — only the active monitor is compiled and shipped
@@ -86,6 +87,7 @@ export default function Home() {
   const [showCodeEditor, setShowCodeEditor] = useState(false)
   const [showCollabMap, setShowCollabMap] = useState(false)
   const [showSandbox, setShowSandbox] = useState(false)
+  const [showAdvancedAnalytics, setShowAdvancedAnalytics] = useState(false)
   const [aiQuery, setAiQuery] = useState<{ monitor: MonitorId; params: any } | null>(null)
 
   // When AI assistant returns an action, set the active monitor
@@ -120,6 +122,14 @@ export default function Home() {
             >
               <BarChart3 className="h-4 w-4" />
               <span className="hidden sm:inline">Analytics</span>
+            </button>
+            <button
+              onClick={() => setShowAdvancedAnalytics(true)}
+              className="flex items-center gap-2 rounded-lg bg-violet-100 px-3 py-1.5 text-xs font-medium text-violet-700 hover:bg-violet-200 dark:bg-violet-950/50 dark:text-violet-300"
+              title="Advanced analytics (cohorts, funnels, retention)"
+            >
+              <TrendingUp className="h-4 w-4" />
+              <span className="hidden sm:inline">Insights</span>
             </button>
             <LanguageSelector />
             <button
@@ -397,6 +407,11 @@ export default function Home() {
       {/* Monitor Sandbox */}
       {showSandbox && (
         <MonitorSandbox onClose={() => setShowSandbox(false)} />
+      )}
+
+      {/* Advanced Analytics */}
+      {showAdvancedAnalytics && (
+        <AdvancedAnalyticsDashboard onClose={() => setShowAdvancedAnalytics(false)} />
       )}
 
       {/* Footer */}
