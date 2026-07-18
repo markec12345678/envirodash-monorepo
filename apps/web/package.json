@@ -24,6 +24,7 @@
     "@envirodash/monitor-weather": "*",
     "@envirodash/monitor-wildfire": "*",
     "@pdf-lib/fontkit": "^1.1.1",
+    "@sentry/nextjs": "^10.66.0",
     "bcryptjs": "^3.0.3",
     "jose": "^6.2.3",
     "lucide-react": "^1.25.0",
