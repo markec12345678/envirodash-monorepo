@@ -1,0 +1,80 @@
+{
+  "name": "EnviroDash — Real-time Environmental Monitoring",
+  "short_name": "EnviroDash",
+  "description": "Real-time environmental monitoring: air quality, wildfires, tsunamis, volcanoes, earthquakes, weather, glaciers, coral reefs, floods, and drought on an interactive map.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#0f172a",
+  "theme_color": "#10b981",
+  "categories": ["navigation", "environment", "utilities", "education", "news"],
+  "lang": "sl",
+  "dir": "ltr",
+  "icons": [
+    {
+      "src": "/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-maskable-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/icons/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/screenshots/dashboard.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "EnviroDash dashboard with real-time environmental data"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Air Quality",
+      "short_name": "Air",
+      "description": "View real-time air quality data",
+      "url": "/?monitor=air-quality",
+      "icons": [{ "src": "/icons/icon-192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Earthquakes",
+      "short_name": "Quakes",
+      "description": "View recent earthquakes (M2.5+, last 24h)",
+      "url": "/?monitor=earthquake",
+      "icons": [{ "src": "/icons/icon-192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Tsunami Warnings",
+      "short_name": "Tsunami",
+      "description": "View active tsunami warnings from NOAA",
+      "url": "/?monitor=tsunami",
+      "icons": [{ "src": "/icons/icon-192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "AI Assistant",
+      "short_name": "AI",
+      "description": "Ask the EnviroDash AI assistant",
+      "url": "/?ai=open",
+      "icons": [{ "src": "/icons/icon-192.png", "sizes": "192x192" }]
+    }
+  ],
+  "prefer_related_applications": false
+}
