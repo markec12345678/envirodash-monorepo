@@ -1,0 +1,20 @@
+{
+  "name": "@envirodash/alerts-ws",
+  "version": "1.0.0",
+  "private": true,
+  "description": "EnviroDash alerts WebSocket service — broadcasts real-time environmental alerts to subscribed clients",
+  "main": "src/index.ts",
+  "scripts": {
+    "dev": "bun --hot src/index.ts",
+    "start": "bun src/index.ts",
+    "type-check": "tsc --noEmit",
+    "clean": "rm -rf node_modules .turbo"
+  },
+  "dependencies": {
+    "socket.io": "^4.7.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22",
+    "typescript": "^5"
+  }
+}

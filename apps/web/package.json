@@ -30,6 +30,7 @@
     "next-auth": "4",
     "react": "19",
     "react-dom": "19",
+    "socket.io-client": "^4.8.3",
     "z-ai-web-dev-sdk": "^0.0.18"
   },
   "devDependencies": {

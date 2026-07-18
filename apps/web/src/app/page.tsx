@@ -5,6 +5,7 @@ import { Activity, Wind, Flame, Waves, Mountain, CloudSun, Snowflake, Fish, Drop
 import { AIAssistant } from './_components/AIAssistant'
 import { UserMenuWrapper } from './_components/UserMenu'
 import { Marketplace } from './_components/Marketplace'
+import { AlertCenter } from './_components/AlertCenter'
 
 // Lazy-load monitor packages — only the active monitor is compiled and shipped
 const AirQualityMonitor = lazy(() => import('@envirodash/monitor-air-quality').then((m) => ({ default: m.AirQualityMonitor })))
@@ -82,6 +83,7 @@ export default function Home() {
             </div>
           </div>
           <div className="flex items-center gap-3">
+            <AlertCenter />
             <button
               onClick={() => setShowMarketplace(true)}
               className="flex items-center gap-2 rounded-lg bg-emerald-100 px-3 py-1.5 text-xs font-medium text-emerald-700 hover:bg-emerald-200 dark:bg-emerald-950/50 dark:text-emerald-300"
