@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, lazy, Suspense } from 'react'
-import { Activity, Wind, Flame, Waves, Mountain, CloudSun, Snowflake, Fish, Droplets, Sun, Globe, Sparkles, Store, Shield, FileText, Map, Download, Layout, Key, BarChart3, Webhook, Mail, MessageSquare, Eye, Code2, Share2, TrendingUp } from 'lucide-react'
+import { Activity, Wind, Flame, Waves, Mountain, CloudSun, Snowflake, Fish, Droplets, Sun, Globe, Sparkles, Store, Shield, FileText, Map, Download, Layout, Key, BarChart3, Webhook, Mail, MessageSquare, Eye, Code2, Share2, TrendingUp, BookOpen } from 'lucide-react'
 import { AIAssistant } from './_components/AIAssistant'
 import { UserMenuWrapper } from './_components/UserMenu'
 import { Marketplace } from './_components/Marketplace'
@@ -21,6 +21,7 @@ import { MonitorCodeEditor } from './_components/MonitorCodeEditor'
 import { CollaborativeMap } from './_components/CollaborativeMap'
 import { MonitorSandbox } from './_components/MonitorSandbox'
 import { AdvancedAnalyticsDashboard } from './_components/AdvancedAnalyticsDashboard'
+import { ApiDocs } from './_components/ApiDocs'
 import { useLanguage } from './_components/LanguageProvider'
 
 // Lazy-load monitor packages — only the active monitor is compiled and shipped
@@ -88,6 +89,7 @@ export default function Home() {
   const [showCollabMap, setShowCollabMap] = useState(false)
   const [showSandbox, setShowSandbox] = useState(false)
   const [showAdvancedAnalytics, setShowAdvancedAnalytics] = useState(false)
+  const [showApiDocs, setShowApiDocs] = useState(false)
   const [aiQuery, setAiQuery] = useState<{ monitor: MonitorId; params: any } | null>(null)
 
   // When AI assistant returns an action, set the active monitor
@@ -130,6 +132,14 @@ export default function Home() {
             >
               <TrendingUp className="h-4 w-4" />
               <span className="hidden sm:inline">Insights</span>
+            </button>
+            <button
+              onClick={() => setShowApiDocs(true)}
+              className="flex items-center gap-2 rounded-lg bg-zinc-100 px-3 py-1.5 text-xs font-medium text-zinc-700 hover:bg-zinc-200 dark:bg-zinc-800 dark:text-zinc-300"
+              title="API documentation"
+            >
+              <BookOpen className="h-4 w-4" />
+              <span className="hidden sm:inline">API Docs</span>
             </button>
             <LanguageSelector />
             <button
@@ -412,6 +422,11 @@ export default function Home() {
       {/* Advanced Analytics */}
       {showAdvancedAnalytics && (
         <AdvancedAnalyticsDashboard onClose={() => setShowAdvancedAnalytics(false)} />
+      )}
+
+      {/* API Documentation */}
+      {showApiDocs && (
+        <ApiDocs onClose={() => setShowApiDocs(false)} />
       )}
 
       {/* Footer */}
