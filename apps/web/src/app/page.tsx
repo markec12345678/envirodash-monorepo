@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, lazy, Suspense } from 'react'
-import { Activity, Wind, Flame, Waves, Mountain, CloudSun, Snowflake, Fish, Droplets, Sun, Globe, Sparkles, Store, Shield, FileText, Map, Download, Layout, Key, BarChart3, Webhook, Mail, MessageSquare, Eye, Code2, Share2, TrendingUp, BookOpen, Settings as SettingsIcon, Play } from 'lucide-react'
+import { Activity, Wind, Flame, Waves, Mountain, CloudSun, Snowflake, Fish, Droplets, Sun, Globe, Sparkles, Store, Shield, FileText, Map, Download, Layout, Key, BarChart3, Webhook, Mail, MessageSquare, Eye, Code2, Share2, TrendingUp, BookOpen, Settings as SettingsIcon, Play, Search } from 'lucide-react'
 import { AIAssistant } from './_components/AIAssistant'
 import { UserMenuWrapper } from './_components/UserMenu'
 import { Marketplace } from './_components/Marketplace'
@@ -24,6 +24,7 @@ import { AdvancedAnalyticsDashboard } from './_components/AdvancedAnalyticsDashb
 import { ApiDocs } from './_components/ApiDocs'
 import { OnboardingWizard } from './_components/OnboardingWizard'
 import { SettingsPanel } from './_components/SettingsPanel'
+import { GlobalSearch } from './_components/GlobalSearch'
 import { useLanguage } from './_components/LanguageProvider'
 
 // Lazy-load monitor packages — only the active monitor is compiled and shipped
@@ -94,6 +95,7 @@ export default function Home() {
   const [showApiDocs, setShowApiDocs] = useState(false)
   const [showOnboarding, setShowOnboarding] = useState(false)
   const [showSettings, setShowSettings] = useState(false)
+  const [showSearch, setShowSearch] = useState(false)
   const [aiQuery, setAiQuery] = useState<{ monitor: MonitorId; params: any } | null>(null)
 
   // When AI assistant returns an action, set the active monitor
@@ -121,6 +123,14 @@ export default function Home() {
           </div>
           <div className="flex items-center gap-3">
             <AlertCenter />
+            <button
+              onClick={() => setShowSearch(true)}
+              className="flex items-center gap-2 rounded-lg bg-zinc-100 px-3 py-1.5 text-xs font-medium text-zinc-700 hover:bg-zinc-200 dark:bg-zinc-800 dark:text-zinc-300"
+              title="Global search (Ctrl+K)"
+            >
+              <Search className="h-4 w-4" />
+              <span className="hidden sm:inline">Search</span>
+            </button>
             <button
               onClick={() => setShowAnalytics(true)}
               className="flex items-center gap-2 rounded-lg bg-zinc-100 px-3 py-1.5 text-xs font-medium text-zinc-700 hover:bg-zinc-200 dark:bg-zinc-800 dark:text-zinc-300"
@@ -456,6 +466,11 @@ export default function Home() {
       {/* Settings Panel */}
       {showSettings && (
         <SettingsPanel onClose={() => setShowSettings(false)} />
+      )}
+
+      {/* Global Search */}
+      {showSearch && (
+        <GlobalSearch onClose={() => setShowSearch(false)} />
       )}
 
       {/* Footer */}
