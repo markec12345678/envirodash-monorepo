@@ -11,6 +11,8 @@ import { MapView } from './_components/MapView'
 import { ExportDialog } from './_components/ExportDialog'
 import { DashboardEditor } from './_components/DashboardEditor'
 import { ApiKeyManager } from './_components/ApiKeyManager'
+import { LanguageSelector } from './_components/LanguageSelector'
+import { useLanguage } from './_components/LanguageProvider'
 
 // Lazy-load monitor packages — only the active monitor is compiled and shipped
 const AirQualityMonitor = lazy(() => import('@envirodash/monitor-air-quality').then((m) => ({ default: m.AirQualityMonitor })))
@@ -59,6 +61,7 @@ const MONITORS: MonitorMeta[] = [
 ]
 
 export default function Home() {
+  const { t } = useLanguage()
   const [activeMonitor, setActiveMonitor] = useState<MonitorId | null>('air-quality')
   const [showAI, setShowAI] = useState(false)
   const [showMarketplace, setShowMarketplace] = useState(false)
@@ -94,47 +97,48 @@ export default function Home() {
           </div>
           <div className="flex items-center gap-3">
             <AlertCenter />
+            <LanguageSelector />
             <button
               onClick={() => setShowDashboardEditor(true)}
               className="flex items-center gap-2 rounded-lg bg-zinc-900 px-3 py-1.5 text-xs font-medium text-white hover:bg-zinc-700 dark:bg-zinc-100 dark:text-zinc-900"
-              title="Customize your dashboard"
+              title={t('btn.customize')}
             >
               <Layout className="h-4 w-4" />
-              <span className="hidden sm:inline">Customize</span>
+              <span className="hidden sm:inline">{t('btn.customize')}</span>
             </button>
             <button
               onClick={() => setShowApiKeys(!showApiKeys)}
               className="flex items-center gap-2 rounded-lg bg-zinc-100 px-3 py-1.5 text-xs font-medium text-zinc-700 hover:bg-zinc-200 dark:bg-zinc-800 dark:text-zinc-300"
-              title="Manage API keys for programmatic access"
+              title={t('btn.apiKeys')}
             >
               <Key className="h-4 w-4" />
-              <span className="hidden sm:inline">API Keys</span>
+              <span className="hidden sm:inline">{t('btn.apiKeys')}</span>
             </button>
             <button
               onClick={() => setShowExport(true)}
               className="flex items-center gap-2 rounded-lg bg-zinc-100 px-3 py-1.5 text-xs font-medium text-zinc-700 hover:bg-zinc-200 dark:bg-zinc-800 dark:text-zinc-300"
-              title="Export environmental data"
+              title={t('btn.export')}
             >
               <Download className="h-4 w-4" />
-              <span className="hidden sm:inline">Export</span>
+              <span className="hidden sm:inline">{t('btn.export')}</span>
             </button>
             <button
               onClick={() => setShowMap(true)}
               className="flex items-center gap-2 rounded-lg bg-sky-100 px-3 py-1.5 text-xs font-medium text-sky-700 hover:bg-sky-200 dark:bg-sky-950/50 dark:text-sky-300"
-              title="Open environmental map"
+              title={t('btn.map')}
             >
               <Map className="h-4 w-4" />
-              <span className="hidden sm:inline">Map</span>
+              <span className="hidden sm:inline">{t('btn.map')}</span>
             </button>
             <a
               href="/api/report?lat=46.0569&lng=14.5058&name=Ljubljana&days=7"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 rounded-lg bg-amber-100 px-3 py-1.5 text-xs font-medium text-amber-700 hover:bg-amber-200 dark:bg-amber-950/50 dark:text-amber-300"
-              title="Download Ljubljana environmental report (PDF)"
+              title={t('btn.pdf')}
             >
               <FileText className="h-4 w-4" />
-              <span className="hidden sm:inline">PDF</span>
+              <span className="hidden sm:inline">{t('btn.pdf')}</span>
             </a>
             <button
               onClick={() => setShowGeofences(!showGeofences)}
@@ -145,14 +149,14 @@ export default function Home() {
               }`}
             >
               <Shield className="h-4 w-4" />
-              <span className="hidden sm:inline">Geofences</span>
+              <span className="hidden sm:inline">{t('btn.geofences')}</span>
             </button>
             <button
               onClick={() => setShowMarketplace(true)}
               className="flex items-center gap-2 rounded-lg bg-emerald-100 px-3 py-1.5 text-xs font-medium text-emerald-700 hover:bg-emerald-200 dark:bg-emerald-950/50 dark:text-emerald-300"
             >
               <Store className="h-4 w-4" />
-              <span className="hidden sm:inline">Marketplace</span>
+              <span className="hidden sm:inline">{t('btn.marketplace')}</span>
             </button>
             <button
               onClick={() => setShowAI(!showAI)}
@@ -163,11 +167,11 @@ export default function Home() {
               }`}
             >
               <Sparkles className="h-4 w-4" />
-              <span className="hidden sm:inline">AI</span>
+              <span className="hidden sm:inline">{t('btn.ai')}</span>
             </button>
             <UserMenuWrapper />
             <div className="hidden text-xs text-zinc-500 md:block">
-              {MONITORS.filter((m) => m.realData).length} real · {MONITORS.length} total
+              {MONITORS.filter((m) => m.realData).length} {t('app.realMonitors')} · {MONITORS.length} {t('app.totalMonitors')}
             </div>
           </div>
         </div>
