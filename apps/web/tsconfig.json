@@ -71,14 +71,26 @@
       "@envirodash/monitor-glacier": [
         "../../monitors/glacier/src/GlacierMonitor.tsx"
       ],
+      "@envirodash/monitor-glacier/api": [
+        "../../monitors/glacier/src/api.ts"
+      ],
       "@envirodash/monitor-coral-reef": [
         "../../monitors/coral-reef/src/CoralReefMonitor.tsx"
+      ],
+      "@envirodash/monitor-coral-reef/api": [
+        "../../monitors/coral-reef/src/api.ts"
       ],
       "@envirodash/monitor-flood": [
         "../../monitors/flood/src/FloodMonitor.tsx"
       ],
+      "@envirodash/monitor-flood/api": [
+        "../../monitors/flood/src/api.ts"
+      ],
       "@envirodash/monitor-drought": [
         "../../monitors/drought/src/DroughtMonitor.tsx"
+      ],
+      "@envirodash/monitor-drought/api": [
+        "../../monitors/drought/src/api.ts"
       ]
     }
   },

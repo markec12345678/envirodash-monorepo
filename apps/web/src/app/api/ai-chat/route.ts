@@ -41,6 +41,18 @@ Available monitors and their APIs (all return real-time data):
    - GET /api/earthquake?minMagnitude=2.5&limit=50
 6. weather — Current weather from Open-Meteo Forecast
    - GET /api/weather?lat=LAT&lng=LNG&name=NAME
+7. glacier — Real-time snowfall, temperature, and precipitation at major world glaciers (Triglav, Alps, Himalaya, Andes, Arctic, Patagonia)
+   - GET /api/glacier?region=alps|himalaya|andes|arctic|all
+   - GET /api/glacier?lat=LAT&lng=LNG&name=NAME
+8. coral-reef — Sea surface temperature (SST) at major coral reefs (Great Barrier Reef, Caribbean, Red Sea, Maldives)
+   - GET /api/coral-reef?region=pacific|caribbean|indian|red-sea|all
+   - SST > 30°C = bleaching warning, SST > 31°C = critical
+9. flood — Flood risk score (0-100) at major river basins (Danube, Sava, Rhine, Thames, Mississippi)
+   - GET /api/flood?region=europe|asia|us|all
+   - Score > 50 = high flood risk
+10. drought — Drought severity score (0-100, D0-D4) from soil moisture, temperature, humidity
+    - GET /api/drought?region=slovenia|europe|us|middle-east|australia|all
+    - D0 (Abnormally Dry) through D4 (Exceptional Drought)
 
 AQI reference (US AQI):
 - 0-50: Good (stable, green)

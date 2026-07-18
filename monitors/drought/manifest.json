@@ -3,10 +3,10 @@
   "name": "Drought Monitor",
   "category": "climate",
   "icon": "sun",
-  "description": "Drought conditions from US Drought Monitor and European Drought Observatory. Real-data integration planned for v1.1.",
-  "dataSource": "US Drought Monitor / EDO (planned)",
-  "realData": false,
+  "description": "Real-time drought severity score (0-100, D0-D4 classification) calculated from soil moisture, temperature, humidity, and precipitation. Covers European, US, Middle Eastern, and Australian regions.",
+  "dataSource": "Open-Meteo Forecast API",
+  "realData": true,
   "free": true,
   "accent": "amber",
-  "supportedRegions": ["US", "europe", "global"]
+  "supportedRegions": ["slovenia", "europe", "us", "middle-east", "australia", "global"]
 }

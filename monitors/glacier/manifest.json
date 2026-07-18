@@ -1,12 +1,12 @@
 {
   "id": "glacier",
-  "name": "Glacier Retreat Monitor",
+  "name": "Glacier Monitor",
   "category": "climate",
   "icon": "snowflake",
-  "description": "Glacier retreat tracking based on GLIMS (Global Land Ice Measurements from Space) database. Real-data integration planned for v1.1.",
-  "dataSource": "GLIMS database (planned)",
-  "realData": false,
+  "description": "Real-time weather conditions at major world glaciers (Triglav, Alps, Himalaya, Andes, Arctic, Patagonia). Snowfall, temperature, and precipitation from Open-Meteo.",
+  "dataSource": "Open-Meteo Forecast API",
+  "realData": true,
   "free": true,
   "accent": "cyan",
-  "supportedRegions": ["alps", "himalaya", "andes", "arctic", "antarctic"]
+  "supportedRegions": ["alps", "himalaya", "andes", "arctic", "antarctic", "global"]
 }

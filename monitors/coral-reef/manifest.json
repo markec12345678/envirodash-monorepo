@@ -1,12 +1,12 @@
 {
   "id": "coral-reef",
-  "name": "Coral Reef Bleaching Monitor",
+  "name": "Coral Reef Monitor",
   "category": "oceanic",
   "icon": "fish",
-  "description": "Coral reef bleaching alerts from NOAA Coral Reef Watch. Real-data integration planned for v1.1.",
-  "dataSource": "NOAA Coral Reef Watch (planned)",
-  "realData": false,
+  "description": "Real-time sea surface temperature (SST) for major coral reefs (Great Barrier Reef, Caribbean, Red Sea, Maldives, etc.). SST > 30°C indicates bleaching risk. Powered by Open-Meteo Marine API.",
+  "dataSource": "Open-Meteo Marine API",
+  "realData": true,
   "free": true,
   "accent": "pink",
-  "supportedRegions": ["great-barrier-reef", "caribbean", "red-sea", "pacific"]
+  "supportedRegions": ["great-barrier-reef", "caribbean", "red-sea", "pacific", "indian", "global"]
 }

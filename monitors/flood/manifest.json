@@ -3,10 +3,10 @@
   "name": "Flood Risk Monitor",
   "category": "disaster",
   "icon": "droplets",
-  "description": "Flood risk monitoring based on GloFAS (Global Flood Awareness System). Real-data integration planned for v1.1.",
-  "dataSource": "GloFAS / Copernicus EMS (planned)",
-  "realData": false,
+  "description": "Real-time flood risk score (0-100) for major river basins and flood-prone cities. Calculated from current precipitation + 24h rainfall total via Open-Meteo Forecast API.",
+  "dataSource": "Open-Meteo Forecast API",
+  "realData": true,
   "free": true,
   "accent": "sky",
-  "supportedRegions": ["europe", "asia", "global"]
+  "supportedRegions": ["europe", "asia", "us", "global"]
 }
