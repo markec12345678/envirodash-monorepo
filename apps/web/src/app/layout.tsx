@@ -3,6 +3,7 @@ import './globals.css'
 import { Providers } from './_components/Providers'
 import { PWAInstallBanner } from './_components/PWAInstallBanner'
 import { OfflineIndicator } from './_components/OfflineIndicator'
+import { LiveMonitorBar } from './_components/LiveMonitorBar'
 
 export const metadata: Metadata = {
   title: 'EnviroDash — Real-time Environmental Monitoring',
@@ -51,6 +52,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body className="antialiased bg-background text-foreground">
         <Providers>
+          <LiveMonitorBar country="SI" />
           {children}
           <PWAInstallBanner />
           <OfflineIndicator />
