@@ -1,12 +1,13 @@
 'use client'
 
 import { useState, lazy, Suspense } from 'react'
-import { Activity, Wind, Flame, Waves, Mountain, CloudSun, Snowflake, Fish, Droplets, Sun, Globe, Sparkles, Store, Shield, FileText } from 'lucide-react'
+import { Activity, Wind, Flame, Waves, Mountain, CloudSun, Snowflake, Fish, Droplets, Sun, Globe, Sparkles, Store, Shield, FileText, Map } from 'lucide-react'
 import { AIAssistant } from './_components/AIAssistant'
 import { UserMenuWrapper } from './_components/UserMenu'
 import { Marketplace } from './_components/Marketplace'
 import { AlertCenter } from './_components/AlertCenter'
 import { GeofenceManager } from './_components/GeofenceManager'
+import { MapView } from './_components/MapView'
 
 // Lazy-load monitor packages — only the active monitor is compiled and shipped
 const AirQualityMonitor = lazy(() => import('@envirodash/monitor-air-quality').then((m) => ({ default: m.AirQualityMonitor })))
@@ -59,6 +60,7 @@ export default function Home() {
   const [showAI, setShowAI] = useState(false)
   const [showMarketplace, setShowMarketplace] = useState(false)
   const [showGeofences, setShowGeofences] = useState(false)
+  const [showMap, setShowMap] = useState(false)
   const [aiQuery, setAiQuery] = useState<{ monitor: MonitorId; params: any } | null>(null)
 
   // When AI assistant returns an action, set the active monitor
@@ -86,6 +88,14 @@ export default function Home() {
           </div>
           <div className="flex items-center gap-3">
             <AlertCenter />
+            <button
+              onClick={() => setShowMap(true)}
+              className="flex items-center gap-2 rounded-lg bg-sky-100 px-3 py-1.5 text-xs font-medium text-sky-700 hover:bg-sky-200 dark:bg-sky-950/50 dark:text-sky-300"
+              title="Open environmental map"
+            >
+              <Map className="h-4 w-4" />
+              <span className="hidden sm:inline">Map</span>
+            </button>
             <a
               href="/api/report?lat=46.0569&lng=14.5058&name=Ljubljana&days=7"
               target="_blank"
@@ -94,7 +104,7 @@ export default function Home() {
               title="Download Ljubljana environmental report (PDF)"
             >
               <FileText className="h-4 w-4" />
-              <span className="hidden sm:inline">PDF Report</span>
+              <span className="hidden sm:inline">PDF</span>
             </a>
             <button
               onClick={() => setShowGeofences(!showGeofences)}
@@ -205,6 +215,11 @@ export default function Home() {
       {/* Geofence Manager — floating panel */}
       {showGeofences && (
         <GeofenceManager onClose={() => setShowGeofences(false)} />
+      )}
+
+      {/* Map View — full-screen modal */}
+      {showMap && (
+        <MapView onClose={() => setShowMap(false)} />
       )}
 
       {/* Footer */}
