@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, lazy, Suspense } from 'react'
-import { Activity, Wind, Flame, Waves, Mountain, CloudSun, Snowflake, Fish, Droplets, Sun, Globe, Sparkles, Store, Shield, FileText, Map, Download, Layout, Key, BarChart3, Webhook, Mail } from 'lucide-react'
+import { Activity, Wind, Flame, Waves, Mountain, CloudSun, Snowflake, Fish, Droplets, Sun, Globe, Sparkles, Store, Shield, FileText, Map, Download, Layout, Key, BarChart3, Webhook, Mail, MessageSquare } from 'lucide-react'
 import { AIAssistant } from './_components/AIAssistant'
 import { UserMenuWrapper } from './_components/UserMenu'
 import { Marketplace } from './_components/Marketplace'
@@ -15,6 +15,7 @@ import { LanguageSelector } from './_components/LanguageSelector'
 import { AnalyticsDashboard } from './_components/AnalyticsDashboard'
 import { WebhookManager } from './_components/WebhookManager'
 import { EmailSubscriptionManager } from './_components/EmailSubscriptionManager'
+import { ChatPanel } from './_components/ChatPanel'
 import { useLanguage } from './_components/LanguageProvider'
 
 // Lazy-load monitor packages — only the active monitor is compiled and shipped
@@ -76,6 +77,7 @@ export default function Home() {
   const [showAnalytics, setShowAnalytics] = useState(false)
   const [showWebhooks, setShowWebhooks] = useState(false)
   const [showEmailSubs, setShowEmailSubs] = useState(false)
+  const [showChat, setShowChat] = useState(false)
   const [aiQuery, setAiQuery] = useState<{ monitor: MonitorId; params: any } | null>(null)
 
   // When AI assistant returns an action, set the active monitor
@@ -143,6 +145,18 @@ export default function Home() {
             >
               <Mail className="h-4 w-4" />
               <span className="hidden sm:inline">Email</span>
+            </button>
+            <button
+              onClick={() => setShowChat(!showChat)}
+              className={`flex items-center gap-2 rounded-lg px-3 py-1.5 text-xs font-medium transition-colors ${
+                showChat
+                  ? 'bg-emerald-600 text-white'
+                  : 'bg-emerald-100 text-emerald-700 hover:bg-emerald-200 dark:bg-emerald-950/50 dark:text-emerald-300'
+              }`}
+              title="Community chat"
+            >
+              <MessageSquare className="h-4 w-4" />
+              <span className="hidden sm:inline">Chat</span>
             </button>
             <button
               onClick={() => setShowExport(true)}
@@ -314,6 +328,11 @@ export default function Home() {
       {/* Email Subscription Manager */}
       {showEmailSubs && (
         <EmailSubscriptionManager onClose={() => setShowEmailSubs(false)} />
+      )}
+
+      {/* Community Chat */}
+      {showChat && (
+        <ChatPanel onClose={() => setShowChat(false)} />
       )}
 
       {/* Footer */}
