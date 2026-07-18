@@ -1,0 +1,54 @@
+{
+  "expo": {
+    "name": "EnviroDash",
+    "slug": "envirodash",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#10b981"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "si.envirodash.app",
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "EnviroDash uses your location to show nearby air quality and environmental data.",
+        "NSLocationAlwaysAndWhenInUseUsageDescription": "EnviroDash uses your location to show nearby air quality and environmental data."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#10b981"
+      },
+      "package": "si.envirodash.app",
+      "permissions": ["ACCESS_COARSE_LOCATION", "ACCESS_FINE_LOCATION"]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png",
+      "bundler": "metro"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-location",
+      "expo-notifications",
+      "expo-secure-store"
+    ],
+    "scheme": "envirodash",
+    "extra": {
+      "envirodashApiUrl": "http://localhost:3000",
+      "eas": {
+        "projectId": "envirodash"
+      }
+    },
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/envirodash"
+    }
+  }
+}
