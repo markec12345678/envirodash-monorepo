@@ -138,3 +138,49 @@ export async function fetchMarketplace(params: { category?: string; realData?: b
   if (params.limit != null) q.set('limit', String(params.limit))
   return request<{ total: number; monitors: any[]; categories: Record<string, number> }>(`/api/marketplace?${q}`)
 }
+
+/**
+ * Register Expo push token for mobile push notifications.
+ * Call this after getting the token from expo-notifications.
+ */
+export async function registerPushToken(token: string, platform: 'ios' | 'android' | 'web', deviceName?: string) {
+  return request<{ success: boolean }>('/api/user/push-tokens', {
+    method: 'POST',
+    body: { token, platform, deviceName },
+  })
+}
+
+/**
+ * List user's registered push tokens.
+ */
+export async function listPushTokens() {
+  return request<{ tokens: any[]; count: number }>('/api/user/push-tokens')
+}
+
+/**
+ * Delete a push token.
+ */
+export async function deletePushToken(tokenId: string) {
+  return request<{ success: boolean }>(`/api/user/push-tokens?id=${tokenId}`, {
+    method: 'DELETE',
+  })
+}
+
+/**
+ * Send a test push notification.
+ */
+export async function testPushToken(tokenId: string) {
+  return request<{ success: boolean; message: string }>(`/api/user/push-tokens?id=${tokenId}&action=test`, {
+    method: 'POST',
+  })
+}
+
+/**
+ * Analyze satellite imagery using AI Vision.
+ */
+export async function analyzeImage(imageUrl: string, type: string, location?: string) {
+  return request<{ success: boolean; analysis: any }>('/api/vision', {
+    method: 'POST',
+    body: { imageUrl, type, location },
+  })
+}
