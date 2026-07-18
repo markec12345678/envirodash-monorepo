@@ -1,0 +1,12 @@
+{
+  "id": "weather",
+  "name": "Weather Monitor",
+  "category": "weather",
+  "icon": "cloud-sun",
+  "description": "Real-time weather data (temperature, humidity, wind, precipitation) and 7-day forecast from Open-Meteo Forecast API.",
+  "dataSource": "Open-Meteo Forecast API",
+  "realData": true,
+  "free": true,
+  "accent": "sky",
+  "supportedRegions": ["global"]
+}

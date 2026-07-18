@@ -1,0 +1,9 @@
+{
+  "name": "@envirodash/monitor-earthquake",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Real-time earthquake data from USGS Earthquake Hazards Program (last 24h, M2.5+)",
+  "main": "./src/EarthquakeMonitor.tsx",
+  "exports": { ".": "./src/EarthquakeMonitor.tsx", "./api": "./src/api.ts", "./manifest": "./manifest.json" },
+  "dependencies": { "@envirodash/core": "*" }
+}

@@ -1,0 +1,12 @@
+{
+  "id": "tsunami",
+  "name": "Tsunami Warnings Monitor",
+  "category": "disaster",
+  "icon": "waves",
+  "description": "Real-time tsunami warnings, watches, advisories, and information statements from NOAA National Tsunami Warning Center (NTWC and PTWC).",
+  "dataSource": "NOAA National Tsunami Warning Center",
+  "realData": true,
+  "free": true,
+  "accent": "cyan",
+  "supportedRegions": ["global"]
+}

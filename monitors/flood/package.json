@@ -1,0 +1,9 @@
+{
+  "name": "@envirodash/monitor-flood",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Flood risk monitoring from GloFAS (Global Flood Awareness System, planned)",
+  "main": "./src/FloodMonitor.tsx",
+  "exports": { ".": "./src/FloodMonitor.tsx", "./manifest": "./manifest.json" },
+  "dependencies": { "@envirodash/core": "*" }
+}

@@ -1,0 +1,95 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": false,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "react-jsx",
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ],
+      "@envirodash/core": [
+        "../../packages/core/src/index.ts"
+      ],
+      "@envirodash/core/*": [
+        "../../packages/core/src/*"
+      ],
+      "@envirodash/monitor-air-quality": [
+        "../../monitors/air-quality/src/AirQualityMonitor.tsx"
+      ],
+      "@envirodash/monitor-air-quality/api": [
+        "../../monitors/air-quality/src/api.ts"
+      ],
+      "@envirodash/monitor-wildfire": [
+        "../../monitors/wildfire/src/WildfireMonitor.tsx"
+      ],
+      "@envirodash/monitor-wildfire/api": [
+        "../../monitors/wildfire/src/api.ts"
+      ],
+      "@envirodash/monitor-tsunami": [
+        "../../monitors/tsunami/src/TsunamiMonitor.tsx"
+      ],
+      "@envirodash/monitor-tsunami/api": [
+        "../../monitors/tsunami/src/api.ts"
+      ],
+      "@envirodash/monitor-volcano": [
+        "../../monitors/volcano/src/VolcanoMonitor.tsx"
+      ],
+      "@envirodash/monitor-volcano/api": [
+        "../../monitors/volcano/src/api.ts"
+      ],
+      "@envirodash/monitor-earthquake": [
+        "../../monitors/earthquake/src/EarthquakeMonitor.tsx"
+      ],
+      "@envirodash/monitor-earthquake/api": [
+        "../../monitors/earthquake/src/api.ts"
+      ],
+      "@envirodash/monitor-weather": [
+        "../../monitors/weather/src/WeatherMonitor.tsx"
+      ],
+      "@envirodash/monitor-weather/api": [
+        "../../monitors/weather/src/api.ts"
+      ],
+      "@envirodash/monitor-glacier": [
+        "../../monitors/glacier/src/GlacierMonitor.tsx"
+      ],
+      "@envirodash/monitor-coral-reef": [
+        "../../monitors/coral-reef/src/CoralReefMonitor.tsx"
+      ],
+      "@envirodash/monitor-flood": [
+        "../../monitors/flood/src/FloodMonitor.tsx"
+      ],
+      "@envirodash/monitor-drought": [
+        "../../monitors/drought/src/DroughtMonitor.tsx"
+      ]
+    }
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    ".next/dev/types/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

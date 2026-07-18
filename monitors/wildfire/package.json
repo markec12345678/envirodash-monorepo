@@ -1,0 +1,23 @@
+{
+  "name": "@envirodash/monitor-wildfire",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Real-time wildfire risk monitor (Fire Weather Index 0-100) calculated from Open-Meteo forecast data",
+  "main": "./src/WildfireMonitor.tsx",
+  "types": "./src/WildfireMonitor.tsx",
+  "exports": {
+    ".": "./src/WildfireMonitor.tsx",
+    "./api": "./src/api.ts",
+    "./manifest": "./manifest.json"
+  },
+  "scripts": {
+    "type-check": "tsc --noEmit",
+    "clean": "rm -rf dist .turbo"
+  },
+  "dependencies": {
+    "@envirodash/core": "*"
+  },
+  "devDependencies": {
+    "typescript": "^5"
+  }
+}

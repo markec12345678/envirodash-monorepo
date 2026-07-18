@@ -1,0 +1,13 @@
+{
+  "name": "@envirodash/monitor-tsunami",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Real-time tsunami warnings monitor from NOAA National Tsunami Warning Center",
+  "main": "./src/TsunamiMonitor.tsx",
+  "exports": {
+    ".": "./src/TsunamiMonitor.tsx",
+    "./api": "./src/api.ts",
+    "./manifest": "./manifest.json"
+  },
+  "dependencies": { "@envirodash/core": "*" }
+}

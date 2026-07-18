@@ -1,0 +1,12 @@
+{
+  "id": "drought",
+  "name": "Drought Monitor",
+  "category": "climate",
+  "icon": "sun",
+  "description": "Drought conditions from US Drought Monitor and European Drought Observatory. Real-data integration planned for v1.1.",
+  "dataSource": "US Drought Monitor / EDO (planned)",
+  "realData": false,
+  "free": true,
+  "accent": "amber",
+  "supportedRegions": ["US", "europe", "global"]
+}

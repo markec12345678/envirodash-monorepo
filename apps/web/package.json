@@ -1,0 +1,38 @@
+{
+  "name": "@envirodash/web",
+  "version": "1.0.0",
+  "private": true,
+  "description": "EnviroDash — main Next.js 16 web application",
+  "scripts": {
+    "dev": "next dev -p 3000 --turbopack",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "type-check": "tsc --noEmit",
+    "clean": "rm -rf .next .turbo"
+  },
+  "dependencies": {
+    "@envirodash/core": "*",
+    "@envirodash/monitor-air-quality": "*",
+    "@envirodash/monitor-coral-reef": "*",
+    "@envirodash/monitor-drought": "*",
+    "@envirodash/monitor-earthquake": "*",
+    "@envirodash/monitor-flood": "*",
+    "@envirodash/monitor-glacier": "*",
+    "@envirodash/monitor-tsunami": "*",
+    "@envirodash/monitor-volcano": "*",
+    "@envirodash/monitor-weather": "*",
+    "@envirodash/monitor-wildfire": "*",
+    "lucide-react": "^1.25.0",
+    "next": "16.1.1",
+    "react": "19",
+    "react-dom": "19"
+  },
+  "devDependencies": {
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "typescript": "^5",
+    "tailwindcss": "^4",
+    "@tailwindcss/postcss": "^4"
+  }
+}

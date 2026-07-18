@@ -1,0 +1,12 @@
+{
+  "id": "glacier",
+  "name": "Glacier Retreat Monitor",
+  "category": "climate",
+  "icon": "snowflake",
+  "description": "Glacier retreat tracking based on GLIMS (Global Land Ice Measurements from Space) database. Real-data integration planned for v1.1.",
+  "dataSource": "GLIMS database (planned)",
+  "realData": false,
+  "free": true,
+  "accent": "cyan",
+  "supportedRegions": ["alps", "himalaya", "andes", "arctic", "antarctic"]
+}

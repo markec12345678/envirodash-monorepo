@@ -1,0 +1,9 @@
+{
+  "name": "@envirodash/monitor-coral-reef",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Coral reef bleaching alerts from NOAA Coral Reef Watch (planned)",
+  "main": "./src/CoralReefMonitor.tsx",
+  "exports": { ".": "./src/CoralReefMonitor.tsx", "./manifest": "./manifest.json" },
+  "dependencies": { "@envirodash/core": "*" }
+}

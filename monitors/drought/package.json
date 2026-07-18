@@ -1,0 +1,9 @@
+{
+  "name": "@envirodash/monitor-drought",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Drought monitoring from US Drought Monitor and Global Drought Observatory (planned)",
+  "main": "./src/DroughtMonitor.tsx",
+  "exports": { ".": "./src/DroughtMonitor.tsx", "./manifest": "./manifest.json" },
+  "dependencies": { "@envirodash/core": "*" }
+}

@@ -1,0 +1,9 @@
+{
+  "name": "@envirodash/monitor-weather",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Real-time weather monitor (temperature, humidity, wind, precipitation, 7-day forecast) from Open-Meteo",
+  "main": "./src/WeatherMonitor.tsx",
+  "exports": { ".": "./src/WeatherMonitor.tsx", "./api": "./src/api.ts", "./manifest": "./manifest.json" },
+  "dependencies": { "@envirodash/core": "*" }
+}

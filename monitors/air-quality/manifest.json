@@ -1,0 +1,12 @@
+{
+  "id": "air-quality",
+  "name": "Air Quality Monitor",
+  "category": "environment",
+  "icon": "wind",
+  "description": "Real-time PM2.5, PM10, NO2, SO2, O3, CO and US AQI from Open-Meteo Air Quality API (CAMS-based model, ~10km resolution globally).",
+  "dataSource": "Open-Meteo Air Quality API (CAMS)",
+  "realData": true,
+  "free": true,
+  "accent": "emerald",
+  "supportedRegions": ["SI", "DE", "IT", "FR", "GB", "US", "global"]
+}

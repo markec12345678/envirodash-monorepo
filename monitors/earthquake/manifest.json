@@ -1,0 +1,12 @@
+{
+  "id": "earthquake",
+  "name": "Earthquake Monitor",
+  "category": "geological",
+  "icon": "activity",
+  "description": "Real-time earthquake data (last 24 hours, magnitude 2.5+) from USGS Earthquake Hazards Program.",
+  "dataSource": "USGS Earthquake Hazards Program",
+  "realData": true,
+  "free": true,
+  "accent": "amber",
+  "supportedRegions": ["global"]
+}

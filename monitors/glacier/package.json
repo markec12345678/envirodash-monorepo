@@ -1,0 +1,9 @@
+{
+  "name": "@envirodash/monitor-glacier",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Glacier retreat monitoring (GLIMS database integration planned)",
+  "main": "./src/GlacierMonitor.tsx",
+  "exports": { ".": "./src/GlacierMonitor.tsx", "./manifest": "./manifest.json" },
+  "dependencies": { "@envirodash/core": "*" }
+}

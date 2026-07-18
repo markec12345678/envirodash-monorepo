@@ -1,0 +1,23 @@
+{
+  "name": "@envirodash/monitor-air-quality",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Real-time air quality monitor (PM2.5, PM10, NO2, SO2, O3, CO, US AQI) powered by Open-Meteo Air Quality API",
+  "main": "./src/AirQualityMonitor.tsx",
+  "types": "./src/AirQualityMonitor.tsx",
+  "exports": {
+    ".": "./src/AirQualityMonitor.tsx",
+    "./api": "./src/api.ts",
+    "./manifest": "./manifest.json"
+  },
+  "scripts": {
+    "type-check": "tsc --noEmit",
+    "clean": "rm -rf dist .turbo"
+  },
+  "dependencies": {
+    "@envirodash/core": "*"
+  },
+  "devDependencies": {
+    "typescript": "^5"
+  }
+}

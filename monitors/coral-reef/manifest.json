@@ -1,0 +1,12 @@
+{
+  "id": "coral-reef",
+  "name": "Coral Reef Bleaching Monitor",
+  "category": "oceanic",
+  "icon": "fish",
+  "description": "Coral reef bleaching alerts from NOAA Coral Reef Watch. Real-data integration planned for v1.1.",
+  "dataSource": "NOAA Coral Reef Watch (planned)",
+  "realData": false,
+  "free": true,
+  "accent": "pink",
+  "supportedRegions": ["great-barrier-reef", "caribbean", "red-sea", "pacific"]
+}

@@ -1,0 +1,9 @@
+{
+  "name": "@envirodash/monitor-volcano",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Real-time volcano alerts from USGS Volcano Hazards Program",
+  "main": "./src/VolcanoMonitor.tsx",
+  "exports": { ".": "./src/VolcanoMonitor.tsx", "./api": "./src/api.ts", "./manifest": "./manifest.json" },
+  "dependencies": { "@envirodash/core": "*" }
+}

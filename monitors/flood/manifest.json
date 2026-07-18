@@ -1,0 +1,12 @@
+{
+  "id": "flood",
+  "name": "Flood Risk Monitor",
+  "category": "disaster",
+  "icon": "droplets",
+  "description": "Flood risk monitoring based on GloFAS (Global Flood Awareness System). Real-data integration planned for v1.1.",
+  "dataSource": "GloFAS / Copernicus EMS (planned)",
+  "realData": false,
+  "free": true,
+  "accent": "sky",
+  "supportedRegions": ["europe", "asia", "global"]
+}

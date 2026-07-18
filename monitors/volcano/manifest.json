@@ -1,0 +1,12 @@
+{
+  "id": "volcano",
+  "name": "Volcano Monitor",
+  "category": "geological",
+  "icon": "mountain",
+  "description": "Real-time volcano alerts from USGS Volcano Hazards Program (normal/advisory/watch/warning).",
+  "dataSource": "USGS Volcano Hazards Program",
+  "realData": true,
+  "free": true,
+  "accent": "rose",
+  "supportedRegions": ["US", "global"]
+}

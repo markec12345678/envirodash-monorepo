@@ -1,0 +1,12 @@
+{
+  "id": "wildfire",
+  "name": "Wildfire Risk Monitor",
+  "category": "disaster",
+  "icon": "flame",
+  "description": "Real-time Fire Weather Index (FWI 0-100) calculated from temperature, humidity, wind, and precipitation via Open-Meteo Forecast API.",
+  "dataSource": "Open-Meteo Forecast API (calculated FWI)",
+  "realData": true,
+  "free": true,
+  "accent": "orange",
+  "supportedRegions": ["europe", "california", "australia", "slovenia", "global"]
+}
