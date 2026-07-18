@@ -1,0 +1,37 @@
+version: '3.8'
+
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    environment:
+      - DATABASE_URL=file:/app/data/envirodash.db
+      - NEXTAUTH_SECRET=${NEXTAUTH_SECRET:-envirodash-dev-secret}
+      - NEXTAUTH_URL=${NEXTAUTH_URL:-http://localhost:3000}
+      - NEXT_PUBLIC_MAPTILER_KEY=${NEXT_PUBLIC_MAPTILER_KEY}
+    volumes:
+      - web-data:/app/data
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:3000/api/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  alerts-ws:
+    build:
+      context: .
+      dockerfile: mini-services/alerts-ws/Dockerfile
+    ports:
+      - "3003:3003"
+    environment:
+      - WEB_API_URL=http://web:3000
+    depends_on:
+      - web
+    restart: unless-stopped
+
+volumes:
+  web-data:
