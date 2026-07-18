@@ -1,0 +1,21 @@
+{
+  "name": "@envirodash/monitor-golf-course-status",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Demo monitor: GolfCourseStatus (originally from MotoTrack, uses static SAMPLE_LOCATIONS)",
+  "main": "./src/GolfCourseStatusMonitor.tsx",
+  "exports": {
+    ".": "./src/GolfCourseStatusMonitor.tsx",
+    "./manifest": "./manifest.json"
+  },
+  "scripts": {
+    "type-check": "tsc --noEmit",
+    "clean": "rm -rf dist .turbo"
+  },
+  "dependencies": {
+    "@envirodash/core": "*"
+  },
+  "devDependencies": {
+    "typescript": "^5"
+  }
+}

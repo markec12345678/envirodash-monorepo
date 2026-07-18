@@ -1,0 +1,21 @@
+{
+  "name": "@envirodash/monitor-bridge-structural-integrity",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Demo monitor: BridgeStructuralIntegrity (originally from MotoTrack, uses static SAMPLE_LOCATIONS)",
+  "main": "./src/BridgeStructuralIntegrityMonitor.tsx",
+  "exports": {
+    ".": "./src/BridgeStructuralIntegrityMonitor.tsx",
+    "./manifest": "./manifest.json"
+  },
+  "scripts": {
+    "type-check": "tsc --noEmit",
+    "clean": "rm -rf dist .turbo"
+  },
+  "dependencies": {
+    "@envirodash/core": "*"
+  },
+  "devDependencies": {
+    "typescript": "^5"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "id": "biome-transition",
+  "name": "Biome Transition Monitor",
+  "category": "other",
+  "icon": "circle",
+  "description": "Demo monitor for BiomeTransition. Originally from MotoTrack with static SAMPLE_LOCATIONS data. Real-data integration planned for future release.",
+  "dataSource": "Demo (static SAMPLE_LOCATIONS)",
+  "realData": false,
+  "free": true,
+  "accent": "violet",
+  "originalFile": "src/components/map/BiomeTransitionMonitor.tsx"
+}

@@ -1,0 +1,21 @@
+{
+  "name": "@envirodash/monitor-aluminum-smelter",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Demo monitor: AluminumSmelter (originally from MotoTrack, uses static SAMPLE_LOCATIONS)",
+  "main": "./src/AluminumSmelterMonitor.tsx",
+  "exports": {
+    ".": "./src/AluminumSmelterMonitor.tsx",
+    "./manifest": "./manifest.json"
+  },
+  "scripts": {
+    "type-check": "tsc --noEmit",
+    "clean": "rm -rf dist .turbo"
+  },
+  "dependencies": {
+    "@envirodash/core": "*"
+  },
+  "devDependencies": {
+    "typescript": "^5"
+  }
+}

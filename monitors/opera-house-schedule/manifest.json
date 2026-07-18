@@ -1,0 +1,12 @@
+{
+  "id": "opera-house-schedule",
+  "name": "Opera House Schedule Monitor",
+  "category": "other",
+  "icon": "circle",
+  "description": "Demo monitor for OperaHouseSchedule. Originally from MotoTrack with static SAMPLE_LOCATIONS data. Real-data integration planned for future release.",
+  "dataSource": "Demo (static SAMPLE_LOCATIONS)",
+  "realData": false,
+  "free": true,
+  "accent": "rose",
+  "originalFile": "src/components/map/OperaHouseScheduleMonitor.tsx"
+}

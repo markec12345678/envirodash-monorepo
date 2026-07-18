@@ -1,0 +1,12 @@
+{
+  "id": "bed-breakfast-inn",
+  "name": "Bed Breakfast Inn Monitor",
+  "category": "services",
+  "icon": "briefcase",
+  "description": "Demo monitor for BedBreakfastInn. Originally from MotoTrack with static SAMPLE_LOCATIONS data. Real-data integration planned for future release.",
+  "dataSource": "Demo (static SAMPLE_LOCATIONS)",
+  "realData": false,
+  "free": true,
+  "accent": "stone",
+  "originalFile": "src/components/map/BedBreakfastInnMonitor.tsx"
+}

@@ -1,0 +1,21 @@
+{
+  "name": "@envirodash/monitor-hot-yoga-studio-cafe",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Demo monitor: HotYogaStudioCafe (originally from MotoTrack, uses static SAMPLE_LOCATIONS)",
+  "main": "./src/HotYogaStudioCafeMonitor.tsx",
+  "exports": {
+    ".": "./src/HotYogaStudioCafeMonitor.tsx",
+    "./manifest": "./manifest.json"
+  },
+  "scripts": {
+    "type-check": "tsc --noEmit",
+    "clean": "rm -rf dist .turbo"
+  },
+  "dependencies": {
+    "@envirodash/core": "*"
+  },
+  "devDependencies": {
+    "typescript": "^5"
+  }
+}

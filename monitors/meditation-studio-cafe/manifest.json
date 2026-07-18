@@ -1,0 +1,12 @@
+{
+  "id": "meditation-studio-cafe",
+  "name": "Meditation Studio Cafe Monitor",
+  "category": "retail",
+  "icon": "shopping-bag",
+  "description": "Demo monitor for MeditationStudioCafe. Originally from MotoTrack with static SAMPLE_LOCATIONS data. Real-data integration planned for future release.",
+  "dataSource": "Demo (static SAMPLE_LOCATIONS)",
+  "realData": false,
+  "free": true,
+  "accent": "amber",
+  "originalFile": "src/components/map/MeditationStudioCafeMonitor.tsx"
+}

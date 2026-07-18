@@ -1,0 +1,12 @@
+{
+  "id": "skate-surf-shop",
+  "name": "Skate Surf Shop Monitor",
+  "category": "retail",
+  "icon": "shopping-bag",
+  "description": "Demo monitor for SkateSurfShop. Originally from MotoTrack with static SAMPLE_LOCATIONS data. Real-data integration planned for future release.",
+  "dataSource": "Demo (static SAMPLE_LOCATIONS)",
+  "realData": false,
+  "free": true,
+  "accent": "rose",
+  "originalFile": "src/components/map/SkateSurfShopMonitor.tsx"
+}

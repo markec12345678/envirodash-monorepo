@@ -1,0 +1,12 @@
+{
+  "id": "snow-cover-extent",
+  "name": "Snow Cover Extent Monitor",
+  "category": "climate",
+  "icon": "snowflake",
+  "description": "Demo monitor for SnowCoverExtent. Originally from MotoTrack with static SAMPLE_LOCATIONS data. Real-data integration planned for future release.",
+  "dataSource": "Demo (static SAMPLE_LOCATIONS)",
+  "realData": false,
+  "free": true,
+  "accent": "stone",
+  "originalFile": "src/components/map/SnowCoverExtentMonitor.tsx"
+}

@@ -1,0 +1,12 @@
+{
+  "id": "pet-training-obedience-school",
+  "name": "Pet Training Obedience School Monitor",
+  "category": "weather",
+  "icon": "cloud-sun",
+  "description": "Demo monitor for PetTrainingObedienceSchool. Originally from MotoTrack with static SAMPLE_LOCATIONS data. Real-data integration planned for future release.",
+  "dataSource": "Demo (static SAMPLE_LOCATIONS)",
+  "realData": false,
+  "free": true,
+  "accent": "amber",
+  "originalFile": "src/components/map/PetTrainingObedienceSchoolMonitor.tsx"
+}

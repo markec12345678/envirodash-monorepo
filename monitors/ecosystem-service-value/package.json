@@ -1,0 +1,21 @@
+{
+  "name": "@envirodash/monitor-ecosystem-service-value",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Demo monitor: EcosystemServiceValue (originally from MotoTrack, uses static SAMPLE_LOCATIONS)",
+  "main": "./src/EcosystemServiceValueMonitor.tsx",
+  "exports": {
+    ".": "./src/EcosystemServiceValueMonitor.tsx",
+    "./manifest": "./manifest.json"
+  },
+  "scripts": {
+    "type-check": "tsc --noEmit",
+    "clean": "rm -rf dist .turbo"
+  },
+  "dependencies": {
+    "@envirodash/core": "*"
+  },
+  "devDependencies": {
+    "typescript": "^5"
+  }
+}

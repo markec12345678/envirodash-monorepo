@@ -1,0 +1,21 @@
+{
+  "name": "@envirodash/monitor-glacial-lake",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Demo monitor: GlacialLake (originally from MotoTrack, uses static SAMPLE_LOCATIONS)",
+  "main": "./src/GlacialLakeMonitor.tsx",
+  "exports": {
+    ".": "./src/GlacialLakeMonitor.tsx",
+    "./manifest": "./manifest.json"
+  },
+  "scripts": {
+    "type-check": "tsc --noEmit",
+    "clean": "rm -rf dist .turbo"
+  },
+  "dependencies": {
+    "@envirodash/core": "*"
+  },
+  "devDependencies": {
+    "typescript": "^5"
+  }
+}

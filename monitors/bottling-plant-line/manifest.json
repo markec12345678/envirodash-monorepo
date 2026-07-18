@@ -1,0 +1,12 @@
+{
+  "id": "bottling-plant-line",
+  "name": "Bottling Plant Line Monitor",
+  "category": "industrial",
+  "icon": "factory",
+  "description": "Demo monitor for BottlingPlantLine. Originally from MotoTrack with static SAMPLE_LOCATIONS data. Real-data integration planned for future release.",
+  "dataSource": "Demo (static SAMPLE_LOCATIONS)",
+  "realData": false,
+  "free": true,
+  "accent": "teal",
+  "originalFile": "src/components/map/BottlingPlantLineMonitor.tsx"
+}

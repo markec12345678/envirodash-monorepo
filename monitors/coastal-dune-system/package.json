@@ -1,0 +1,21 @@
+{
+  "name": "@envirodash/monitor-coastal-dune-system",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Demo monitor: CoastalDuneSystem (originally from MotoTrack, uses static SAMPLE_LOCATIONS)",
+  "main": "./src/CoastalDuneSystemMonitor.tsx",
+  "exports": {
+    ".": "./src/CoastalDuneSystemMonitor.tsx",
+    "./manifest": "./manifest.json"
+  },
+  "scripts": {
+    "type-check": "tsc --noEmit",
+    "clean": "rm -rf dist .turbo"
+  },
+  "dependencies": {
+    "@envirodash/core": "*"
+  },
+  "devDependencies": {
+    "typescript": "^5"
+  }
+}

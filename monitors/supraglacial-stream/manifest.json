@@ -1,0 +1,12 @@
+{
+  "id": "supraglacial-stream",
+  "name": "Supraglacial Stream Monitor",
+  "category": "hydrology",
+  "icon": "droplets",
+  "description": "Demo monitor for SupraglacialStream. Originally from MotoTrack with static SAMPLE_LOCATIONS data. Real-data integration planned for future release.",
+  "dataSource": "Demo (static SAMPLE_LOCATIONS)",
+  "realData": false,
+  "free": true,
+  "accent": "orange",
+  "originalFile": "src/components/map/SupraglacialStreamMonitor.tsx"
+}

@@ -1,0 +1,12 @@
+{
+  "id": "ore-reserve-estimate",
+  "name": "Ore Reserve Estimate Monitor",
+  "category": "industrial",
+  "icon": "factory",
+  "description": "Demo monitor for OreReserveEstimate. Originally from MotoTrack with static SAMPLE_LOCATIONS data. Real-data integration planned for future release.",
+  "dataSource": "Demo (static SAMPLE_LOCATIONS)",
+  "realData": false,
+  "free": true,
+  "accent": "fuchsia",
+  "originalFile": "src/components/map/OreReserveEstimateMonitor.tsx"
+}

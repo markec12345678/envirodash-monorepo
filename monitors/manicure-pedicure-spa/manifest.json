@@ -1,0 +1,12 @@
+{
+  "id": "manicure-pedicure-spa",
+  "name": "Manicure Pedicure Spa Monitor",
+  "category": "services",
+  "icon": "briefcase",
+  "description": "Demo monitor for ManicurePedicureSpa. Originally from MotoTrack with static SAMPLE_LOCATIONS data. Real-data integration planned for future release.",
+  "dataSource": "Demo (static SAMPLE_LOCATIONS)",
+  "realData": false,
+  "free": true,
+  "accent": "cyan",
+  "originalFile": "src/components/map/ManicurePedicureSpaMonitor.tsx"
+}

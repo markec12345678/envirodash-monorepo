@@ -1,0 +1,21 @@
+{
+  "name": "@envirodash/monitor-casino-hotel-buffet",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Demo monitor: CasinoHotelBuffet (originally from MotoTrack, uses static SAMPLE_LOCATIONS)",
+  "main": "./src/CasinoHotelBuffetMonitor.tsx",
+  "exports": {
+    ".": "./src/CasinoHotelBuffetMonitor.tsx",
+    "./manifest": "./manifest.json"
+  },
+  "scripts": {
+    "type-check": "tsc --noEmit",
+    "clean": "rm -rf dist .turbo"
+  },
+  "dependencies": {
+    "@envirodash/core": "*"
+  },
+  "devDependencies": {
+    "typescript": "^5"
+  }
+}

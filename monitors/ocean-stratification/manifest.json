@@ -1,0 +1,12 @@
+{
+  "id": "ocean-stratification",
+  "name": "Ocean Stratification Monitor",
+  "category": "oceanic",
+  "icon": "waves",
+  "description": "Demo monitor for OceanStratification. Originally from MotoTrack with static SAMPLE_LOCATIONS data. Real-data integration planned for future release.",
+  "dataSource": "Demo (static SAMPLE_LOCATIONS)",
+  "realData": false,
+  "free": true,
+  "accent": "sky",
+  "originalFile": "src/components/map/OceanStratificationMonitor.tsx"
+}

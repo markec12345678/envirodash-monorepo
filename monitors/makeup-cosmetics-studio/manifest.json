@@ -1,0 +1,12 @@
+{
+  "id": "makeup-cosmetics-studio",
+  "name": "Makeup Cosmetics Studio Monitor",
+  "category": "other",
+  "icon": "circle",
+  "description": "Demo monitor for MakeupCosmeticsStudio. Originally from MotoTrack with static SAMPLE_LOCATIONS data. Real-data integration planned for future release.",
+  "dataSource": "Demo (static SAMPLE_LOCATIONS)",
+  "realData": false,
+  "free": true,
+  "accent": "amber",
+  "originalFile": "src/components/map/MakeupCosmeticsStudioMonitor.tsx"
+}

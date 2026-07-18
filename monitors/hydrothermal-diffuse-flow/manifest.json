@@ -1,0 +1,12 @@
+{
+  "id": "hydrothermal-diffuse-flow",
+  "name": "Hydrothermal Diffuse Flow Monitor",
+  "category": "hydrology",
+  "icon": "droplets",
+  "description": "Demo monitor for HydrothermalDiffuseFlow. Originally from MotoTrack with static SAMPLE_LOCATIONS data. Real-data integration planned for future release.",
+  "dataSource": "Demo (static SAMPLE_LOCATIONS)",
+  "realData": false,
+  "free": true,
+  "accent": "yellow",
+  "originalFile": "src/components/map/HydrothermalDiffuseFlowMonitor.tsx"
+}

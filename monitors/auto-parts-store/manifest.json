@@ -1,0 +1,12 @@
+{
+  "id": "auto-parts-store",
+  "name": "Auto Parts Store Monitor",
+  "category": "industrial",
+  "icon": "factory",
+  "description": "Demo monitor for AutoPartsStore. Originally from MotoTrack with static SAMPLE_LOCATIONS data. Real-data integration planned for future release.",
+  "dataSource": "Demo (static SAMPLE_LOCATIONS)",
+  "realData": false,
+  "free": true,
+  "accent": "amber",
+  "originalFile": "src/components/map/AutoPartsStoreMonitor.tsx"
+}

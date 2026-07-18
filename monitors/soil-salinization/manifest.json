@@ -1,0 +1,12 @@
+{
+  "id": "soil-salinization",
+  "name": "Soil Salinization Monitor",
+  "category": "vegetation",
+  "icon": "leaf",
+  "description": "Demo monitor for SoilSalinization. Originally from MotoTrack with static SAMPLE_LOCATIONS data. Real-data integration planned for future release.",
+  "dataSource": "Demo (static SAMPLE_LOCATIONS)",
+  "realData": false,
+  "free": true,
+  "accent": "yellow",
+  "originalFile": "src/components/map/SoilSalinizationMonitor.tsx"
+}

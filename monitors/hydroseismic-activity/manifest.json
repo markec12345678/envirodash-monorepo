@@ -1,0 +1,12 @@
+{
+  "id": "hydroseismic-activity",
+  "name": "Hydroseismic Activity Monitor",
+  "category": "geological",
+  "icon": "mountain",
+  "description": "Demo monitor for HydroseismicActivity. Originally from MotoTrack with static SAMPLE_LOCATIONS data. Real-data integration planned for future release.",
+  "dataSource": "Demo (static SAMPLE_LOCATIONS)",
+  "realData": false,
+  "free": true,
+  "accent": "sky",
+  "originalFile": "src/components/map/HydroseismicActivityMonitor.tsx"
+}

@@ -1,0 +1,12 @@
+{
+  "id": "fire-department-response",
+  "name": "Fire Department Response Monitor",
+  "category": "disaster",
+  "icon": "flame",
+  "description": "Demo monitor for FireDepartmentResponse. Originally from MotoTrack with static SAMPLE_LOCATIONS data. Real-data integration planned for future release.",
+  "dataSource": "Demo (static SAMPLE_LOCATIONS)",
+  "realData": false,
+  "free": true,
+  "accent": "orange",
+  "originalFile": "src/components/map/FireDepartmentResponseMonitor.tsx"
+}

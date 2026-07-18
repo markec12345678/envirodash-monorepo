@@ -1,0 +1,12 @@
+{
+  "id": "smart-home-tech-store",
+  "name": "Smart Home Tech Store Monitor",
+  "category": "industrial",
+  "icon": "factory",
+  "description": "Demo monitor for SmartHomeTechStore. Originally from MotoTrack with static SAMPLE_LOCATIONS data. Real-data integration planned for future release.",
+  "dataSource": "Demo (static SAMPLE_LOCATIONS)",
+  "realData": false,
+  "free": true,
+  "accent": "green",
+  "originalFile": "src/components/map/SmartHomeTechStoreMonitor.tsx"
+}

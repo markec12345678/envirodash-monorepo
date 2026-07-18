@@ -1,0 +1,12 @@
+{
+  "id": "polar-vortex",
+  "name": "Polar Vortex Monitor",
+  "category": "climate",
+  "icon": "snowflake",
+  "description": "Demo monitor for PolarVortex. Originally from MotoTrack with static SAMPLE_LOCATIONS data. Real-data integration planned for future release.",
+  "dataSource": "Demo (static SAMPLE_LOCATIONS)",
+  "realData": false,
+  "free": true,
+  "accent": "fuchsia",
+  "originalFile": "src/components/map/PolarVortexMonitor.tsx"
+}

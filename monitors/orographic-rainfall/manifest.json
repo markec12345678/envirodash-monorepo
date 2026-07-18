@@ -1,0 +1,12 @@
+{
+  "id": "orographic-rainfall",
+  "name": "Orographic Rainfall Monitor",
+  "category": "weather",
+  "icon": "cloud-sun",
+  "description": "Demo monitor for OrographicRainfall. Originally from MotoTrack with static SAMPLE_LOCATIONS data. Real-data integration planned for future release.",
+  "dataSource": "Demo (static SAMPLE_LOCATIONS)",
+  "realData": false,
+  "free": true,
+  "accent": "purple",
+  "originalFile": "src/components/map/OrographicRainfallMonitor.tsx"
+}

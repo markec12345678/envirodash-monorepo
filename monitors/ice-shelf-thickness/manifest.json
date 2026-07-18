@@ -1,0 +1,12 @@
+{
+  "id": "ice-shelf-thickness",
+  "name": "Ice Shelf Thickness Monitor",
+  "category": "climate",
+  "icon": "snowflake",
+  "description": "Demo monitor for IceShelfThickness. Originally from MotoTrack with static SAMPLE_LOCATIONS data. Real-data integration planned for future release.",
+  "dataSource": "Demo (static SAMPLE_LOCATIONS)",
+  "realData": false,
+  "free": true,
+  "accent": "sky",
+  "originalFile": "src/components/map/IceShelfThicknessMonitor.tsx"
+}

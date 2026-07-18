@@ -1,0 +1,12 @@
+{
+  "id": "watch-boutique-retail",
+  "name": "Watch Boutique Retail Monitor",
+  "category": "retail",
+  "icon": "shopping-bag",
+  "description": "Demo monitor for WatchBoutiqueRetail. Originally from MotoTrack with static SAMPLE_LOCATIONS data. Real-data integration planned for future release.",
+  "dataSource": "Demo (static SAMPLE_LOCATIONS)",
+  "realData": false,
+  "free": true,
+  "accent": "green",
+  "originalFile": "src/components/map/WatchBoutiqueRetailMonitor.tsx"
+}

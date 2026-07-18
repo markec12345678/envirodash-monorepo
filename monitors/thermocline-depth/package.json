@@ -1,0 +1,21 @@
+{
+  "name": "@envirodash/monitor-thermocline-depth",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Demo monitor: ThermoclineDepth (originally from MotoTrack, uses static SAMPLE_LOCATIONS)",
+  "main": "./src/ThermoclineDepthMonitor.tsx",
+  "exports": {
+    ".": "./src/ThermoclineDepthMonitor.tsx",
+    "./manifest": "./manifest.json"
+  },
+  "scripts": {
+    "type-check": "tsc --noEmit",
+    "clean": "rm -rf dist .turbo"
+  },
+  "dependencies": {
+    "@envirodash/core": "*"
+  },
+  "devDependencies": {
+    "typescript": "^5"
+  }
+}

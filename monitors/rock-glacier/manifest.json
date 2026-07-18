@@ -1,0 +1,12 @@
+{
+  "id": "rock-glacier",
+  "name": "Rock Glacier Monitor",
+  "category": "climate",
+  "icon": "snowflake",
+  "description": "Demo monitor for RockGlacier. Originally from MotoTrack with static SAMPLE_LOCATIONS data. Real-data integration planned for future release.",
+  "dataSource": "Demo (static SAMPLE_LOCATIONS)",
+  "realData": false,
+  "free": true,
+  "accent": "orange",
+  "originalFile": "src/components/map/RockGlacierMonitor.tsx"
+}

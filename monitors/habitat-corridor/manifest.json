@@ -1,0 +1,12 @@
+{
+  "id": "habitat-corridor",
+  "name": "Habitat Corridor Monitor",
+  "category": "wildlife",
+  "icon": "bird",
+  "description": "Demo monitor for HabitatCorridor. Originally from MotoTrack with static SAMPLE_LOCATIONS data. Real-data integration planned for future release.",
+  "dataSource": "Demo (static SAMPLE_LOCATIONS)",
+  "realData": false,
+  "free": true,
+  "accent": "green",
+  "originalFile": "src/components/map/HabitatCorridorMonitor.tsx"
+}

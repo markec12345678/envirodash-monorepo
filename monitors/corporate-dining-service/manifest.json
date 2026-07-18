@@ -1,0 +1,12 @@
+{
+  "id": "corporate-dining-service",
+  "name": "Corporate Dining Service Monitor",
+  "category": "climate",
+  "icon": "snowflake",
+  "description": "Demo monitor for CorporateDiningService. Originally from MotoTrack with static SAMPLE_LOCATIONS data. Real-data integration planned for future release.",
+  "dataSource": "Demo (static SAMPLE_LOCATIONS)",
+  "realData": false,
+  "free": true,
+  "accent": "cyan",
+  "originalFile": "src/components/map/CorporateDiningServiceMonitor.tsx"
+}

@@ -1,0 +1,12 @@
+{
+  "id": "coastal-upwelling",
+  "name": "Coastal Upwelling Monitor",
+  "category": "oceanic",
+  "icon": "waves",
+  "description": "Demo monitor for CoastalUpwelling. Originally from MotoTrack with static SAMPLE_LOCATIONS data. Real-data integration planned for future release.",
+  "dataSource": "Demo (static SAMPLE_LOCATIONS)",
+  "realData": false,
+  "free": true,
+  "accent": "yellow",
+  "originalFile": "src/components/map/CoastalUpwellingMonitor.tsx"
+}

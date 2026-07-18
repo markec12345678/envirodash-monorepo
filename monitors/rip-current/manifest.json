@@ -1,0 +1,12 @@
+{
+  "id": "rip-current",
+  "name": "Rip Current Monitor",
+  "category": "oceanic",
+  "icon": "waves",
+  "description": "Demo monitor for RipCurrent. Originally from MotoTrack with static SAMPLE_LOCATIONS data. Real-data integration planned for future release.",
+  "dataSource": "Demo (static SAMPLE_LOCATIONS)",
+  "realData": false,
+  "free": true,
+  "accent": "red",
+  "originalFile": "src/components/map/RipCurrentMonitor.tsx"
+}

@@ -1,0 +1,12 @@
+{
+  "id": "wildfire-risk-assessment",
+  "name": "Wildfire Risk Assessment Monitor",
+  "category": "disaster",
+  "icon": "flame",
+  "description": "Demo monitor for WildfireRiskAssessment. Originally from MotoTrack with static SAMPLE_LOCATIONS data. Real-data integration planned for future release.",
+  "dataSource": "Demo (static SAMPLE_LOCATIONS)",
+  "realData": false,
+  "free": true,
+  "accent": "yellow",
+  "originalFile": "src/components/map/WildfireRiskAssessmentMonitor.tsx"
+}

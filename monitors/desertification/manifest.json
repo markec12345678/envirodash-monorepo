@@ -1,0 +1,12 @@
+{
+  "id": "desertification",
+  "name": "Desertification Monitor",
+  "category": "climate",
+  "icon": "snowflake",
+  "description": "Demo monitor for Desertification. Originally from MotoTrack with static SAMPLE_LOCATIONS data. Real-data integration planned for future release.",
+  "dataSource": "Demo (static SAMPLE_LOCATIONS)",
+  "realData": false,
+  "free": true,
+  "accent": "rose",
+  "originalFile": "src/components/map/DesertificationMonitor.tsx"
+}

@@ -1,0 +1,12 @@
+{
+  "id": "river-delta-erosion",
+  "name": "River Delta Erosion Monitor",
+  "category": "oceanic",
+  "icon": "waves",
+  "description": "Demo monitor for RiverDeltaErosion. Originally from MotoTrack with static SAMPLE_LOCATIONS data. Real-data integration planned for future release.",
+  "dataSource": "Demo (static SAMPLE_LOCATIONS)",
+  "realData": false,
+  "free": true,
+  "accent": "sky",
+  "originalFile": "src/components/map/RiverDeltaErosionMonitor.tsx"
+}

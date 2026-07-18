@@ -1,0 +1,12 @@
+{
+  "id": "catering-event-hall",
+  "name": "Catering Event Hall Monitor",
+  "category": "retail",
+  "icon": "shopping-bag",
+  "description": "Demo monitor for CateringEventHall. Originally from MotoTrack with static SAMPLE_LOCATIONS data. Real-data integration planned for future release.",
+  "dataSource": "Demo (static SAMPLE_LOCATIONS)",
+  "realData": false,
+  "free": true,
+  "accent": "teal",
+  "originalFile": "src/components/map/CateringEventHallMonitor.tsx"
+}

@@ -1,0 +1,12 @@
+{
+  "id": "space-radiation-dose",
+  "name": "Space Radiation Dose Monitor",
+  "category": "infrastructure",
+  "icon": "building-2",
+  "description": "Demo monitor for SpaceRadiationDose. Originally from MotoTrack with static SAMPLE_LOCATIONS data. Real-data integration planned for future release.",
+  "dataSource": "Demo (static SAMPLE_LOCATIONS)",
+  "realData": false,
+  "free": true,
+  "accent": "violet",
+  "originalFile": "src/components/map/SpaceRadiationDoseMonitor.tsx"
+}

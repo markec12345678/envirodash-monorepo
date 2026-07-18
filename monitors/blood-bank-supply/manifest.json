@@ -1,0 +1,12 @@
+{
+  "id": "blood-bank-supply",
+  "name": "Blood Bank Supply Monitor",
+  "category": "infrastructure",
+  "icon": "building-2",
+  "description": "Demo monitor for BloodBankSupply. Originally from MotoTrack with static SAMPLE_LOCATIONS data. Real-data integration planned for future release.",
+  "dataSource": "Demo (static SAMPLE_LOCATIONS)",
+  "realData": false,
+  "free": true,
+  "accent": "purple",
+  "originalFile": "src/components/map/BloodBankSupplyMonitor.tsx"
+}

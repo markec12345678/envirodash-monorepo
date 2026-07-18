@@ -1,0 +1,21 @@
+{
+  "name": "@envirodash/monitor-submarine-landslide",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Demo monitor: SubmarineLandslide (originally from MotoTrack, uses static SAMPLE_LOCATIONS)",
+  "main": "./src/SubmarineLandslideMonitor.tsx",
+  "exports": {
+    ".": "./src/SubmarineLandslideMonitor.tsx",
+    "./manifest": "./manifest.json"
+  },
+  "scripts": {
+    "type-check": "tsc --noEmit",
+    "clean": "rm -rf dist .turbo"
+  },
+  "dependencies": {
+    "@envirodash/core": "*"
+  },
+  "devDependencies": {
+    "typescript": "^5"
+  }
+}

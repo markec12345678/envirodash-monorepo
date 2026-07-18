@@ -1,0 +1,21 @@
+{
+  "name": "@envirodash/monitor-reservoir-storage-level",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Demo monitor: ReservoirStorageLevel (originally from MotoTrack, uses static SAMPLE_LOCATIONS)",
+  "main": "./src/ReservoirStorageLevelMonitor.tsx",
+  "exports": {
+    ".": "./src/ReservoirStorageLevelMonitor.tsx",
+    "./manifest": "./manifest.json"
+  },
+  "scripts": {
+    "type-check": "tsc --noEmit",
+    "clean": "rm -rf dist .turbo"
+  },
+  "dependencies": {
+    "@envirodash/core": "*"
+  },
+  "devDependencies": {
+    "typescript": "^5"
+  }
+}

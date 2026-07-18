@@ -1,0 +1,12 @@
+{
+  "id": "ice-penitent",
+  "name": "Ice Penitent Monitor",
+  "category": "climate",
+  "icon": "snowflake",
+  "description": "Demo monitor for IcePenitent. Originally from MotoTrack with static SAMPLE_LOCATIONS data. Real-data integration planned for future release.",
+  "dataSource": "Demo (static SAMPLE_LOCATIONS)",
+  "realData": false,
+  "free": true,
+  "accent": "violet",
+  "originalFile": "src/components/map/IcePenitentMonitor.tsx"
+}

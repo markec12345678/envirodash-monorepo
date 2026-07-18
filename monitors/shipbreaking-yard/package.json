@@ -1,0 +1,21 @@
+{
+  "name": "@envirodash/monitor-shipbreaking-yard",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Demo monitor: ShipbreakingYard (originally from MotoTrack, uses static SAMPLE_LOCATIONS)",
+  "main": "./src/ShipbreakingYardMonitor.tsx",
+  "exports": {
+    ".": "./src/ShipbreakingYardMonitor.tsx",
+    "./manifest": "./manifest.json"
+  },
+  "scripts": {
+    "type-check": "tsc --noEmit",
+    "clean": "rm -rf dist .turbo"
+  },
+  "dependencies": {
+    "@envirodash/core": "*"
+  },
+  "devDependencies": {
+    "typescript": "^5"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "id": "nursery-school",
+  "name": "Nursery School Monitor",
+  "category": "services",
+  "icon": "briefcase",
+  "description": "Demo monitor for NurserySchool. Originally from MotoTrack with static SAMPLE_LOCATIONS data. Real-data integration planned for future release.",
+  "dataSource": "Demo (static SAMPLE_LOCATIONS)",
+  "realData": false,
+  "free": true,
+  "accent": "orange",
+  "originalFile": "src/components/map/NurserySchoolMonitor.tsx"
+}

@@ -1,0 +1,21 @@
+{
+  "name": "@envirodash/monitor-sailing-club-bar",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Demo monitor: SailingClubBar (originally from MotoTrack, uses static SAMPLE_LOCATIONS)",
+  "main": "./src/SailingClubBarMonitor.tsx",
+  "exports": {
+    ".": "./src/SailingClubBarMonitor.tsx",
+    "./manifest": "./manifest.json"
+  },
+  "scripts": {
+    "type-check": "tsc --noEmit",
+    "clean": "rm -rf dist .turbo"
+  },
+  "dependencies": {
+    "@envirodash/core": "*"
+  },
+  "devDependencies": {
+    "typescript": "^5"
+  }
+}

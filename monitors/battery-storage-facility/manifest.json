@@ -1,0 +1,12 @@
+{
+  "id": "battery-storage-facility",
+  "name": "Battery Storage Facility Monitor",
+  "category": "other",
+  "icon": "circle",
+  "description": "Demo monitor for BatteryStorageFacility. Originally from MotoTrack with static SAMPLE_LOCATIONS data. Real-data integration planned for future release.",
+  "dataSource": "Demo (static SAMPLE_LOCATIONS)",
+  "realData": false,
+  "free": true,
+  "accent": "cyan",
+  "originalFile": "src/components/map/BatteryStorageFacilityMonitor.tsx"
+}

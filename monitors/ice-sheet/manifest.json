@@ -1,0 +1,12 @@
+{
+  "id": "ice-sheet",
+  "name": "Ice Sheet Monitor",
+  "category": "climate",
+  "icon": "snowflake",
+  "description": "Demo monitor for IceSheet. Originally from MotoTrack with static SAMPLE_LOCATIONS data. Real-data integration planned for future release.",
+  "dataSource": "Demo (static SAMPLE_LOCATIONS)",
+  "realData": false,
+  "free": true,
+  "accent": "cyan",
+  "originalFile": "src/components/map/IceSheetMonitor.tsx"
+}

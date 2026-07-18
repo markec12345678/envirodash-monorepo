@@ -1,0 +1,12 @@
+{
+  "id": "river-delta",
+  "name": "River Delta Monitor",
+  "category": "hydrology",
+  "icon": "droplets",
+  "description": "Demo monitor for RiverDelta. Originally from MotoTrack with static SAMPLE_LOCATIONS data. Real-data integration planned for future release.",
+  "dataSource": "Demo (static SAMPLE_LOCATIONS)",
+  "realData": false,
+  "free": true,
+  "accent": "yellow",
+  "originalFile": "src/components/map/RiverDeltaMonitor.tsx"
+}

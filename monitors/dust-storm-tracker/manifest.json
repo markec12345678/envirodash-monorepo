@@ -1,0 +1,12 @@
+{
+  "id": "dust-storm-tracker",
+  "name": "Dust Storm Tracker Monitor",
+  "category": "atmospheric",
+  "icon": "wind",
+  "description": "Demo monitor for DustStormTracker. Originally from MotoTrack with static SAMPLE_LOCATIONS data. Real-data integration planned for future release.",
+  "dataSource": "Demo (static SAMPLE_LOCATIONS)",
+  "realData": false,
+  "free": true,
+  "accent": "violet",
+  "originalFile": "src/components/map/DustStormTrackerMonitor.tsx"
+}

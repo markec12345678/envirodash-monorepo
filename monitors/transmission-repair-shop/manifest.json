@@ -1,0 +1,12 @@
+{
+  "id": "transmission-repair-shop",
+  "name": "Transmission Repair Shop Monitor",
+  "category": "atmospheric",
+  "icon": "wind",
+  "description": "Demo monitor for TransmissionRepairShop. Originally from MotoTrack with static SAMPLE_LOCATIONS data. Real-data integration planned for future release.",
+  "dataSource": "Demo (static SAMPLE_LOCATIONS)",
+  "realData": false,
+  "free": true,
+  "accent": "orange",
+  "originalFile": "src/components/map/TransmissionRepairShopMonitor.tsx"
+}

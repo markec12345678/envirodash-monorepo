@@ -1,0 +1,12 @@
+{
+  "id": "riverboat-cruise-dining",
+  "name": "Riverboat Cruise Dining Monitor",
+  "category": "hydrology",
+  "icon": "droplets",
+  "description": "Demo monitor for RiverboatCruiseDining. Originally from MotoTrack with static SAMPLE_LOCATIONS data. Real-data integration planned for future release.",
+  "dataSource": "Demo (static SAMPLE_LOCATIONS)",
+  "realData": false,
+  "free": true,
+  "accent": "teal",
+  "originalFile": "src/components/map/RiverboatCruiseDiningMonitor.tsx"
+}

@@ -1,0 +1,21 @@
+{
+  "name": "@envirodash/monitor-paint-decorating",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Demo monitor: PaintDecorating (originally from MotoTrack, uses static SAMPLE_LOCATIONS)",
+  "main": "./src/PaintDecoratingMonitor.tsx",
+  "exports": {
+    ".": "./src/PaintDecoratingMonitor.tsx",
+    "./manifest": "./manifest.json"
+  },
+  "scripts": {
+    "type-check": "tsc --noEmit",
+    "clean": "rm -rf dist .turbo"
+  },
+  "dependencies": {
+    "@envirodash/core": "*"
+  },
+  "devDependencies": {
+    "typescript": "^5"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "id": "aircraft-hangar-facility",
+  "name": "Aircraft Hangar Facility Monitor",
+  "category": "atmospheric",
+  "icon": "wind",
+  "description": "Demo monitor for AircraftHangarFacility. Originally from MotoTrack with static SAMPLE_LOCATIONS data. Real-data integration planned for future release.",
+  "dataSource": "Demo (static SAMPLE_LOCATIONS)",
+  "realData": false,
+  "free": true,
+  "accent": "stone",
+  "originalFile": "src/components/map/AircraftHangarFacilityMonitor.tsx"
+}

@@ -1,0 +1,12 @@
+{
+  "id": "runway-occupancy",
+  "name": "Runway Occupancy Monitor",
+  "category": "other",
+  "icon": "circle",
+  "description": "Demo monitor for RunwayOccupancy. Originally from MotoTrack with static SAMPLE_LOCATIONS data. Real-data integration planned for future release.",
+  "dataSource": "Demo (static SAMPLE_LOCATIONS)",
+  "realData": false,
+  "free": true,
+  "accent": "green",
+  "originalFile": "src/components/map/RunwayOccupancyMonitor.tsx"
+}

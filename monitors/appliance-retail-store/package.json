@@ -1,0 +1,21 @@
+{
+  "name": "@envirodash/monitor-appliance-retail-store",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Demo monitor: ApplianceRetailStore (originally from MotoTrack, uses static SAMPLE_LOCATIONS)",
+  "main": "./src/ApplianceRetailStoreMonitor.tsx",
+  "exports": {
+    ".": "./src/ApplianceRetailStoreMonitor.tsx",
+    "./manifest": "./manifest.json"
+  },
+  "scripts": {
+    "type-check": "tsc --noEmit",
+    "clean": "rm -rf dist .turbo"
+  },
+  "dependencies": {
+    "@envirodash/core": "*"
+  },
+  "devDependencies": {
+    "typescript": "^5"
+  }
+}

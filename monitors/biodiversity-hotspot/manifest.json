@@ -1,0 +1,12 @@
+{
+  "id": "biodiversity-hotspot",
+  "name": "Biodiversity Hotspot Monitor",
+  "category": "wildlife",
+  "icon": "bird",
+  "description": "Demo monitor for BiodiversityHotspot. Originally from MotoTrack with static SAMPLE_LOCATIONS data. Real-data integration planned for future release.",
+  "dataSource": "Demo (static SAMPLE_LOCATIONS)",
+  "realData": false,
+  "free": true,
+  "accent": "rose",
+  "originalFile": "src/components/map/BiodiversityHotspotMonitor.tsx"
+}

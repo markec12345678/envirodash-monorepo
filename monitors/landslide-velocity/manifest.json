@@ -1,0 +1,12 @@
+{
+  "id": "landslide-velocity",
+  "name": "Landslide Velocity Monitor",
+  "category": "geological",
+  "icon": "mountain",
+  "description": "Demo monitor for LandslideVelocity. Originally from MotoTrack with static SAMPLE_LOCATIONS data. Real-data integration planned for future release.",
+  "dataSource": "Demo (static SAMPLE_LOCATIONS)",
+  "realData": false,
+  "free": true,
+  "accent": "red",
+  "originalFile": "src/components/map/LandslideVelocityMonitor.tsx"
+}

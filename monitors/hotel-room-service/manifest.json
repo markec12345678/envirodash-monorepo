@@ -1,0 +1,12 @@
+{
+  "id": "hotel-room-service",
+  "name": "Hotel Room Service Monitor",
+  "category": "climate",
+  "icon": "snowflake",
+  "description": "Demo monitor for HotelRoomService. Originally from MotoTrack with static SAMPLE_LOCATIONS data. Real-data integration planned for future release.",
+  "dataSource": "Demo (static SAMPLE_LOCATIONS)",
+  "realData": false,
+  "free": true,
+  "accent": "violet",
+  "originalFile": "src/components/map/HotelRoomServiceMonitor.tsx"
+}

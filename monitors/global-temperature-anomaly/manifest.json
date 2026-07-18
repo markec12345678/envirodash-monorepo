@@ -1,0 +1,12 @@
+{
+  "id": "global-temperature-anomaly",
+  "name": "Global Temperature Anomaly Monitor",
+  "category": "other",
+  "icon": "circle",
+  "description": "Demo monitor for GlobalTemperatureAnomaly. Originally from MotoTrack with static SAMPLE_LOCATIONS data. Real-data integration planned for future release.",
+  "dataSource": "Demo (static SAMPLE_LOCATIONS)",
+  "realData": false,
+  "free": true,
+  "accent": "violet",
+  "originalFile": "src/components/map/GlobalTemperatureAnomalyMonitor.tsx"
+}

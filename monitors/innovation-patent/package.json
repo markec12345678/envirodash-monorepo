@@ -1,0 +1,21 @@
+{
+  "name": "@envirodash/monitor-innovation-patent",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Demo monitor: InnovationPatent (originally from MotoTrack, uses static SAMPLE_LOCATIONS)",
+  "main": "./src/InnovationPatentMonitor.tsx",
+  "exports": {
+    ".": "./src/InnovationPatentMonitor.tsx",
+    "./manifest": "./manifest.json"
+  },
+  "scripts": {
+    "type-check": "tsc --noEmit",
+    "clean": "rm -rf dist .turbo"
+  },
+  "dependencies": {
+    "@envirodash/core": "*"
+  },
+  "devDependencies": {
+    "typescript": "^5"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "id": "medical-research-lab",
+  "name": "Medical Research Lab Monitor",
+  "category": "oceanic",
+  "icon": "waves",
+  "description": "Demo monitor for MedicalResearchLab. Originally from MotoTrack with static SAMPLE_LOCATIONS data. Real-data integration planned for future release.",
+  "dataSource": "Demo (static SAMPLE_LOCATIONS)",
+  "realData": false,
+  "free": true,
+  "accent": "rose",
+  "originalFile": "src/components/map/MedicalResearchLabMonitor.tsx"
+}

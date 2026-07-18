@@ -1,0 +1,21 @@
+{
+  "name": "@envirodash/monitor-solar-flux-index",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Demo monitor: SolarFluxIndex (originally from MotoTrack, uses static SAMPLE_LOCATIONS)",
+  "main": "./src/SolarFluxIndexMonitor.tsx",
+  "exports": {
+    ".": "./src/SolarFluxIndexMonitor.tsx",
+    "./manifest": "./manifest.json"
+  },
+  "scripts": {
+    "type-check": "tsc --noEmit",
+    "clean": "rm -rf dist .turbo"
+  },
+  "dependencies": {
+    "@envirodash/core": "*"
+  },
+  "devDependencies": {
+    "typescript": "^5"
+  }
+}

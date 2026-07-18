@@ -1,0 +1,12 @@
+{
+  "id": "solar-flare",
+  "name": "Solar Flare Monitor",
+  "category": "infrastructure",
+  "icon": "building-2",
+  "description": "Demo monitor for SolarFlare. Originally from MotoTrack with static SAMPLE_LOCATIONS data. Real-data integration planned for future release.",
+  "dataSource": "Demo (static SAMPLE_LOCATIONS)",
+  "realData": false,
+  "free": true,
+  "accent": "emerald",
+  "originalFile": "src/components/map/SolarFlareMonitor.tsx"
+}

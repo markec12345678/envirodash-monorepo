@@ -1,0 +1,12 @@
+{
+  "id": "go-kart-track-concession",
+  "name": "Go Kart Track Concession Monitor",
+  "category": "recreation",
+  "icon": "trophy",
+  "description": "Demo monitor for GoKartTrackConcession. Originally from MotoTrack with static SAMPLE_LOCATIONS data. Real-data integration planned for future release.",
+  "dataSource": "Demo (static SAMPLE_LOCATIONS)",
+  "realData": false,
+  "free": true,
+  "accent": "purple",
+  "originalFile": "src/components/map/GoKartTrackConcessionMonitor.tsx"
+}

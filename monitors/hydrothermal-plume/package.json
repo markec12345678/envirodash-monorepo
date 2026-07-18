@@ -1,0 +1,21 @@
+{
+  "name": "@envirodash/monitor-hydrothermal-plume",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Demo monitor: HydrothermalPlume (originally from MotoTrack, uses static SAMPLE_LOCATIONS)",
+  "main": "./src/HydrothermalPlumeMonitor.tsx",
+  "exports": {
+    ".": "./src/HydrothermalPlumeMonitor.tsx",
+    "./manifest": "./manifest.json"
+  },
+  "scripts": {
+    "type-check": "tsc --noEmit",
+    "clean": "rm -rf dist .turbo"
+  },
+  "dependencies": {
+    "@envirodash/core": "*"
+  },
+  "devDependencies": {
+    "typescript": "^5"
+  }
+}

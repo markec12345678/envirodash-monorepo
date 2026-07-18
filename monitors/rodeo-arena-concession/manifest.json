@@ -1,0 +1,12 @@
+{
+  "id": "rodeo-arena-concession",
+  "name": "Rodeo Arena Concession Monitor",
+  "category": "recreation",
+  "icon": "trophy",
+  "description": "Demo monitor for RodeoArenaConcession. Originally from MotoTrack with static SAMPLE_LOCATIONS data. Real-data integration planned for future release.",
+  "dataSource": "Demo (static SAMPLE_LOCATIONS)",
+  "realData": false,
+  "free": true,
+  "accent": "fuchsia",
+  "originalFile": "src/components/map/RodeoArenaConcessionMonitor.tsx"
+}

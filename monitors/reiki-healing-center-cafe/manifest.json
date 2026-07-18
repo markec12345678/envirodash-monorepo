@@ -1,0 +1,12 @@
+{
+  "id": "reiki-healing-center-cafe",
+  "name": "Reiki Healing Center Cafe Monitor",
+  "category": "retail",
+  "icon": "shopping-bag",
+  "description": "Demo monitor for ReikiHealingCenterCafe. Originally from MotoTrack with static SAMPLE_LOCATIONS data. Real-data integration planned for future release.",
+  "dataSource": "Demo (static SAMPLE_LOCATIONS)",
+  "realData": false,
+  "free": true,
+  "accent": "orange",
+  "originalFile": "src/components/map/ReikiHealingCenterCafeMonitor.tsx"
+}

@@ -1,0 +1,12 @@
+{
+  "id": "glacial-lake-outburst",
+  "name": "Glacial Lake Outburst Monitor",
+  "category": "hydrology",
+  "icon": "droplets",
+  "description": "Demo monitor for GlacialLakeOutburst. Originally from MotoTrack with static SAMPLE_LOCATIONS data. Real-data integration planned for future release.",
+  "dataSource": "Demo (static SAMPLE_LOCATIONS)",
+  "realData": false,
+  "free": true,
+  "accent": "sky",
+  "originalFile": "src/components/map/GlacialLakeOutburstMonitor.tsx"
+}

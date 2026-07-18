@@ -1,0 +1,12 @@
+{
+  "id": "cinema-theater-attendance",
+  "name": "Cinema Theater Attendance Monitor",
+  "category": "recreation",
+  "icon": "trophy",
+  "description": "Demo monitor for CinemaTheaterAttendance. Originally from MotoTrack with static SAMPLE_LOCATIONS data. Real-data integration planned for future release.",
+  "dataSource": "Demo (static SAMPLE_LOCATIONS)",
+  "realData": false,
+  "free": true,
+  "accent": "yellow",
+  "originalFile": "src/components/map/CinemaTheaterAttendanceMonitor.tsx"
+}

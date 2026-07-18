@@ -1,0 +1,21 @@
+{
+  "name": "@envirodash/monitor-biomass-energy-yield",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Demo monitor: BiomassEnergyYield (originally from MotoTrack, uses static SAMPLE_LOCATIONS)",
+  "main": "./src/BiomassEnergyYieldMonitor.tsx",
+  "exports": {
+    ".": "./src/BiomassEnergyYieldMonitor.tsx",
+    "./manifest": "./manifest.json"
+  },
+  "scripts": {
+    "type-check": "tsc --noEmit",
+    "clean": "rm -rf dist .turbo"
+  },
+  "dependencies": {
+    "@envirodash/core": "*"
+  },
+  "devDependencies": {
+    "typescript": "^5"
+  }
+}

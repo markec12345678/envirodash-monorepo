@@ -1,0 +1,12 @@
+{
+  "id": "submarine-landslide",
+  "name": "Submarine Landslide Monitor",
+  "category": "geological",
+  "icon": "mountain",
+  "description": "Demo monitor for SubmarineLandslide. Originally from MotoTrack with static SAMPLE_LOCATIONS data. Real-data integration planned for future release.",
+  "dataSource": "Demo (static SAMPLE_LOCATIONS)",
+  "realData": false,
+  "free": true,
+  "accent": "green",
+  "originalFile": "src/components/map/SubmarineLandslideMonitor.tsx"
+}

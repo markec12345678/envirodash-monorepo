@@ -1,0 +1,12 @@
+{
+  "id": "soil-carbon-sequestration",
+  "name": "Soil Carbon Sequestration Monitor",
+  "category": "atmospheric",
+  "icon": "wind",
+  "description": "Demo monitor for SoilCarbonSequestration. Originally from MotoTrack with static SAMPLE_LOCATIONS data. Real-data integration planned for future release.",
+  "dataSource": "Demo (static SAMPLE_LOCATIONS)",
+  "realData": false,
+  "free": true,
+  "accent": "pink",
+  "originalFile": "src/components/map/SoilCarbonSequestrationMonitor.tsx"
+}

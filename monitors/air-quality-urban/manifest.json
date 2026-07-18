@@ -1,0 +1,12 @@
+{
+  "id": "air-quality-urban",
+  "name": "Air Quality Urban Monitor",
+  "category": "atmospheric",
+  "icon": "wind",
+  "description": "Demo monitor for AirQualityUrban. Originally from MotoTrack with static SAMPLE_LOCATIONS data. Real-data integration planned for future release.",
+  "dataSource": "Demo (static SAMPLE_LOCATIONS)",
+  "realData": false,
+  "free": true,
+  "accent": "red",
+  "originalFile": "src/components/map/AirQualityUrbanMonitor.tsx"
+}

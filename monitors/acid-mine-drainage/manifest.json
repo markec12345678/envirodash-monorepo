@@ -1,0 +1,12 @@
+{
+  "id": "acid-mine-drainage",
+  "name": "Acid Mine Drainage Monitor",
+  "category": "weather",
+  "icon": "cloud-sun",
+  "description": "Demo monitor for AcidMineDrainage. Originally from MotoTrack with static SAMPLE_LOCATIONS data. Real-data integration planned for future release.",
+  "dataSource": "Demo (static SAMPLE_LOCATIONS)",
+  "realData": false,
+  "free": true,
+  "accent": "rose",
+  "originalFile": "src/components/map/AcidMineDrainageMonitor.tsx"
+}

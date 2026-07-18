@@ -1,0 +1,12 @@
+{
+  "id": "energy-storage-level",
+  "name": "Energy Storage Level Monitor",
+  "category": "infrastructure",
+  "icon": "building-2",
+  "description": "Demo monitor for EnergyStorageLevel. Originally from MotoTrack with static SAMPLE_LOCATIONS data. Real-data integration planned for future release.",
+  "dataSource": "Demo (static SAMPLE_LOCATIONS)",
+  "realData": false,
+  "free": true,
+  "accent": "cyan",
+  "originalFile": "src/components/map/EnergyStorageLevelMonitor.tsx"
+}

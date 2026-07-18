@@ -1,0 +1,12 @@
+{
+  "id": "governor-mansion",
+  "name": "Governor Mansion Monitor",
+  "category": "other",
+  "icon": "circle",
+  "description": "Demo monitor for GovernorMansion. Originally from MotoTrack with static SAMPLE_LOCATIONS data. Real-data integration planned for future release.",
+  "dataSource": "Demo (static SAMPLE_LOCATIONS)",
+  "realData": false,
+  "free": true,
+  "accent": "stone",
+  "originalFile": "src/components/map/GovernorMansionMonitor.tsx"
+}

@@ -1,0 +1,12 @@
+{
+  "id": "soil-moisture",
+  "name": "Soil Moisture Monitor",
+  "category": "vegetation",
+  "icon": "leaf",
+  "description": "Demo monitor for SoilMoisture. Originally from MotoTrack with static SAMPLE_LOCATIONS data. Real-data integration planned for future release.",
+  "dataSource": "Demo (static SAMPLE_LOCATIONS)",
+  "realData": false,
+  "free": true,
+  "accent": "green",
+  "originalFile": "src/components/map/SoilMoistureMonitor.tsx"
+}

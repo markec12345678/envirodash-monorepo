@@ -1,0 +1,21 @@
+{
+  "name": "@envirodash/monitor-waste-collection-route",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Demo monitor: WasteCollectionRoute (originally from MotoTrack, uses static SAMPLE_LOCATIONS)",
+  "main": "./src/WasteCollectionRouteMonitor.tsx",
+  "exports": {
+    ".": "./src/WasteCollectionRouteMonitor.tsx",
+    "./manifest": "./manifest.json"
+  },
+  "scripts": {
+    "type-check": "tsc --noEmit",
+    "clean": "rm -rf dist .turbo"
+  },
+  "dependencies": {
+    "@envirodash/core": "*"
+  },
+  "devDependencies": {
+    "typescript": "^5"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "@envirodash/monitor-muffler-exhaust-shop",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Demo monitor: MufflerExhaustShop (originally from MotoTrack, uses static SAMPLE_LOCATIONS)",
+  "main": "./src/MufflerExhaustShopMonitor.tsx",
+  "exports": {
+    ".": "./src/MufflerExhaustShopMonitor.tsx",
+    "./manifest": "./manifest.json"
+  },
+  "scripts": {
+    "type-check": "tsc --noEmit",
+    "clean": "rm -rf dist .turbo"
+  },
+  "dependencies": {
+    "@envirodash/core": "*"
+  },
+  "devDependencies": {
+    "typescript": "^5"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "id": "tundra-permafrost-thaw",
+  "name": "Tundra Permafrost Thaw Monitor",
+  "category": "climate",
+  "icon": "snowflake",
+  "description": "Demo monitor for TundraPermafrostThaw. Originally from MotoTrack with static SAMPLE_LOCATIONS data. Real-data integration planned for future release.",
+  "dataSource": "Demo (static SAMPLE_LOCATIONS)",
+  "realData": false,
+  "free": true,
+  "accent": "cyan",
+  "originalFile": "src/components/map/TundraPermafrostThawMonitor.tsx"
+}

@@ -1,0 +1,12 @@
+{
+  "id": "desert-flash-flood",
+  "name": "Desert Flash Flood Monitor",
+  "category": "weather",
+  "icon": "cloud-sun",
+  "description": "Demo monitor for DesertFlashFlood. Originally from MotoTrack with static SAMPLE_LOCATIONS data. Real-data integration planned for future release.",
+  "dataSource": "Demo (static SAMPLE_LOCATIONS)",
+  "realData": false,
+  "free": true,
+  "accent": "yellow",
+  "originalFile": "src/components/map/DesertFlashFloodMonitor.tsx"
+}

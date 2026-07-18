@@ -1,0 +1,12 @@
+{
+  "id": "katabatic-wind",
+  "name": "Katabatic Wind Monitor",
+  "category": "weather",
+  "icon": "cloud-sun",
+  "description": "Demo monitor for KatabaticWind. Originally from MotoTrack with static SAMPLE_LOCATIONS data. Real-data integration planned for future release.",
+  "dataSource": "Demo (static SAMPLE_LOCATIONS)",
+  "realData": false,
+  "free": true,
+  "accent": "yellow",
+  "originalFile": "src/components/map/KatabaticWindMonitor.tsx"
+}

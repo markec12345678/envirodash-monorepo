@@ -1,0 +1,12 @@
+{
+  "id": "bakery-pastry-shop",
+  "name": "Bakery Pastry Shop Monitor",
+  "category": "retail",
+  "icon": "shopping-bag",
+  "description": "Demo monitor for BakeryPastryShop. Originally from MotoTrack with static SAMPLE_LOCATIONS data. Real-data integration planned for future release.",
+  "dataSource": "Demo (static SAMPLE_LOCATIONS)",
+  "realData": false,
+  "free": true,
+  "accent": "stone",
+  "originalFile": "src/components/map/BakeryPastryShopMonitor.tsx"
+}

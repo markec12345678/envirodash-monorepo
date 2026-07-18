@@ -1,0 +1,12 @@
+{
+  "id": "van-allen-radiation",
+  "name": "Van Allen Radiation Monitor",
+  "category": "other",
+  "icon": "circle",
+  "description": "Demo monitor for VanAllenRadiation. Originally from MotoTrack with static SAMPLE_LOCATIONS data. Real-data integration planned for future release.",
+  "dataSource": "Demo (static SAMPLE_LOCATIONS)",
+  "realData": false,
+  "free": true,
+  "accent": "sky",
+  "originalFile": "src/components/map/VanAllenRadiationMonitor.tsx"
+}

@@ -1,0 +1,12 @@
+{
+  "id": "train-station-dining",
+  "name": "Train Station Dining Monitor",
+  "category": "weather",
+  "icon": "cloud-sun",
+  "description": "Demo monitor for TrainStationDining. Originally from MotoTrack with static SAMPLE_LOCATIONS data. Real-data integration planned for future release.",
+  "dataSource": "Demo (static SAMPLE_LOCATIONS)",
+  "realData": false,
+  "free": true,
+  "accent": "yellow",
+  "originalFile": "src/components/map/TrainStationDiningMonitor.tsx"
+}

@@ -1,0 +1,21 @@
+{
+  "name": "@envirodash/monitor-lighthouse-navigation",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Demo monitor: LighthouseNavigation (originally from MotoTrack, uses static SAMPLE_LOCATIONS)",
+  "main": "./src/LighthouseNavigationMonitor.tsx",
+  "exports": {
+    ".": "./src/LighthouseNavigationMonitor.tsx",
+    "./manifest": "./manifest.json"
+  },
+  "scripts": {
+    "type-check": "tsc --noEmit",
+    "clean": "rm -rf dist .turbo"
+  },
+  "dependencies": {
+    "@envirodash/core": "*"
+  },
+  "devDependencies": {
+    "typescript": "^5"
+  }
+}

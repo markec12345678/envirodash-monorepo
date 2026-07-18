@@ -1,0 +1,12 @@
+{
+  "id": "aquarium-pet-supply",
+  "name": "Aquarium Pet Supply Monitor",
+  "category": "infrastructure",
+  "icon": "building-2",
+  "description": "Demo monitor for AquariumPetSupply. Originally from MotoTrack with static SAMPLE_LOCATIONS data. Real-data integration planned for future release.",
+  "dataSource": "Demo (static SAMPLE_LOCATIONS)",
+  "realData": false,
+  "free": true,
+  "accent": "yellow",
+  "originalFile": "src/components/map/AquariumPetSupplyMonitor.tsx"
+}

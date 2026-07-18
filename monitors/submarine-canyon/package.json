@@ -1,0 +1,21 @@
+{
+  "name": "@envirodash/monitor-submarine-canyon",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Demo monitor: SubmarineCanyon (originally from MotoTrack, uses static SAMPLE_LOCATIONS)",
+  "main": "./src/SubmarineCanyonMonitor.tsx",
+  "exports": {
+    ".": "./src/SubmarineCanyonMonitor.tsx",
+    "./manifest": "./manifest.json"
+  },
+  "scripts": {
+    "type-check": "tsc --noEmit",
+    "clean": "rm -rf dist .turbo"
+  },
+  "dependencies": {
+    "@envirodash/core": "*"
+  },
+  "devDependencies": {
+    "typescript": "^5"
+  }
+}

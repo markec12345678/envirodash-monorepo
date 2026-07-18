@@ -1,0 +1,12 @@
+{
+  "id": "lighting-ceiling-fan-store",
+  "name": "Lighting Ceiling Fan Store Monitor",
+  "category": "industrial",
+  "icon": "factory",
+  "description": "Demo monitor for LightingCeilingFanStore. Originally from MotoTrack with static SAMPLE_LOCATIONS data. Real-data integration planned for future release.",
+  "dataSource": "Demo (static SAMPLE_LOCATIONS)",
+  "realData": false,
+  "free": true,
+  "accent": "violet",
+  "originalFile": "src/components/map/LightingCeilingFanStoreMonitor.tsx"
+}

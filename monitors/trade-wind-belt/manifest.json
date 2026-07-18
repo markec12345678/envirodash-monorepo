@@ -1,0 +1,12 @@
+{
+  "id": "trade-wind-belt",
+  "name": "Trade Wind Belt Monitor",
+  "category": "weather",
+  "icon": "cloud-sun",
+  "description": "Demo monitor for TradeWindBelt. Originally from MotoTrack with static SAMPLE_LOCATIONS data. Real-data integration planned for future release.",
+  "dataSource": "Demo (static SAMPLE_LOCATIONS)",
+  "realData": false,
+  "free": true,
+  "accent": "green",
+  "originalFile": "src/components/map/TradeWindBeltMonitor.tsx"
+}

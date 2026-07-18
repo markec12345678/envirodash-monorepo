@@ -1,0 +1,21 @@
+{
+  "name": "@envirodash/monitor-ski-snowboard-shop",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Demo monitor: SkiSnowboardShop (originally from MotoTrack, uses static SAMPLE_LOCATIONS)",
+  "main": "./src/SkiSnowboardShopMonitor.tsx",
+  "exports": {
+    ".": "./src/SkiSnowboardShopMonitor.tsx",
+    "./manifest": "./manifest.json"
+  },
+  "scripts": {
+    "type-check": "tsc --noEmit",
+    "clean": "rm -rf dist .turbo"
+  },
+  "dependencies": {
+    "@envirodash/core": "*"
+  },
+  "devDependencies": {
+    "typescript": "^5"
+  }
+}

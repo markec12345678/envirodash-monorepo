@@ -1,0 +1,12 @@
+{
+  "id": "solar-irradiance",
+  "name": "Solar Irradiance Monitor",
+  "category": "infrastructure",
+  "icon": "building-2",
+  "description": "Demo monitor for SolarIrradiance. Originally from MotoTrack with static SAMPLE_LOCATIONS data. Real-data integration planned for future release.",
+  "dataSource": "Demo (static SAMPLE_LOCATIONS)",
+  "realData": false,
+  "free": true,
+  "accent": "orange",
+  "originalFile": "src/components/map/SolarIrradianceMonitor.tsx"
+}

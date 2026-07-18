@@ -1,0 +1,12 @@
+{
+  "id": "coral-reef-recovery",
+  "name": "Coral Reef Recovery Monitor",
+  "category": "oceanic",
+  "icon": "waves",
+  "description": "Demo monitor for CoralReefRecovery. Originally from MotoTrack with static SAMPLE_LOCATIONS data. Real-data integration planned for future release.",
+  "dataSource": "Demo (static SAMPLE_LOCATIONS)",
+  "realData": false,
+  "free": true,
+  "accent": "violet",
+  "originalFile": "src/components/map/CoralReefRecoveryMonitor.tsx"
+}

@@ -1,0 +1,12 @@
+{
+  "id": "aquarium-marine-exhibit",
+  "name": "Aquarium Marine Exhibit Monitor",
+  "category": "oceanic",
+  "icon": "waves",
+  "description": "Demo monitor for AquariumMarineExhibit. Originally from MotoTrack with static SAMPLE_LOCATIONS data. Real-data integration planned for future release.",
+  "dataSource": "Demo (static SAMPLE_LOCATIONS)",
+  "realData": false,
+  "free": true,
+  "accent": "sky",
+  "originalFile": "src/components/map/AquariumMarineExhibitMonitor.tsx"
+}

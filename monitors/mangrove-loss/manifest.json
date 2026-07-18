@@ -1,0 +1,12 @@
+{
+  "id": "mangrove-loss",
+  "name": "Mangrove Loss Monitor",
+  "category": "oceanic",
+  "icon": "waves",
+  "description": "Demo monitor for MangroveLoss. Originally from MotoTrack with static SAMPLE_LOCATIONS data. Real-data integration planned for future release.",
+  "dataSource": "Demo (static SAMPLE_LOCATIONS)",
+  "realData": false,
+  "free": true,
+  "accent": "fuchsia",
+  "originalFile": "src/components/map/MangroveLossMonitor.tsx"
+}

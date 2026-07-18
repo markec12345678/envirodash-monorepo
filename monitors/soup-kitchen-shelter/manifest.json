@@ -1,0 +1,12 @@
+{
+  "id": "soup-kitchen-shelter",
+  "name": "Soup Kitchen Shelter Monitor",
+  "category": "retail",
+  "icon": "shopping-bag",
+  "description": "Demo monitor for SoupKitchenShelter. Originally from MotoTrack with static SAMPLE_LOCATIONS data. Real-data integration planned for future release.",
+  "dataSource": "Demo (static SAMPLE_LOCATIONS)",
+  "realData": false,
+  "free": true,
+  "accent": "fuchsia",
+  "originalFile": "src/components/map/SoupKitchenShelterMonitor.tsx"
+}

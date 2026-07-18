@@ -1,0 +1,12 @@
+{
+  "id": "border-patrol-activity",
+  "name": "Border Patrol Activity Monitor",
+  "category": "other",
+  "icon": "circle",
+  "description": "Demo monitor for BorderPatrolActivity. Originally from MotoTrack with static SAMPLE_LOCATIONS data. Real-data integration planned for future release.",
+  "dataSource": "Demo (static SAMPLE_LOCATIONS)",
+  "realData": false,
+  "free": true,
+  "accent": "yellow",
+  "originalFile": "src/components/map/BorderPatrolActivityMonitor.tsx"
+}

@@ -1,0 +1,21 @@
+{
+  "name": "@envirodash/monitor-podzol-profile",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Demo monitor: PodzolProfile (originally from MotoTrack, uses static SAMPLE_LOCATIONS)",
+  "main": "./src/PodzolProfileMonitor.tsx",
+  "exports": {
+    ".": "./src/PodzolProfileMonitor.tsx",
+    "./manifest": "./manifest.json"
+  },
+  "scripts": {
+    "type-check": "tsc --noEmit",
+    "clean": "rm -rf dist .turbo"
+  },
+  "dependencies": {
+    "@envirodash/core": "*"
+  },
+  "devDependencies": {
+    "typescript": "^5"
+  }
+}

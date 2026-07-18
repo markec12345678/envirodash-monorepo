@@ -1,0 +1,12 @@
+{
+  "id": "aurora-oval-position",
+  "name": "Aurora Oval Position Monitor",
+  "category": "other",
+  "icon": "circle",
+  "description": "Demo monitor for AuroraOvalPosition. Originally from MotoTrack with static SAMPLE_LOCATIONS data. Real-data integration planned for future release.",
+  "dataSource": "Demo (static SAMPLE_LOCATIONS)",
+  "realData": false,
+  "free": true,
+  "accent": "orange",
+  "originalFile": "src/components/map/AuroraOvalPositionMonitor.tsx"
+}

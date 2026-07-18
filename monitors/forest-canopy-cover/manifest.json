@@ -1,0 +1,12 @@
+{
+  "id": "forest-canopy-cover",
+  "name": "Forest Canopy Cover Monitor",
+  "category": "wildlife",
+  "icon": "bird",
+  "description": "Demo monitor for ForestCanopyCover. Originally from MotoTrack with static SAMPLE_LOCATIONS data. Real-data integration planned for future release.",
+  "dataSource": "Demo (static SAMPLE_LOCATIONS)",
+  "realData": false,
+  "free": true,
+  "accent": "violet",
+  "originalFile": "src/components/map/ForestCanopyCoverMonitor.tsx"
+}

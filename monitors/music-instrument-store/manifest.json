@@ -1,0 +1,12 @@
+{
+  "id": "music-instrument-store",
+  "name": "Music Instrument Store Monitor",
+  "category": "industrial",
+  "icon": "factory",
+  "description": "Demo monitor for MusicInstrumentStore. Originally from MotoTrack with static SAMPLE_LOCATIONS data. Real-data integration planned for future release.",
+  "dataSource": "Demo (static SAMPLE_LOCATIONS)",
+  "realData": false,
+  "free": true,
+  "accent": "rose",
+  "originalFile": "src/components/map/MusicInstrumentStoreMonitor.tsx"
+}

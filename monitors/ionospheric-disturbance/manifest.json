@@ -1,0 +1,12 @@
+{
+  "id": "ionospheric-disturbance",
+  "name": "Ionospheric Disturbance Monitor",
+  "category": "other",
+  "icon": "circle",
+  "description": "Demo monitor for IonosphericDisturbance. Originally from MotoTrack with static SAMPLE_LOCATIONS data. Real-data integration planned for future release.",
+  "dataSource": "Demo (static SAMPLE_LOCATIONS)",
+  "realData": false,
+  "free": true,
+  "accent": "yellow",
+  "originalFile": "src/components/map/IonosphericDisturbanceMonitor.tsx"
+}

@@ -1,0 +1,12 @@
+{
+  "id": "tsunami-wave-height",
+  "name": "Tsunami Wave Height Monitor",
+  "category": "oceanic",
+  "icon": "waves",
+  "description": "Demo monitor for TsunamiWaveHeight. Originally from MotoTrack with static SAMPLE_LOCATIONS data. Real-data integration planned for future release.",
+  "dataSource": "Demo (static SAMPLE_LOCATIONS)",
+  "realData": false,
+  "free": true,
+  "accent": "violet",
+  "originalFile": "src/components/map/TsunamiWaveHeightMonitor.tsx"
+}

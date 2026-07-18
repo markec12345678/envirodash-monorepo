@@ -1,0 +1,12 @@
+{
+  "id": "fuel-station-network",
+  "name": "Fuel Station Network Monitor",
+  "category": "infrastructure",
+  "icon": "building-2",
+  "description": "Demo monitor for FuelStationNetwork. Originally from MotoTrack with static SAMPLE_LOCATIONS data. Real-data integration planned for future release.",
+  "dataSource": "Demo (static SAMPLE_LOCATIONS)",
+  "realData": false,
+  "free": true,
+  "accent": "red",
+  "originalFile": "src/components/map/FuelStationNetworkMonitor.tsx"
+}

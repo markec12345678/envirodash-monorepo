@@ -1,0 +1,21 @@
+{
+  "name": "@envirodash/monitor-dam-construction-progress",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Demo monitor: DamConstructionProgress (originally from MotoTrack, uses static SAMPLE_LOCATIONS)",
+  "main": "./src/DamConstructionProgressMonitor.tsx",
+  "exports": {
+    ".": "./src/DamConstructionProgressMonitor.tsx",
+    "./manifest": "./manifest.json"
+  },
+  "scripts": {
+    "type-check": "tsc --noEmit",
+    "clean": "rm -rf dist .turbo"
+  },
+  "dependencies": {
+    "@envirodash/core": "*"
+  },
+  "devDependencies": {
+    "typescript": "^5"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "@envirodash/monitor-peat-fire",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Demo monitor: PeatFire (originally from MotoTrack, uses static SAMPLE_LOCATIONS)",
+  "main": "./src/PeatFireMonitor.tsx",
+  "exports": {
+    ".": "./src/PeatFireMonitor.tsx",
+    "./manifest": "./manifest.json"
+  },
+  "scripts": {
+    "type-check": "tsc --noEmit",
+    "clean": "rm -rf dist .turbo"
+  },
+  "dependencies": {
+    "@envirodash/core": "*"
+  },
+  "devDependencies": {
+    "typescript": "^5"
+  }
+}

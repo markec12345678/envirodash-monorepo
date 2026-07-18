@@ -68,9 +68,31 @@ Each monitor package follows this structure:
 | Volcano | USGS Volcano Hazards | ✅ Real |
 | Earthquake | USGS Earthquake Hazards | ✅ Real |
 | Weather | Open-Meteo Forecast | ✅ Real |
-| Glacier | GLIMS database | 🚧 Planned |
-| Coral Reef | NOAA Coral Reef Watch | 🚧 Planned |
-| ... 800+ others | Demo data (SAMPLE_LOCATIONS) | 📋 Demo |
+| Glacier | GLIMS database | 🚧 Planned v1.1 |
+| Coral Reef | NOAA Coral Reef Watch | 🚧 Planned v1.1 |
+| Flood | GloFAS / Copernicus EMS | 🚧 Planned v1.1 |
+| Drought | US Drought Monitor / EDO | 🚧 Planned v1.1 |
+| ... 857 others | Demo (static SAMPLE_LOCATIONS) | 📋 Demo |
+
+## 📊 Monitor Categories
+
+| Category | Count | Examples |
+|---|---|---|
+| Other | 198 | AbyssalSedimentFlux, ContinentalDrift, MagneticAnomaly |
+| Retail | 100 | BakeryPastryShop, ElectronicsRetail, LuxuryJewelry |
+| Oceanic | 90 | CoralBleaching, MangroveRestoration, KelpForest |
+| Industrial | 85 | AutomobileAssemblyPlant, AluminumSmelter, CoalMine |
+| Climate | 67 | PermafrostThaw, IceSheetVelocity, AeolianDust |
+| Services | 65 | HospitalCafe, BankBranch, AccountingFirm |
+| Infrastructure | 62 | PowerGridLoad, EvChargingNetwork, SatelliteGround |
+| Atmospheric | 45 | AirPollution, OzoneLayer, MethaneEmission |
+| Hydrology | 40 | AquiferDepletion, WatershedPollution, KarstSpring |
+| Recreation | 30 | ThemeParkQueue, GolfTournament, SkiResort |
+| Geological | 29 | VolcanoThermal, FaultLineActivity, LandslideHazard |
+| Weather | 21 | AtmosphericRiver, JetStream, PolarVortex |
+| Vegetation | 14 | CropHealth, SoilPhosphorus, BiomeTransition |
+| Wildlife | 13 | BirdMigration, WhaleMigration, PolarBearHabitat |
+| Disaster | 5 | Wildfire, Tsunami, Earthquake, Flood, Drought |
 
 ## 📄 License
 

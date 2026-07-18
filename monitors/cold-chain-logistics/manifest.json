@@ -1,0 +1,12 @@
+{
+  "id": "cold-chain-logistics",
+  "name": "Cold Chain Logistics Monitor",
+  "category": "infrastructure",
+  "icon": "building-2",
+  "description": "Demo monitor for ColdChainLogistics. Originally from MotoTrack with static SAMPLE_LOCATIONS data. Real-data integration planned for future release.",
+  "dataSource": "Demo (static SAMPLE_LOCATIONS)",
+  "realData": false,
+  "free": true,
+  "accent": "amber",
+  "originalFile": "src/components/map/ColdChainLogisticsMonitor.tsx"
+}

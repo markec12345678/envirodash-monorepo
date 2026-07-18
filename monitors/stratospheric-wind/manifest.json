@@ -1,0 +1,12 @@
+{
+  "id": "stratospheric-wind",
+  "name": "Stratospheric Wind Monitor",
+  "category": "weather",
+  "icon": "cloud-sun",
+  "description": "Demo monitor for StratosphericWind. Originally from MotoTrack with static SAMPLE_LOCATIONS data. Real-data integration planned for future release.",
+  "dataSource": "Demo (static SAMPLE_LOCATIONS)",
+  "realData": false,
+  "free": true,
+  "accent": "sky",
+  "originalFile": "src/components/map/StratosphericWindMonitor.tsx"
+}

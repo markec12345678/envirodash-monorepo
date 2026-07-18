@@ -1,0 +1,21 @@
+{
+  "name": "@envirodash/monitor-flood-control-system",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Demo monitor: FloodControlSystem (originally from MotoTrack, uses static SAMPLE_LOCATIONS)",
+  "main": "./src/FloodControlSystemMonitor.tsx",
+  "exports": {
+    ".": "./src/FloodControlSystemMonitor.tsx",
+    "./manifest": "./manifest.json"
+  },
+  "scripts": {
+    "type-check": "tsc --noEmit",
+    "clean": "rm -rf dist .turbo"
+  },
+  "dependencies": {
+    "@envirodash/core": "*"
+  },
+  "devDependencies": {
+    "typescript": "^5"
+  }
+}

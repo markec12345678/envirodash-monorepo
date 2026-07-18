@@ -1,0 +1,12 @@
+{
+  "id": "flower-market-wholesale",
+  "name": "Flower Market Wholesale Monitor",
+  "category": "retail",
+  "icon": "shopping-bag",
+  "description": "Demo monitor for FlowerMarketWholesale. Originally from MotoTrack with static SAMPLE_LOCATIONS data. Real-data integration planned for future release.",
+  "dataSource": "Demo (static SAMPLE_LOCATIONS)",
+  "realData": false,
+  "free": true,
+  "accent": "teal",
+  "originalFile": "src/components/map/FlowerMarketWholesaleMonitor.tsx"
+}

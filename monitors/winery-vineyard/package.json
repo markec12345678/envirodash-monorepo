@@ -1,0 +1,21 @@
+{
+  "name": "@envirodash/monitor-winery-vineyard",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Demo monitor: WineryVineyard (originally from MotoTrack, uses static SAMPLE_LOCATIONS)",
+  "main": "./src/WineryVineyardMonitor.tsx",
+  "exports": {
+    ".": "./src/WineryVineyardMonitor.tsx",
+    "./manifest": "./manifest.json"
+  },
+  "scripts": {
+    "type-check": "tsc --noEmit",
+    "clean": "rm -rf dist .turbo"
+  },
+  "dependencies": {
+    "@envirodash/core": "*"
+  },
+  "devDependencies": {
+    "typescript": "^5"
+  }
+}

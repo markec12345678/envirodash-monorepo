@@ -1,0 +1,21 @@
+{
+  "name": "@envirodash/monitor-lego-brand-store",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Demo monitor: LegoBrandStore (originally from MotoTrack, uses static SAMPLE_LOCATIONS)",
+  "main": "./src/LegoBrandStoreMonitor.tsx",
+  "exports": {
+    ".": "./src/LegoBrandStoreMonitor.tsx",
+    "./manifest": "./manifest.json"
+  },
+  "scripts": {
+    "type-check": "tsc --noEmit",
+    "clean": "rm -rf dist .turbo"
+  },
+  "dependencies": {
+    "@envirodash/core": "*"
+  },
+  "devDependencies": {
+    "typescript": "^5"
+  }
+}

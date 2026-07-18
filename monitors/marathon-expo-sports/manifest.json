@@ -1,0 +1,12 @@
+{
+  "id": "marathon-expo-sports",
+  "name": "Marathon Expo Sports Monitor",
+  "category": "infrastructure",
+  "icon": "building-2",
+  "description": "Demo monitor for MarathonExpoSports. Originally from MotoTrack with static SAMPLE_LOCATIONS data. Real-data integration planned for future release.",
+  "dataSource": "Demo (static SAMPLE_LOCATIONS)",
+  "realData": false,
+  "free": true,
+  "accent": "green",
+  "originalFile": "src/components/map/MarathonExpoSportsMonitor.tsx"
+}

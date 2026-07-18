@@ -1,0 +1,12 @@
+{
+  "id": "hotel-chain-operation",
+  "name": "Hotel Chain Operation Monitor",
+  "category": "infrastructure",
+  "icon": "building-2",
+  "description": "Demo monitor for HotelChainOperation. Originally from MotoTrack with static SAMPLE_LOCATIONS data. Real-data integration planned for future release.",
+  "dataSource": "Demo (static SAMPLE_LOCATIONS)",
+  "realData": false,
+  "free": true,
+  "accent": "amber",
+  "originalFile": "src/components/map/HotelChainOperationMonitor.tsx"
+}

@@ -1,0 +1,12 @@
+{
+  "id": "co2-atmospheric",
+  "name": "Co2 Atmospheric Monitor",
+  "category": "atmospheric",
+  "icon": "wind",
+  "description": "Demo monitor for Co2Atmospheric. Originally from MotoTrack with static SAMPLE_LOCATIONS data. Real-data integration planned for future release.",
+  "dataSource": "Demo (static SAMPLE_LOCATIONS)",
+  "realData": false,
+  "free": true,
+  "accent": "rose",
+  "originalFile": "src/components/map/Co2AtmosphericMonitor.tsx"
+}

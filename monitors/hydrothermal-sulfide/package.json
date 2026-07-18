@@ -1,0 +1,21 @@
+{
+  "name": "@envirodash/monitor-hydrothermal-sulfide",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Demo monitor: HydrothermalSulfide (originally from MotoTrack, uses static SAMPLE_LOCATIONS)",
+  "main": "./src/HydrothermalSulfideMonitor.tsx",
+  "exports": {
+    ".": "./src/HydrothermalSulfideMonitor.tsx",
+    "./manifest": "./manifest.json"
+  },
+  "scripts": {
+    "type-check": "tsc --noEmit",
+    "clean": "rm -rf dist .turbo"
+  },
+  "dependencies": {
+    "@envirodash/core": "*"
+  },
+  "devDependencies": {
+    "typescript": "^5"
+  }
+}

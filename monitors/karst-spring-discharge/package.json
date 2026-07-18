@@ -1,0 +1,21 @@
+{
+  "name": "@envirodash/monitor-karst-spring-discharge",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Demo monitor: KarstSpringDischarge (originally from MotoTrack, uses static SAMPLE_LOCATIONS)",
+  "main": "./src/KarstSpringDischargeMonitor.tsx",
+  "exports": {
+    ".": "./src/KarstSpringDischargeMonitor.tsx",
+    "./manifest": "./manifest.json"
+  },
+  "scripts": {
+    "type-check": "tsc --noEmit",
+    "clean": "rm -rf dist .turbo"
+  },
+  "dependencies": {
+    "@envirodash/core": "*"
+  },
+  "devDependencies": {
+    "typescript": "^5"
+  }
+}

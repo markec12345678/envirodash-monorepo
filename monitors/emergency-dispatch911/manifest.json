@@ -1,0 +1,12 @@
+{
+  "id": "emergency-dispatch911",
+  "name": "Emergency Dispatch911 Monitor",
+  "category": "services",
+  "icon": "briefcase",
+  "description": "Demo monitor for EmergencyDispatch911. Originally from MotoTrack with static SAMPLE_LOCATIONS data. Real-data integration planned for future release.",
+  "dataSource": "Demo (static SAMPLE_LOCATIONS)",
+  "realData": false,
+  "free": true,
+  "accent": "amber",
+  "originalFile": "src/components/map/EmergencyDispatch911Monitor.tsx"
+}

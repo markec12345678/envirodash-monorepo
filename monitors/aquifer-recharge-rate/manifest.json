@@ -1,0 +1,12 @@
+{
+  "id": "aquifer-recharge-rate",
+  "name": "Aquifer Recharge Rate Monitor",
+  "category": "hydrology",
+  "icon": "droplets",
+  "description": "Demo monitor for AquiferRechargeRate. Originally from MotoTrack with static SAMPLE_LOCATIONS data. Real-data integration planned for future release.",
+  "dataSource": "Demo (static SAMPLE_LOCATIONS)",
+  "realData": false,
+  "free": true,
+  "accent": "emerald",
+  "originalFile": "src/components/map/AquiferRechargeRateMonitor.tsx"
+}

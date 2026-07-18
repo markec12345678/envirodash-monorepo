@@ -1,0 +1,12 @@
+{
+  "id": "strip-mine-ratio",
+  "name": "Strip Mine Ratio Monitor",
+  "category": "industrial",
+  "icon": "factory",
+  "description": "Demo monitor for StripMineRatio. Originally from MotoTrack with static SAMPLE_LOCATIONS data. Real-data integration planned for future release.",
+  "dataSource": "Demo (static SAMPLE_LOCATIONS)",
+  "realData": false,
+  "free": true,
+  "accent": "teal",
+  "originalFile": "src/components/map/StripMineRatioMonitor.tsx"
+}

@@ -1,0 +1,12 @@
+{
+  "id": "volcano-seismic",
+  "name": "Volcano Seismic Monitor",
+  "category": "geological",
+  "icon": "mountain",
+  "description": "Demo monitor for VolcanoSeismic. Originally from MotoTrack with static SAMPLE_LOCATIONS data. Real-data integration planned for future release.",
+  "dataSource": "Demo (static SAMPLE_LOCATIONS)",
+  "realData": false,
+  "free": true,
+  "accent": "violet",
+  "originalFile": "src/components/map/VolcanoSeismicMonitor.tsx"
+}

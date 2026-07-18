@@ -1,0 +1,12 @@
+{
+  "id": "windsurfing-shore-cafe",
+  "name": "Windsurfing Shore Cafe Monitor",
+  "category": "oceanic",
+  "icon": "waves",
+  "description": "Demo monitor for WindsurfingShoreCafe. Originally from MotoTrack with static SAMPLE_LOCATIONS data. Real-data integration planned for future release.",
+  "dataSource": "Demo (static SAMPLE_LOCATIONS)",
+  "realData": false,
+  "free": true,
+  "accent": "orange",
+  "originalFile": "src/components/map/WindsurfingShoreCafeMonitor.tsx"
+}

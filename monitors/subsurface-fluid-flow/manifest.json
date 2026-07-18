@@ -1,0 +1,12 @@
+{
+  "id": "subsurface-fluid-flow",
+  "name": "Subsurface Fluid Flow Monitor",
+  "category": "recreation",
+  "icon": "trophy",
+  "description": "Demo monitor for SubsurfaceFluidFlow. Originally from MotoTrack with static SAMPLE_LOCATIONS data. Real-data integration planned for future release.",
+  "dataSource": "Demo (static SAMPLE_LOCATIONS)",
+  "realData": false,
+  "free": true,
+  "accent": "yellow",
+  "originalFile": "src/components/map/SubsurfaceFluidFlowMonitor.tsx"
+}

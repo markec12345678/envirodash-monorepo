@@ -1,0 +1,12 @@
+{
+  "id": "urban-heat-ventilation",
+  "name": "Urban Heat Ventilation Monitor",
+  "category": "other",
+  "icon": "circle",
+  "description": "Demo monitor for UrbanHeatVentilation. Originally from MotoTrack with static SAMPLE_LOCATIONS data. Real-data integration planned for future release.",
+  "dataSource": "Demo (static SAMPLE_LOCATIONS)",
+  "realData": false,
+  "free": true,
+  "accent": "pink",
+  "originalFile": "src/components/map/UrbanHeatVentilationMonitor.tsx"
+}

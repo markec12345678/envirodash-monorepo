@@ -1,0 +1,12 @@
+{
+  "id": "urban-sprawl",
+  "name": "Urban Sprawl Monitor",
+  "category": "other",
+  "icon": "circle",
+  "description": "Demo monitor for UrbanSprawl. Originally from MotoTrack with static SAMPLE_LOCATIONS data. Real-data integration planned for future release.",
+  "dataSource": "Demo (static SAMPLE_LOCATIONS)",
+  "realData": false,
+  "free": true,
+  "accent": "violet",
+  "originalFile": "src/components/map/UrbanSprawlMonitor.tsx"
+}

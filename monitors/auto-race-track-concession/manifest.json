@@ -1,0 +1,12 @@
+{
+  "id": "auto-race-track-concession",
+  "name": "Auto Race Track Concession Monitor",
+  "category": "recreation",
+  "icon": "trophy",
+  "description": "Demo monitor for AutoRaceTrackConcession. Originally from MotoTrack with static SAMPLE_LOCATIONS data. Real-data integration planned for future release.",
+  "dataSource": "Demo (static SAMPLE_LOCATIONS)",
+  "realData": false,
+  "free": true,
+  "accent": "pink",
+  "originalFile": "src/components/map/AutoRaceTrackConcessionMonitor.tsx"
+}

@@ -1,0 +1,12 @@
+{
+  "id": "tropical-current",
+  "name": "Tropical Current Monitor",
+  "category": "oceanic",
+  "icon": "waves",
+  "description": "Demo monitor for TropicalCurrent. Originally from MotoTrack with static SAMPLE_LOCATIONS data. Real-data integration planned for future release.",
+  "dataSource": "Demo (static SAMPLE_LOCATIONS)",
+  "realData": false,
+  "free": true,
+  "accent": "rose",
+  "originalFile": "src/components/map/TropicalCurrentMonitor.tsx"
+}

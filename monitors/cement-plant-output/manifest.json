@@ -1,0 +1,12 @@
+{
+  "id": "cement-plant-output",
+  "name": "Cement Plant Output Monitor",
+  "category": "industrial",
+  "icon": "factory",
+  "description": "Demo monitor for CementPlantOutput. Originally from MotoTrack with static SAMPLE_LOCATIONS data. Real-data integration planned for future release.",
+  "dataSource": "Demo (static SAMPLE_LOCATIONS)",
+  "realData": false,
+  "free": true,
+  "accent": "violet",
+  "originalFile": "src/components/map/CementPlantOutputMonitor.tsx"
+}

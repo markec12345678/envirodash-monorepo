@@ -1,0 +1,12 @@
+{
+  "id": "permafrost-carbon-pipeline",
+  "name": "Permafrost Carbon Pipeline Monitor",
+  "category": "atmospheric",
+  "icon": "wind",
+  "description": "Demo monitor for PermafrostCarbonPipeline. Originally from MotoTrack with static SAMPLE_LOCATIONS data. Real-data integration planned for future release.",
+  "dataSource": "Demo (static SAMPLE_LOCATIONS)",
+  "realData": false,
+  "free": true,
+  "accent": "red",
+  "originalFile": "src/components/map/PermafrostCarbonPipelineMonitor.tsx"
+}

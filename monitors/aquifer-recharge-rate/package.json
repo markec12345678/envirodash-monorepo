@@ -1,0 +1,21 @@
+{
+  "name": "@envirodash/monitor-aquifer-recharge-rate",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Demo monitor: AquiferRechargeRate (originally from MotoTrack, uses static SAMPLE_LOCATIONS)",
+  "main": "./src/AquiferRechargeRateMonitor.tsx",
+  "exports": {
+    ".": "./src/AquiferRechargeRateMonitor.tsx",
+    "./manifest": "./manifest.json"
+  },
+  "scripts": {
+    "type-check": "tsc --noEmit",
+    "clean": "rm -rf dist .turbo"
+  },
+  "dependencies": {
+    "@envirodash/core": "*"
+  },
+  "devDependencies": {
+    "typescript": "^5"
+  }
+}

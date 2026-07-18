@@ -1,0 +1,21 @@
+{
+  "name": "@envirodash/monitor-desert-oasis",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Demo monitor: DesertOasis (originally from MotoTrack, uses static SAMPLE_LOCATIONS)",
+  "main": "./src/DesertOasisMonitor.tsx",
+  "exports": {
+    ".": "./src/DesertOasisMonitor.tsx",
+    "./manifest": "./manifest.json"
+  },
+  "scripts": {
+    "type-check": "tsc --noEmit",
+    "clean": "rm -rf dist .turbo"
+  },
+  "dependencies": {
+    "@envirodash/core": "*"
+  },
+  "devDependencies": {
+    "typescript": "^5"
+  }
+}

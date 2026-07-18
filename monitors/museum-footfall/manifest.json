@@ -1,0 +1,12 @@
+{
+  "id": "museum-footfall",
+  "name": "Museum Footfall Monitor",
+  "category": "recreation",
+  "icon": "trophy",
+  "description": "Demo monitor for MuseumFootfall. Originally from MotoTrack with static SAMPLE_LOCATIONS data. Real-data integration planned for future release.",
+  "dataSource": "Demo (static SAMPLE_LOCATIONS)",
+  "realData": false,
+  "free": true,
+  "accent": "orange",
+  "originalFile": "src/components/map/MuseumFootfallMonitor.tsx"
+}

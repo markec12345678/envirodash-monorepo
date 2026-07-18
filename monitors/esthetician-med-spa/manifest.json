@@ -1,0 +1,12 @@
+{
+  "id": "esthetician-med-spa",
+  "name": "Esthetician Med Spa Monitor",
+  "category": "services",
+  "icon": "briefcase",
+  "description": "Demo monitor for EstheticianMedSpa. Originally from MotoTrack with static SAMPLE_LOCATIONS data. Real-data integration planned for future release.",
+  "dataSource": "Demo (static SAMPLE_LOCATIONS)",
+  "realData": false,
+  "free": true,
+  "accent": "yellow",
+  "originalFile": "src/components/map/EstheticianMedSpaMonitor.tsx"
+}

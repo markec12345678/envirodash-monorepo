@@ -1,0 +1,12 @@
+{
+  "id": "biomass-burning",
+  "name": "Biomass Burning Monitor",
+  "category": "disaster",
+  "icon": "flame",
+  "description": "Demo monitor for BiomassBurning. Originally from MotoTrack with static SAMPLE_LOCATIONS data. Real-data integration planned for future release.",
+  "dataSource": "Demo (static SAMPLE_LOCATIONS)",
+  "realData": false,
+  "free": true,
+  "accent": "pink",
+  "originalFile": "src/components/map/BiomassBurningMonitor.tsx"
+}

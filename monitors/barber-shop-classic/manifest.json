@@ -1,0 +1,12 @@
+{
+  "id": "barber-shop-classic",
+  "name": "Barber Shop Classic Monitor",
+  "category": "retail",
+  "icon": "shopping-bag",
+  "description": "Demo monitor for BarberShopClassic. Originally from MotoTrack with static SAMPLE_LOCATIONS data. Real-data integration planned for future release.",
+  "dataSource": "Demo (static SAMPLE_LOCATIONS)",
+  "realData": false,
+  "free": true,
+  "accent": "amber",
+  "originalFile": "src/components/map/BarberShopClassicMonitor.tsx"
+}

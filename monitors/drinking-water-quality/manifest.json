@@ -1,0 +1,12 @@
+{
+  "id": "drinking-water-quality",
+  "name": "Drinking Water Quality Monitor",
+  "category": "hydrology",
+  "icon": "droplets",
+  "description": "Demo monitor for DrinkingWaterQuality. Originally from MotoTrack with static SAMPLE_LOCATIONS data. Real-data integration planned for future release.",
+  "dataSource": "Demo (static SAMPLE_LOCATIONS)",
+  "realData": false,
+  "free": true,
+  "accent": "teal",
+  "originalFile": "src/components/map/DrinkingWaterQualityMonitor.tsx"
+}

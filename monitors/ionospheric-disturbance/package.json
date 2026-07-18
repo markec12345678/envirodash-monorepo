@@ -1,0 +1,21 @@
+{
+  "name": "@envirodash/monitor-ionospheric-disturbance",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Demo monitor: IonosphericDisturbance (originally from MotoTrack, uses static SAMPLE_LOCATIONS)",
+  "main": "./src/IonosphericDisturbanceMonitor.tsx",
+  "exports": {
+    ".": "./src/IonosphericDisturbanceMonitor.tsx",
+    "./manifest": "./manifest.json"
+  },
+  "scripts": {
+    "type-check": "tsc --noEmit",
+    "clean": "rm -rf dist .turbo"
+  },
+  "dependencies": {
+    "@envirodash/core": "*"
+  },
+  "devDependencies": {
+    "typescript": "^5"
+  }
+}

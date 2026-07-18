@@ -1,0 +1,21 @@
+{
+  "name": "@envirodash/monitor-cryoconite-granule",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Demo monitor: CryoconiteGranule (originally from MotoTrack, uses static SAMPLE_LOCATIONS)",
+  "main": "./src/CryoconiteGranuleMonitor.tsx",
+  "exports": {
+    ".": "./src/CryoconiteGranuleMonitor.tsx",
+    "./manifest": "./manifest.json"
+  },
+  "scripts": {
+    "type-check": "tsc --noEmit",
+    "clean": "rm -rf dist .turbo"
+  },
+  "dependencies": {
+    "@envirodash/core": "*"
+  },
+  "devDependencies": {
+    "typescript": "^5"
+  }
+}

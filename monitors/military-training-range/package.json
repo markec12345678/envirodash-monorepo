@@ -1,0 +1,21 @@
+{
+  "name": "@envirodash/monitor-military-training-range",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Demo monitor: MilitaryTrainingRange (originally from MotoTrack, uses static SAMPLE_LOCATIONS)",
+  "main": "./src/MilitaryTrainingRangeMonitor.tsx",
+  "exports": {
+    ".": "./src/MilitaryTrainingRangeMonitor.tsx",
+    "./manifest": "./manifest.json"
+  },
+  "scripts": {
+    "type-check": "tsc --noEmit",
+    "clean": "rm -rf dist .turbo"
+  },
+  "dependencies": {
+    "@envirodash/core": "*"
+  },
+  "devDependencies": {
+    "typescript": "^5"
+  }
+}

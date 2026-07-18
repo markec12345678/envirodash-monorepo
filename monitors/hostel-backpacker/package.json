@@ -1,0 +1,21 @@
+{
+  "name": "@envirodash/monitor-hostel-backpacker",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Demo monitor: HostelBackpacker (originally from MotoTrack, uses static SAMPLE_LOCATIONS)",
+  "main": "./src/HostelBackpackerMonitor.tsx",
+  "exports": {
+    ".": "./src/HostelBackpackerMonitor.tsx",
+    "./manifest": "./manifest.json"
+  },
+  "scripts": {
+    "type-check": "tsc --noEmit",
+    "clean": "rm -rf dist .turbo"
+  },
+  "dependencies": {
+    "@envirodash/core": "*"
+  },
+  "devDependencies": {
+    "typescript": "^5"
+  }
+}

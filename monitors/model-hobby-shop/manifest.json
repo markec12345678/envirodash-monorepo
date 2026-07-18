@@ -1,0 +1,12 @@
+{
+  "id": "model-hobby-shop",
+  "name": "Model Hobby Shop Monitor",
+  "category": "retail",
+  "icon": "shopping-bag",
+  "description": "Demo monitor for ModelHobbyShop. Originally from MotoTrack with static SAMPLE_LOCATIONS data. Real-data integration planned for future release.",
+  "dataSource": "Demo (static SAMPLE_LOCATIONS)",
+  "realData": false,
+  "free": true,
+  "accent": "violet",
+  "originalFile": "src/components/map/ModelHobbyShopMonitor.tsx"
+}

@@ -1,0 +1,12 @@
+{
+  "id": "vector-habitat-risk",
+  "name": "Vector Habitat Risk Monitor",
+  "category": "wildlife",
+  "icon": "bird",
+  "description": "Demo monitor for VectorHabitatRisk. Originally from MotoTrack with static SAMPLE_LOCATIONS data. Real-data integration planned for future release.",
+  "dataSource": "Demo (static SAMPLE_LOCATIONS)",
+  "realData": false,
+  "free": true,
+  "accent": "stone",
+  "originalFile": "src/components/map/VectorHabitatRiskMonitor.tsx"
+}

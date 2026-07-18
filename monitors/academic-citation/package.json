@@ -1,0 +1,21 @@
+{
+  "name": "@envirodash/monitor-academic-citation",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Demo monitor: AcademicCitation (originally from MotoTrack, uses static SAMPLE_LOCATIONS)",
+  "main": "./src/AcademicCitationMonitor.tsx",
+  "exports": {
+    ".": "./src/AcademicCitationMonitor.tsx",
+    "./manifest": "./manifest.json"
+  },
+  "scripts": {
+    "type-check": "tsc --noEmit",
+    "clean": "rm -rf dist .turbo"
+  },
+  "dependencies": {
+    "@envirodash/core": "*"
+  },
+  "devDependencies": {
+    "typescript": "^5"
+  }
+}

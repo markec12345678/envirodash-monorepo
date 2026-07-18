@@ -1,0 +1,12 @@
+{
+  "id": "coastal-aquifer",
+  "name": "Coastal Aquifer Monitor",
+  "category": "oceanic",
+  "icon": "waves",
+  "description": "Demo monitor for CoastalAquifer. Originally from MotoTrack with static SAMPLE_LOCATIONS data. Real-data integration planned for future release.",
+  "dataSource": "Demo (static SAMPLE_LOCATIONS)",
+  "realData": false,
+  "free": true,
+  "accent": "violet",
+  "originalFile": "src/components/map/CoastalAquiferMonitor.tsx"
+}

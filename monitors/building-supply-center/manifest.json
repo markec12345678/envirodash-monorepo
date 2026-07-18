@@ -1,0 +1,12 @@
+{
+  "id": "building-supply-center",
+  "name": "Building Supply Center Monitor",
+  "category": "infrastructure",
+  "icon": "building-2",
+  "description": "Demo monitor for BuildingSupplyCenter. Originally from MotoTrack with static SAMPLE_LOCATIONS data. Real-data integration planned for future release.",
+  "dataSource": "Demo (static SAMPLE_LOCATIONS)",
+  "realData": false,
+  "free": true,
+  "accent": "red",
+  "originalFile": "src/components/map/BuildingSupplyCenterMonitor.tsx"
+}

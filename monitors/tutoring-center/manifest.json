@@ -1,0 +1,12 @@
+{
+  "id": "tutoring-center",
+  "name": "Tutoring Center Monitor",
+  "category": "services",
+  "icon": "briefcase",
+  "description": "Demo monitor for TutoringCenter. Originally from MotoTrack with static SAMPLE_LOCATIONS data. Real-data integration planned for future release.",
+  "dataSource": "Demo (static SAMPLE_LOCATIONS)",
+  "realData": false,
+  "free": true,
+  "accent": "red",
+  "originalFile": "src/components/map/TutoringCenterMonitor.tsx"
+}

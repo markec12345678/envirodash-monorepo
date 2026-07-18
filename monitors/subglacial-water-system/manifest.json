@@ -1,0 +1,12 @@
+{
+  "id": "subglacial-water-system",
+  "name": "Subglacial Water System Monitor",
+  "category": "hydrology",
+  "icon": "droplets",
+  "description": "Demo monitor for SubglacialWaterSystem. Originally from MotoTrack with static SAMPLE_LOCATIONS data. Real-data integration planned for future release.",
+  "dataSource": "Demo (static SAMPLE_LOCATIONS)",
+  "realData": false,
+  "free": true,
+  "accent": "pink",
+  "originalFile": "src/components/map/SubglacialWaterSystemMonitor.tsx"
+}

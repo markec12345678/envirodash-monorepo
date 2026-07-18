@@ -1,0 +1,21 @@
+{
+  "name": "@envirodash/monitor-kayak-tour-snack-bar",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Demo monitor: KayakTourSnackBar (originally from MotoTrack, uses static SAMPLE_LOCATIONS)",
+  "main": "./src/KayakTourSnackBarMonitor.tsx",
+  "exports": {
+    ".": "./src/KayakTourSnackBarMonitor.tsx",
+    "./manifest": "./manifest.json"
+  },
+  "scripts": {
+    "type-check": "tsc --noEmit",
+    "clean": "rm -rf dist .turbo"
+  },
+  "dependencies": {
+    "@envirodash/core": "*"
+  },
+  "devDependencies": {
+    "typescript": "^5"
+  }
+}

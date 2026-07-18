@@ -1,0 +1,12 @@
+{
+  "id": "hot-spring-resort-cafe",
+  "name": "Hot Spring Resort Cafe Monitor",
+  "category": "retail",
+  "icon": "shopping-bag",
+  "description": "Demo monitor for HotSpringResortCafe. Originally from MotoTrack with static SAMPLE_LOCATIONS data. Real-data integration planned for future release.",
+  "dataSource": "Demo (static SAMPLE_LOCATIONS)",
+  "realData": false,
+  "free": true,
+  "accent": "orange",
+  "originalFile": "src/components/map/HotSpringResortCafeMonitor.tsx"
+}

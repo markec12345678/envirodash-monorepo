@@ -1,0 +1,12 @@
+{
+  "id": "bungee-jump-site-cafe",
+  "name": "Bungee Jump Site Cafe Monitor",
+  "category": "retail",
+  "icon": "shopping-bag",
+  "description": "Demo monitor for BungeeJumpSiteCafe. Originally from MotoTrack with static SAMPLE_LOCATIONS data. Real-data integration planned for future release.",
+  "dataSource": "Demo (static SAMPLE_LOCATIONS)",
+  "realData": false,
+  "free": true,
+  "accent": "sky",
+  "originalFile": "src/components/map/BungeeJumpSiteCafeMonitor.tsx"
+}

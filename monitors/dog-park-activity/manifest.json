@@ -1,0 +1,12 @@
+{
+  "id": "dog-park-activity",
+  "name": "Dog Park Activity Monitor",
+  "category": "recreation",
+  "icon": "trophy",
+  "description": "Demo monitor for DogParkActivity. Originally from MotoTrack with static SAMPLE_LOCATIONS data. Real-data integration planned for future release.",
+  "dataSource": "Demo (static SAMPLE_LOCATIONS)",
+  "realData": false,
+  "free": true,
+  "accent": "stone",
+  "originalFile": "src/components/map/DogParkActivityMonitor.tsx"
+}

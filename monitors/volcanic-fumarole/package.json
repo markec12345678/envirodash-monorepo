@@ -1,0 +1,21 @@
+{
+  "name": "@envirodash/monitor-volcanic-fumarole",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Demo monitor: VolcanicFumarole (originally from MotoTrack, uses static SAMPLE_LOCATIONS)",
+  "main": "./src/VolcanicFumaroleMonitor.tsx",
+  "exports": {
+    ".": "./src/VolcanicFumaroleMonitor.tsx",
+    "./manifest": "./manifest.json"
+  },
+  "scripts": {
+    "type-check": "tsc --noEmit",
+    "clean": "rm -rf dist .turbo"
+  },
+  "dependencies": {
+    "@envirodash/core": "*"
+  },
+  "devDependencies": {
+    "typescript": "^5"
+  }
+}

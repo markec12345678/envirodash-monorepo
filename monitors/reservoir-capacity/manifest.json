@@ -1,0 +1,12 @@
+{
+  "id": "reservoir-capacity",
+  "name": "Reservoir Capacity Monitor",
+  "category": "hydrology",
+  "icon": "droplets",
+  "description": "Demo monitor for ReservoirCapacity. Originally from MotoTrack with static SAMPLE_LOCATIONS data. Real-data integration planned for future release.",
+  "dataSource": "Demo (static SAMPLE_LOCATIONS)",
+  "realData": false,
+  "free": true,
+  "accent": "amber",
+  "originalFile": "src/components/map/ReservoirCapacityMonitor.tsx"
+}

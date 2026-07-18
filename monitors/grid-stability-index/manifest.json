@@ -1,0 +1,12 @@
+{
+  "id": "grid-stability-index",
+  "name": "Grid Stability Index Monitor",
+  "category": "infrastructure",
+  "icon": "building-2",
+  "description": "Demo monitor for GridStabilityIndex. Originally from MotoTrack with static SAMPLE_LOCATIONS data. Real-data integration planned for future release.",
+  "dataSource": "Demo (static SAMPLE_LOCATIONS)",
+  "realData": false,
+  "free": true,
+  "accent": "rose",
+  "originalFile": "src/components/map/GridStabilityIndexMonitor.tsx"
+}

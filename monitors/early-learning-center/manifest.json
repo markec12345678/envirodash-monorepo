@@ -1,0 +1,12 @@
+{
+  "id": "early-learning-center",
+  "name": "Early Learning Center Monitor",
+  "category": "services",
+  "icon": "briefcase",
+  "description": "Demo monitor for EarlyLearningCenter. Originally from MotoTrack with static SAMPLE_LOCATIONS data. Real-data integration planned for future release.",
+  "dataSource": "Demo (static SAMPLE_LOCATIONS)",
+  "realData": false,
+  "free": true,
+  "accent": "purple",
+  "originalFile": "src/components/map/EarlyLearningCenterMonitor.tsx"
+}

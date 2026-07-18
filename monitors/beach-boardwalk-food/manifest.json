@@ -1,0 +1,12 @@
+{
+  "id": "beach-boardwalk-food",
+  "name": "Beach Boardwalk Food Monitor",
+  "category": "oceanic",
+  "icon": "waves",
+  "description": "Demo monitor for BeachBoardwalkFood. Originally from MotoTrack with static SAMPLE_LOCATIONS data. Real-data integration planned for future release.",
+  "dataSource": "Demo (static SAMPLE_LOCATIONS)",
+  "realData": false,
+  "free": true,
+  "accent": "green",
+  "originalFile": "src/components/map/BeachBoardwalkFoodMonitor.tsx"
+}

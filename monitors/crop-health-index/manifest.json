@@ -1,0 +1,12 @@
+{
+  "id": "crop-health-index",
+  "name": "Crop Health Index Monitor",
+  "category": "vegetation",
+  "icon": "leaf",
+  "description": "Demo monitor for CropHealthIndex. Originally from MotoTrack with static SAMPLE_LOCATIONS data. Real-data integration planned for future release.",
+  "dataSource": "Demo (static SAMPLE_LOCATIONS)",
+  "realData": false,
+  "free": true,
+  "accent": "rose",
+  "originalFile": "src/components/map/CropHealthIndexMonitor.tsx"
+}

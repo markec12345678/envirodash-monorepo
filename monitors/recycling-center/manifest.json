@@ -1,0 +1,12 @@
+{
+  "id": "recycling-center",
+  "name": "Recycling Center Monitor",
+  "category": "other",
+  "icon": "circle",
+  "description": "Demo monitor for RecyclingCenter. Originally from MotoTrack with static SAMPLE_LOCATIONS data. Real-data integration planned for future release.",
+  "dataSource": "Demo (static SAMPLE_LOCATIONS)",
+  "realData": false,
+  "free": true,
+  "accent": "sky",
+  "originalFile": "src/components/map/RecyclingCenterMonitor.tsx"
+}

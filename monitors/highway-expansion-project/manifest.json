@@ -1,0 +1,12 @@
+{
+  "id": "highway-expansion-project",
+  "name": "Highway Expansion Project Monitor",
+  "category": "other",
+  "icon": "circle",
+  "description": "Demo monitor for HighwayExpansionProject. Originally from MotoTrack with static SAMPLE_LOCATIONS data. Real-data integration planned for future release.",
+  "dataSource": "Demo (static SAMPLE_LOCATIONS)",
+  "realData": false,
+  "free": true,
+  "accent": "fuchsia",
+  "originalFile": "src/components/map/HighwayExpansionProjectMonitor.tsx"
+}

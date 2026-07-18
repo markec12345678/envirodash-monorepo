@@ -1,0 +1,12 @@
+{
+  "id": "roller-derby-venue-bar",
+  "name": "Roller Derby Venue Bar Monitor",
+  "category": "retail",
+  "icon": "shopping-bag",
+  "description": "Demo monitor for RollerDerbyVenueBar. Originally from MotoTrack with static SAMPLE_LOCATIONS data. Real-data integration planned for future release.",
+  "dataSource": "Demo (static SAMPLE_LOCATIONS)",
+  "realData": false,
+  "free": true,
+  "accent": "violet",
+  "originalFile": "src/components/map/RollerDerbyVenueBarMonitor.tsx"
+}

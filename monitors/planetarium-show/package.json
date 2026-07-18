@@ -1,0 +1,21 @@
+{
+  "name": "@envirodash/monitor-planetarium-show",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Demo monitor: PlanetariumShow (originally from MotoTrack, uses static SAMPLE_LOCATIONS)",
+  "main": "./src/PlanetariumShowMonitor.tsx",
+  "exports": {
+    ".": "./src/PlanetariumShowMonitor.tsx",
+    "./manifest": "./manifest.json"
+  },
+  "scripts": {
+    "type-check": "tsc --noEmit",
+    "clean": "rm -rf dist .turbo"
+  },
+  "dependencies": {
+    "@envirodash/core": "*"
+  },
+  "devDependencies": {
+    "typescript": "^5"
+  }
+}

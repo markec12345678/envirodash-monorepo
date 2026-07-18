@@ -1,0 +1,21 @@
+{
+  "name": "@envirodash/monitor-luxury-jewelry-boutique",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Demo monitor: LuxuryJewelryBoutique (originally from MotoTrack, uses static SAMPLE_LOCATIONS)",
+  "main": "./src/LuxuryJewelryBoutiqueMonitor.tsx",
+  "exports": {
+    ".": "./src/LuxuryJewelryBoutiqueMonitor.tsx",
+    "./manifest": "./manifest.json"
+  },
+  "scripts": {
+    "type-check": "tsc --noEmit",
+    "clean": "rm -rf dist .turbo"
+  },
+  "dependencies": {
+    "@envirodash/core": "*"
+  },
+  "devDependencies": {
+    "typescript": "^5"
+  }
+}

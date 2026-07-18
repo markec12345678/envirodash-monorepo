@@ -1,0 +1,12 @@
+{
+  "id": "sporting-goods-chain",
+  "name": "Sporting Goods Chain Monitor",
+  "category": "infrastructure",
+  "icon": "building-2",
+  "description": "Demo monitor for SportingGoodsChain. Originally from MotoTrack with static SAMPLE_LOCATIONS data. Real-data integration planned for future release.",
+  "dataSource": "Demo (static SAMPLE_LOCATIONS)",
+  "realData": false,
+  "free": true,
+  "accent": "sky",
+  "originalFile": "src/components/map/SportingGoodsChainMonitor.tsx"
+}

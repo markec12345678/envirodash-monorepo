@@ -1,0 +1,12 @@
+{
+  "id": "campground-rv-park",
+  "name": "Campground Rv Park Monitor",
+  "category": "recreation",
+  "icon": "trophy",
+  "description": "Demo monitor for CampgroundRvPark. Originally from MotoTrack with static SAMPLE_LOCATIONS data. Real-data integration planned for future release.",
+  "dataSource": "Demo (static SAMPLE_LOCATIONS)",
+  "realData": false,
+  "free": true,
+  "accent": "rose",
+  "originalFile": "src/components/map/CampgroundRvParkMonitor.tsx"
+}

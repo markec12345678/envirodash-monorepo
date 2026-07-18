@@ -1,0 +1,12 @@
+{
+  "id": "comic-book-shop",
+  "name": "Comic Book Shop Monitor",
+  "category": "retail",
+  "icon": "shopping-bag",
+  "description": "Demo monitor for ComicBookShop. Originally from MotoTrack with static SAMPLE_LOCATIONS data. Real-data integration planned for future release.",
+  "dataSource": "Demo (static SAMPLE_LOCATIONS)",
+  "realData": false,
+  "free": true,
+  "accent": "violet",
+  "originalFile": "src/components/map/ComicBookShopMonitor.tsx"
+}

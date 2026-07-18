@@ -1,0 +1,12 @@
+{
+  "id": "water-quality-index",
+  "name": "Water Quality Index Monitor",
+  "category": "hydrology",
+  "icon": "droplets",
+  "description": "Demo monitor for WaterQualityIndex. Originally from MotoTrack with static SAMPLE_LOCATIONS data. Real-data integration planned for future release.",
+  "dataSource": "Demo (static SAMPLE_LOCATIONS)",
+  "realData": false,
+  "free": true,
+  "accent": "stone",
+  "originalFile": "src/components/map/WaterQualityIndexMonitor.tsx"
+}

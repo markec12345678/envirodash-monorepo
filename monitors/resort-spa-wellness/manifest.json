@@ -1,0 +1,12 @@
+{
+  "id": "resort-spa-wellness",
+  "name": "Resort Spa Wellness Monitor",
+  "category": "services",
+  "icon": "briefcase",
+  "description": "Demo monitor for ResortSpaWellness. Originally from MotoTrack with static SAMPLE_LOCATIONS data. Real-data integration planned for future release.",
+  "dataSource": "Demo (static SAMPLE_LOCATIONS)",
+  "realData": false,
+  "free": true,
+  "accent": "fuchsia",
+  "originalFile": "src/components/map/ResortSpaWellnessMonitor.tsx"
+}

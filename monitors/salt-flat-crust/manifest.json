@@ -1,0 +1,12 @@
+{
+  "id": "salt-flat-crust",
+  "name": "Salt Flat Crust Monitor",
+  "category": "oceanic",
+  "icon": "waves",
+  "description": "Demo monitor for SaltFlatCrust. Originally from MotoTrack with static SAMPLE_LOCATIONS data. Real-data integration planned for future release.",
+  "dataSource": "Demo (static SAMPLE_LOCATIONS)",
+  "realData": false,
+  "free": true,
+  "accent": "stone",
+  "originalFile": "src/components/map/SaltFlatCrustMonitor.tsx"
+}

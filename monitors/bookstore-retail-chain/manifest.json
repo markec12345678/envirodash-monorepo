@@ -1,0 +1,12 @@
+{
+  "id": "bookstore-retail-chain",
+  "name": "Bookstore Retail Chain Monitor",
+  "category": "industrial",
+  "icon": "factory",
+  "description": "Demo monitor for BookstoreRetailChain. Originally from MotoTrack with static SAMPLE_LOCATIONS data. Real-data integration planned for future release.",
+  "dataSource": "Demo (static SAMPLE_LOCATIONS)",
+  "realData": false,
+  "free": true,
+  "accent": "red",
+  "originalFile": "src/components/map/BookstoreRetailChainMonitor.tsx"
+}

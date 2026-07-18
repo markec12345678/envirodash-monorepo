@@ -1,0 +1,12 @@
+{
+  "id": "police-station-status",
+  "name": "Police Station Status Monitor",
+  "category": "climate",
+  "icon": "snowflake",
+  "description": "Demo monitor for PoliceStationStatus. Originally from MotoTrack with static SAMPLE_LOCATIONS data. Real-data integration planned for future release.",
+  "dataSource": "Demo (static SAMPLE_LOCATIONS)",
+  "realData": false,
+  "free": true,
+  "accent": "violet",
+  "originalFile": "src/components/map/PoliceStationStatusMonitor.tsx"
+}

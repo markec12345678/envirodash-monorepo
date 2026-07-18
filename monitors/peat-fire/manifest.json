@@ -1,0 +1,12 @@
+{
+  "id": "peat-fire",
+  "name": "Peat Fire Monitor",
+  "category": "disaster",
+  "icon": "flame",
+  "description": "Demo monitor for PeatFire. Originally from MotoTrack with static SAMPLE_LOCATIONS data. Real-data integration planned for future release.",
+  "dataSource": "Demo (static SAMPLE_LOCATIONS)",
+  "realData": false,
+  "free": true,
+  "accent": "pink",
+  "originalFile": "src/components/map/PeatFireMonitor.tsx"
+}

@@ -1,0 +1,12 @@
+{
+  "id": "tv-transmission-tower",
+  "name": "Tv Transmission Tower Monitor",
+  "category": "services",
+  "icon": "briefcase",
+  "description": "Demo monitor for TvTransmissionTower. Originally from MotoTrack with static SAMPLE_LOCATIONS data. Real-data integration planned for future release.",
+  "dataSource": "Demo (static SAMPLE_LOCATIONS)",
+  "realData": false,
+  "free": true,
+  "accent": "sky",
+  "originalFile": "src/components/map/TvTransmissionTowerMonitor.tsx"
+}

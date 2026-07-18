@@ -1,0 +1,12 @@
+{
+  "id": "toy-retail-chain",
+  "name": "Toy Retail Chain Monitor",
+  "category": "infrastructure",
+  "icon": "building-2",
+  "description": "Demo monitor for ToyRetailChain. Originally from MotoTrack with static SAMPLE_LOCATIONS data. Real-data integration planned for future release.",
+  "dataSource": "Demo (static SAMPLE_LOCATIONS)",
+  "realData": false,
+  "free": true,
+  "accent": "cyan",
+  "originalFile": "src/components/map/ToyRetailChainMonitor.tsx"
+}

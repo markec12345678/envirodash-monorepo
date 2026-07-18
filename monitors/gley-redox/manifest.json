@@ -1,0 +1,12 @@
+{
+  "id": "gley-redox",
+  "name": "Gley Redox Monitor",
+  "category": "other",
+  "icon": "circle",
+  "description": "Demo monitor for GleyRedox. Originally from MotoTrack with static SAMPLE_LOCATIONS data. Real-data integration planned for future release.",
+  "dataSource": "Demo (static SAMPLE_LOCATIONS)",
+  "realData": false,
+  "free": true,
+  "accent": "fuchsia",
+  "originalFile": "src/components/map/GleyRedoxMonitor.tsx"
+}

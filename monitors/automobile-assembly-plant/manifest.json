@@ -1,0 +1,12 @@
+{
+  "id": "automobile-assembly-plant",
+  "name": "Automobile Assembly Plant Monitor",
+  "category": "industrial",
+  "icon": "factory",
+  "description": "Demo monitor for AutomobileAssemblyPlant. Originally from MotoTrack with static SAMPLE_LOCATIONS data. Real-data integration planned for future release.",
+  "dataSource": "Demo (static SAMPLE_LOCATIONS)",
+  "realData": false,
+  "free": true,
+  "accent": "violet",
+  "originalFile": "src/components/map/AutomobileAssemblyPlantMonitor.tsx"
+}

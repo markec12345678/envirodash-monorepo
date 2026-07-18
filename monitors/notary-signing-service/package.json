@@ -1,0 +1,21 @@
+{
+  "name": "@envirodash/monitor-notary-signing-service",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Demo monitor: NotarySigningService (originally from MotoTrack, uses static SAMPLE_LOCATIONS)",
+  "main": "./src/NotarySigningServiceMonitor.tsx",
+  "exports": {
+    ".": "./src/NotarySigningServiceMonitor.tsx",
+    "./manifest": "./manifest.json"
+  },
+  "scripts": {
+    "type-check": "tsc --noEmit",
+    "clean": "rm -rf dist .turbo"
+  },
+  "dependencies": {
+    "@envirodash/core": "*"
+  },
+  "devDependencies": {
+    "typescript": "^5"
+  }
+}

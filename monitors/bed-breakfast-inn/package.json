@@ -1,0 +1,21 @@
+{
+  "name": "@envirodash/monitor-bed-breakfast-inn",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Demo monitor: BedBreakfastInn (originally from MotoTrack, uses static SAMPLE_LOCATIONS)",
+  "main": "./src/BedBreakfastInnMonitor.tsx",
+  "exports": {
+    ".": "./src/BedBreakfastInnMonitor.tsx",
+    "./manifest": "./manifest.json"
+  },
+  "scripts": {
+    "type-check": "tsc --noEmit",
+    "clean": "rm -rf dist .turbo"
+  },
+  "dependencies": {
+    "@envirodash/core": "*"
+  },
+  "devDependencies": {
+    "typescript": "^5"
+  }
+}

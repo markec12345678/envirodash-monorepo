@@ -1,0 +1,21 @@
+{
+  "name": "@envirodash/monitor-aquarium-cafe",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Demo monitor: AquariumCafe (originally from MotoTrack, uses static SAMPLE_LOCATIONS)",
+  "main": "./src/AquariumCafeMonitor.tsx",
+  "exports": {
+    ".": "./src/AquariumCafeMonitor.tsx",
+    "./manifest": "./manifest.json"
+  },
+  "scripts": {
+    "type-check": "tsc --noEmit",
+    "clean": "rm -rf dist .turbo"
+  },
+  "dependencies": {
+    "@envirodash/core": "*"
+  },
+  "devDependencies": {
+    "typescript": "^5"
+  }
+}

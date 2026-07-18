@@ -1,0 +1,12 @@
+{
+  "id": "supply-chain-relief",
+  "name": "Supply Chain Relief Monitor",
+  "category": "infrastructure",
+  "icon": "building-2",
+  "description": "Demo monitor for SupplyChainRelief. Originally from MotoTrack with static SAMPLE_LOCATIONS data. Real-data integration planned for future release.",
+  "dataSource": "Demo (static SAMPLE_LOCATIONS)",
+  "realData": false,
+  "free": true,
+  "accent": "teal",
+  "originalFile": "src/components/map/SupplyChainReliefMonitor.tsx"
+}

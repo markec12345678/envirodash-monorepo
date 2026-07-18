@@ -1,0 +1,21 @@
+{
+  "name": "@envirodash/monitor-landslide-susceptibility",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Demo monitor: LandslideSusceptibility (originally from MotoTrack, uses static SAMPLE_LOCATIONS)",
+  "main": "./src/LandslideSusceptibilityMonitor.tsx",
+  "exports": {
+    ".": "./src/LandslideSusceptibilityMonitor.tsx",
+    "./manifest": "./manifest.json"
+  },
+  "scripts": {
+    "type-check": "tsc --noEmit",
+    "clean": "rm -rf dist .turbo"
+  },
+  "dependencies": {
+    "@envirodash/core": "*"
+  },
+  "devDependencies": {
+    "typescript": "^5"
+  }
+}

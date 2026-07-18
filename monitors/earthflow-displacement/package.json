@@ -1,0 +1,21 @@
+{
+  "name": "@envirodash/monitor-earthflow-displacement",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Demo monitor: EarthflowDisplacement (originally from MotoTrack, uses static SAMPLE_LOCATIONS)",
+  "main": "./src/EarthflowDisplacementMonitor.tsx",
+  "exports": {
+    ".": "./src/EarthflowDisplacementMonitor.tsx",
+    "./manifest": "./manifest.json"
+  },
+  "scripts": {
+    "type-check": "tsc --noEmit",
+    "clean": "rm -rf dist .turbo"
+  },
+  "dependencies": {
+    "@envirodash/core": "*"
+  },
+  "devDependencies": {
+    "typescript": "^5"
+  }
+}

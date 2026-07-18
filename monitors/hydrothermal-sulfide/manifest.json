@@ -1,0 +1,12 @@
+{
+  "id": "hydrothermal-sulfide",
+  "name": "Hydrothermal Sulfide Monitor",
+  "category": "hydrology",
+  "icon": "droplets",
+  "description": "Demo monitor for HydrothermalSulfide. Originally from MotoTrack with static SAMPLE_LOCATIONS data. Real-data integration planned for future release.",
+  "dataSource": "Demo (static SAMPLE_LOCATIONS)",
+  "realData": false,
+  "free": true,
+  "accent": "emerald",
+  "originalFile": "src/components/map/HydrothermalSulfideMonitor.tsx"
+}

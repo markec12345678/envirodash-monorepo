@@ -1,0 +1,12 @@
+{
+  "id": "military-training-range",
+  "name": "Military Training Range Monitor",
+  "category": "weather",
+  "icon": "cloud-sun",
+  "description": "Demo monitor for MilitaryTrainingRange. Originally from MotoTrack with static SAMPLE_LOCATIONS data. Real-data integration planned for future release.",
+  "dataSource": "Demo (static SAMPLE_LOCATIONS)",
+  "realData": false,
+  "free": true,
+  "accent": "emerald",
+  "originalFile": "src/components/map/MilitaryTrainingRangeMonitor.tsx"
+}

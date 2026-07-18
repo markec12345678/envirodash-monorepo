@@ -1,0 +1,12 @@
+{
+  "id": "iceberg-tracker",
+  "name": "Iceberg Tracker Monitor",
+  "category": "climate",
+  "icon": "snowflake",
+  "description": "Demo monitor for IcebergTracker. Originally from MotoTrack with static SAMPLE_LOCATIONS data. Real-data integration planned for future release.",
+  "dataSource": "Demo (static SAMPLE_LOCATIONS)",
+  "realData": false,
+  "free": true,
+  "accent": "teal",
+  "originalFile": "src/components/map/IcebergTrackerMonitor.tsx"
+}

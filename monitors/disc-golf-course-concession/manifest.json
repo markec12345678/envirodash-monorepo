@@ -1,0 +1,12 @@
+{
+  "id": "disc-golf-course-concession",
+  "name": "Disc Golf Course Concession Monitor",
+  "category": "recreation",
+  "icon": "trophy",
+  "description": "Demo monitor for DiscGolfCourseConcession. Originally from MotoTrack with static SAMPLE_LOCATIONS data. Real-data integration planned for future release.",
+  "dataSource": "Demo (static SAMPLE_LOCATIONS)",
+  "realData": false,
+  "free": true,
+  "accent": "cyan",
+  "originalFile": "src/components/map/DiscGolfCourseConcessionMonitor.tsx"
+}

@@ -1,0 +1,12 @@
+{
+  "id": "laser-tag-arena-snack-bar",
+  "name": "Laser Tag Arena Snack Bar Monitor",
+  "category": "retail",
+  "icon": "shopping-bag",
+  "description": "Demo monitor for LaserTagArenaSnackBar. Originally from MotoTrack with static SAMPLE_LOCATIONS data. Real-data integration planned for future release.",
+  "dataSource": "Demo (static SAMPLE_LOCATIONS)",
+  "realData": false,
+  "free": true,
+  "accent": "yellow",
+  "originalFile": "src/components/map/LaserTagArenaSnackBarMonitor.tsx"
+}

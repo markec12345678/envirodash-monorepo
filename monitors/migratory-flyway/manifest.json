@@ -1,0 +1,12 @@
+{
+  "id": "migratory-flyway",
+  "name": "Migratory Flyway Monitor",
+  "category": "wildlife",
+  "icon": "bird",
+  "description": "Demo monitor for MigratoryFlyway. Originally from MotoTrack with static SAMPLE_LOCATIONS data. Real-data integration planned for future release.",
+  "dataSource": "Demo (static SAMPLE_LOCATIONS)",
+  "realData": false,
+  "free": true,
+  "accent": "stone",
+  "originalFile": "src/components/map/MigratoryFlywayMonitor.tsx"
+}

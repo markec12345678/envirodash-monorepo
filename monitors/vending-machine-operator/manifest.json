@@ -1,0 +1,12 @@
+{
+  "id": "vending-machine-operator",
+  "name": "Vending Machine Operator Monitor",
+  "category": "other",
+  "icon": "circle",
+  "description": "Demo monitor for VendingMachineOperator. Originally from MotoTrack with static SAMPLE_LOCATIONS data. Real-data integration planned for future release.",
+  "dataSource": "Demo (static SAMPLE_LOCATIONS)",
+  "realData": false,
+  "free": true,
+  "accent": "emerald",
+  "originalFile": "src/components/map/VendingMachineOperatorMonitor.tsx"
+}

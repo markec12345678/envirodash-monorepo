@@ -1,0 +1,12 @@
+{
+  "id": "national-park-lodge",
+  "name": "National Park Lodge Monitor",
+  "category": "services",
+  "icon": "briefcase",
+  "description": "Demo monitor for NationalParkLodge. Originally from MotoTrack with static SAMPLE_LOCATIONS data. Real-data integration planned for future release.",
+  "dataSource": "Demo (static SAMPLE_LOCATIONS)",
+  "realData": false,
+  "free": true,
+  "accent": "violet",
+  "originalFile": "src/components/map/NationalParkLodgeMonitor.tsx"
+}

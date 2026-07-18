@@ -1,0 +1,21 @@
+{
+  "name": "@envirodash/monitor-desertification-front",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Demo monitor: DesertificationFront (originally from MotoTrack, uses static SAMPLE_LOCATIONS)",
+  "main": "./src/DesertificationFrontMonitor.tsx",
+  "exports": {
+    ".": "./src/DesertificationFrontMonitor.tsx",
+    "./manifest": "./manifest.json"
+  },
+  "scripts": {
+    "type-check": "tsc --noEmit",
+    "clean": "rm -rf dist .turbo"
+  },
+  "dependencies": {
+    "@envirodash/core": "*"
+  },
+  "devDependencies": {
+    "typescript": "^5"
+  }
+}

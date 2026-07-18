@@ -1,0 +1,12 @@
+{
+  "id": "harvest-yield-predict",
+  "name": "Harvest Yield Predict Monitor",
+  "category": "vegetation",
+  "icon": "leaf",
+  "description": "Demo monitor for HarvestYieldPredict. Originally from MotoTrack with static SAMPLE_LOCATIONS data. Real-data integration planned for future release.",
+  "dataSource": "Demo (static SAMPLE_LOCATIONS)",
+  "realData": false,
+  "free": true,
+  "accent": "orange",
+  "originalFile": "src/components/map/HarvestYieldPredictMonitor.tsx"
+}

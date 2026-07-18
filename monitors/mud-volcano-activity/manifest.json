@@ -1,0 +1,12 @@
+{
+  "id": "mud-volcano-activity",
+  "name": "Mud Volcano Activity Monitor",
+  "category": "geological",
+  "icon": "mountain",
+  "description": "Demo monitor for MudVolcanoActivity. Originally from MotoTrack with static SAMPLE_LOCATIONS data. Real-data integration planned for future release.",
+  "dataSource": "Demo (static SAMPLE_LOCATIONS)",
+  "realData": false,
+  "free": true,
+  "accent": "yellow",
+  "originalFile": "src/components/map/MudVolcanoActivityMonitor.tsx"
+}

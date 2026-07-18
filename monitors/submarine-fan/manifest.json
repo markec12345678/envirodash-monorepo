@@ -1,0 +1,12 @@
+{
+  "id": "submarine-fan",
+  "name": "Submarine Fan Monitor",
+  "category": "oceanic",
+  "icon": "waves",
+  "description": "Demo monitor for SubmarineFan. Originally from MotoTrack with static SAMPLE_LOCATIONS data. Real-data integration planned for future release.",
+  "dataSource": "Demo (static SAMPLE_LOCATIONS)",
+  "realData": false,
+  "free": true,
+  "accent": "purple",
+  "originalFile": "src/components/map/SubmarineFanMonitor.tsx"
+}

@@ -1,0 +1,12 @@
+{
+  "id": "glacier-surge-event",
+  "name": "Glacier Surge Event Monitor",
+  "category": "climate",
+  "icon": "snowflake",
+  "description": "Demo monitor for GlacierSurgeEvent. Originally from MotoTrack with static SAMPLE_LOCATIONS data. Real-data integration planned for future release.",
+  "dataSource": "Demo (static SAMPLE_LOCATIONS)",
+  "realData": false,
+  "free": true,
+  "accent": "amber",
+  "originalFile": "src/components/map/GlacierSurgeEventMonitor.tsx"
+}

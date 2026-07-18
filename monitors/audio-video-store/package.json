@@ -1,0 +1,21 @@
+{
+  "name": "@envirodash/monitor-audio-video-store",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Demo monitor: AudioVideoStore (originally from MotoTrack, uses static SAMPLE_LOCATIONS)",
+  "main": "./src/AudioVideoStoreMonitor.tsx",
+  "exports": {
+    ".": "./src/AudioVideoStoreMonitor.tsx",
+    "./manifest": "./manifest.json"
+  },
+  "scripts": {
+    "type-check": "tsc --noEmit",
+    "clean": "rm -rf dist .turbo"
+  },
+  "dependencies": {
+    "@envirodash/core": "*"
+  },
+  "devDependencies": {
+    "typescript": "^5"
+  }
+}

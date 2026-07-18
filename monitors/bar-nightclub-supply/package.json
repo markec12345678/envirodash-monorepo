@@ -1,0 +1,21 @@
+{
+  "name": "@envirodash/monitor-bar-nightclub-supply",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Demo monitor: BarNightclubSupply (originally from MotoTrack, uses static SAMPLE_LOCATIONS)",
+  "main": "./src/BarNightclubSupplyMonitor.tsx",
+  "exports": {
+    ".": "./src/BarNightclubSupplyMonitor.tsx",
+    "./manifest": "./manifest.json"
+  },
+  "scripts": {
+    "type-check": "tsc --noEmit",
+    "clean": "rm -rf dist .turbo"
+  },
+  "dependencies": {
+    "@envirodash/core": "*"
+  },
+  "devDependencies": {
+    "typescript": "^5"
+  }
+}

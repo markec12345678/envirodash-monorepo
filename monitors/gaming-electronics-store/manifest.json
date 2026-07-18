@@ -1,0 +1,12 @@
+{
+  "id": "gaming-electronics-store",
+  "name": "Gaming Electronics Store Monitor",
+  "category": "industrial",
+  "icon": "factory",
+  "description": "Demo monitor for GamingElectronicsStore. Originally from MotoTrack with static SAMPLE_LOCATIONS data. Real-data integration planned for future release.",
+  "dataSource": "Demo (static SAMPLE_LOCATIONS)",
+  "realData": false,
+  "free": true,
+  "accent": "stone",
+  "originalFile": "src/components/map/GamingElectronicsStoreMonitor.tsx"
+}

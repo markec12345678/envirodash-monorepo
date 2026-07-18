@@ -1,0 +1,12 @@
+{
+  "id": "reef-health",
+  "name": "Reef Health Monitor",
+  "category": "oceanic",
+  "icon": "waves",
+  "description": "Demo monitor for ReefHealth. Originally from MotoTrack with static SAMPLE_LOCATIONS data. Real-data integration planned for future release.",
+  "dataSource": "Demo (static SAMPLE_LOCATIONS)",
+  "realData": false,
+  "free": true,
+  "accent": "yellow",
+  "originalFile": "src/components/map/ReefHealthMonitor.tsx"
+}

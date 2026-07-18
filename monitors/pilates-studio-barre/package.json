@@ -1,0 +1,21 @@
+{
+  "name": "@envirodash/monitor-pilates-studio-barre",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Demo monitor: PilatesStudioBarre (originally from MotoTrack, uses static SAMPLE_LOCATIONS)",
+  "main": "./src/PilatesStudioBarreMonitor.tsx",
+  "exports": {
+    ".": "./src/PilatesStudioBarreMonitor.tsx",
+    "./manifest": "./manifest.json"
+  },
+  "scripts": {
+    "type-check": "tsc --noEmit",
+    "clean": "rm -rf dist .turbo"
+  },
+  "dependencies": {
+    "@envirodash/core": "*"
+  },
+  "devDependencies": {
+    "typescript": "^5"
+  }
+}

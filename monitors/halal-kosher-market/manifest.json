@@ -1,0 +1,12 @@
+{
+  "id": "halal-kosher-market",
+  "name": "Halal Kosher Market Monitor",
+  "category": "retail",
+  "icon": "shopping-bag",
+  "description": "Demo monitor for HalalKosherMarket. Originally from MotoTrack with static SAMPLE_LOCATIONS data. Real-data integration planned for future release.",
+  "dataSource": "Demo (static SAMPLE_LOCATIONS)",
+  "realData": false,
+  "free": true,
+  "accent": "emerald",
+  "originalFile": "src/components/map/HalalKosherMarketMonitor.tsx"
+}

@@ -1,0 +1,12 @@
+{
+  "id": "national-park-visitor",
+  "name": "National Park Visitor Monitor",
+  "category": "recreation",
+  "icon": "trophy",
+  "description": "Demo monitor for NationalParkVisitor. Originally from MotoTrack with static SAMPLE_LOCATIONS data. Real-data integration planned for future release.",
+  "dataSource": "Demo (static SAMPLE_LOCATIONS)",
+  "realData": false,
+  "free": true,
+  "accent": "purple",
+  "originalFile": "src/components/map/NationalParkVisitorMonitor.tsx"
+}

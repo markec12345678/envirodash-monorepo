@@ -1,0 +1,12 @@
+{
+  "id": "volcanic-gas-emission",
+  "name": "Volcanic Gas Emission Monitor",
+  "category": "infrastructure",
+  "icon": "building-2",
+  "description": "Demo monitor for VolcanicGasEmission. Originally from MotoTrack with static SAMPLE_LOCATIONS data. Real-data integration planned for future release.",
+  "dataSource": "Demo (static SAMPLE_LOCATIONS)",
+  "realData": false,
+  "free": true,
+  "accent": "sky",
+  "originalFile": "src/components/map/VolcanicGasEmissionMonitor.tsx"
+}

@@ -1,0 +1,12 @@
+{
+  "id": "soil-creep-rate",
+  "name": "Soil Creep Rate Monitor",
+  "category": "vegetation",
+  "icon": "leaf",
+  "description": "Demo monitor for SoilCreepRate. Originally from MotoTrack with static SAMPLE_LOCATIONS data. Real-data integration planned for future release.",
+  "dataSource": "Demo (static SAMPLE_LOCATIONS)",
+  "realData": false,
+  "free": true,
+  "accent": "violet",
+  "originalFile": "src/components/map/SoilCreepRateMonitor.tsx"
+}

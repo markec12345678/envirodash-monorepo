@@ -1,0 +1,12 @@
+{
+  "id": "natural-gas-terminal",
+  "name": "Natural Gas Terminal Monitor",
+  "category": "infrastructure",
+  "icon": "building-2",
+  "description": "Demo monitor for NaturalGasTerminal. Originally from MotoTrack with static SAMPLE_LOCATIONS data. Real-data integration planned for future release.",
+  "dataSource": "Demo (static SAMPLE_LOCATIONS)",
+  "realData": false,
+  "free": true,
+  "accent": "cyan",
+  "originalFile": "src/components/map/NaturalGasTerminalMonitor.tsx"
+}

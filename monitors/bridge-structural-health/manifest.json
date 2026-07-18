@@ -1,0 +1,12 @@
+{
+  "id": "bridge-structural-health",
+  "name": "Bridge Structural Health Monitor",
+  "category": "services",
+  "icon": "briefcase",
+  "description": "Demo monitor for BridgeStructuralHealth. Originally from MotoTrack with static SAMPLE_LOCATIONS data. Real-data integration planned for future release.",
+  "dataSource": "Demo (static SAMPLE_LOCATIONS)",
+  "realData": false,
+  "free": true,
+  "accent": "fuchsia",
+  "originalFile": "src/components/map/BridgeStructuralHealthMonitor.tsx"
+}

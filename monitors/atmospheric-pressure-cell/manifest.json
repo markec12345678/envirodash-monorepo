@@ -1,0 +1,12 @@
+{
+  "id": "atmospheric-pressure-cell",
+  "name": "Atmospheric Pressure Cell Monitor",
+  "category": "atmospheric",
+  "icon": "wind",
+  "description": "Demo monitor for AtmosphericPressureCell. Originally from MotoTrack with static SAMPLE_LOCATIONS data. Real-data integration planned for future release.",
+  "dataSource": "Demo (static SAMPLE_LOCATIONS)",
+  "realData": false,
+  "free": true,
+  "accent": "yellow",
+  "originalFile": "src/components/map/AtmosphericPressureCellMonitor.tsx"
+}

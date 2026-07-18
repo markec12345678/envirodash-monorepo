@@ -1,0 +1,12 @@
+{
+  "id": "lego-brand-store",
+  "name": "Lego Brand Store Monitor",
+  "category": "industrial",
+  "icon": "factory",
+  "description": "Demo monitor for LegoBrandStore. Originally from MotoTrack with static SAMPLE_LOCATIONS data. Real-data integration planned for future release.",
+  "dataSource": "Demo (static SAMPLE_LOCATIONS)",
+  "realData": false,
+  "free": true,
+  "accent": "amber",
+  "originalFile": "src/components/map/LegoBrandStoreMonitor.tsx"
+}

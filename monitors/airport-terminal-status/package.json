@@ -1,0 +1,21 @@
+{
+  "name": "@envirodash/monitor-airport-terminal-status",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Demo monitor: AirportTerminalStatus (originally from MotoTrack, uses static SAMPLE_LOCATIONS)",
+  "main": "./src/AirportTerminalStatusMonitor.tsx",
+  "exports": {
+    ".": "./src/AirportTerminalStatusMonitor.tsx",
+    "./manifest": "./manifest.json"
+  },
+  "scripts": {
+    "type-check": "tsc --noEmit",
+    "clean": "rm -rf dist .turbo"
+  },
+  "dependencies": {
+    "@envirodash/core": "*"
+  },
+  "devDependencies": {
+    "typescript": "^5"
+  }
+}

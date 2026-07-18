@@ -1,0 +1,12 @@
+{
+  "id": "waste-collection-route",
+  "name": "Waste Collection Route Monitor",
+  "category": "other",
+  "icon": "circle",
+  "description": "Demo monitor for WasteCollectionRoute. Originally from MotoTrack with static SAMPLE_LOCATIONS data. Real-data integration planned for future release.",
+  "dataSource": "Demo (static SAMPLE_LOCATIONS)",
+  "realData": false,
+  "free": true,
+  "accent": "cyan",
+  "originalFile": "src/components/map/WasteCollectionRouteMonitor.tsx"
+}

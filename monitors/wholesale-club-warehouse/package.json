@@ -1,0 +1,21 @@
+{
+  "name": "@envirodash/monitor-wholesale-club-warehouse",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Demo monitor: WholesaleClubWarehouse (originally from MotoTrack, uses static SAMPLE_LOCATIONS)",
+  "main": "./src/WholesaleClubWarehouseMonitor.tsx",
+  "exports": {
+    ".": "./src/WholesaleClubWarehouseMonitor.tsx",
+    "./manifest": "./manifest.json"
+  },
+  "scripts": {
+    "type-check": "tsc --noEmit",
+    "clean": "rm -rf dist .turbo"
+  },
+  "dependencies": {
+    "@envirodash/core": "*"
+  },
+  "devDependencies": {
+    "typescript": "^5"
+  }
+}

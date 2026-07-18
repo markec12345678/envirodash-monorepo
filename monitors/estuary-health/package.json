@@ -1,0 +1,21 @@
+{
+  "name": "@envirodash/monitor-estuary-health",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Demo monitor: EstuaryHealth (originally from MotoTrack, uses static SAMPLE_LOCATIONS)",
+  "main": "./src/EstuaryHealthMonitor.tsx",
+  "exports": {
+    ".": "./src/EstuaryHealthMonitor.tsx",
+    "./manifest": "./manifest.json"
+  },
+  "scripts": {
+    "type-check": "tsc --noEmit",
+    "clean": "rm -rf dist .turbo"
+  },
+  "dependencies": {
+    "@envirodash/core": "*"
+  },
+  "devDependencies": {
+    "typescript": "^5"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "id": "salt-marsh-carbon",
+  "name": "Salt Marsh Carbon Monitor",
+  "category": "atmospheric",
+  "icon": "wind",
+  "description": "Demo monitor for SaltMarshCarbon. Originally from MotoTrack with static SAMPLE_LOCATIONS data. Real-data integration planned for future release.",
+  "dataSource": "Demo (static SAMPLE_LOCATIONS)",
+  "realData": false,
+  "free": true,
+  "accent": "emerald",
+  "originalFile": "src/components/map/SaltMarshCarbonMonitor.tsx"
+}

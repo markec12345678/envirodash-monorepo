@@ -1,0 +1,12 @@
+{
+  "id": "tidal-energy",
+  "name": "Tidal Energy Monitor",
+  "category": "infrastructure",
+  "icon": "building-2",
+  "description": "Demo monitor for TidalEnergy. Originally from MotoTrack with static SAMPLE_LOCATIONS data. Real-data integration planned for future release.",
+  "dataSource": "Demo (static SAMPLE_LOCATIONS)",
+  "realData": false,
+  "free": true,
+  "accent": "orange",
+  "originalFile": "src/components/map/TidalEnergyMonitor.tsx"
+}

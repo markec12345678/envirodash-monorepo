@@ -1,0 +1,12 @@
+{
+  "id": "air-force-base",
+  "name": "Air Force Base Monitor",
+  "category": "atmospheric",
+  "icon": "wind",
+  "description": "Demo monitor for AirForceBase. Originally from MotoTrack with static SAMPLE_LOCATIONS data. Real-data integration planned for future release.",
+  "dataSource": "Demo (static SAMPLE_LOCATIONS)",
+  "realData": false,
+  "free": true,
+  "accent": "purple",
+  "originalFile": "src/components/map/AirForceBaseMonitor.tsx"
+}

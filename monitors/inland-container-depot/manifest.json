@@ -1,0 +1,12 @@
+{
+  "id": "inland-container-depot",
+  "name": "Inland Container Depot Monitor",
+  "category": "other",
+  "icon": "circle",
+  "description": "Demo monitor for InlandContainerDepot. Originally from MotoTrack with static SAMPLE_LOCATIONS data. Real-data integration planned for future release.",
+  "dataSource": "Demo (static SAMPLE_LOCATIONS)",
+  "realData": false,
+  "free": true,
+  "accent": "pink",
+  "originalFile": "src/components/map/InlandContainerDepotMonitor.tsx"
+}

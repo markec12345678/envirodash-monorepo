@@ -1,0 +1,12 @@
+{
+  "id": "cruise-port-activity",
+  "name": "Cruise Port Activity Monitor",
+  "category": "infrastructure",
+  "icon": "building-2",
+  "description": "Demo monitor for CruisePortActivity. Originally from MotoTrack with static SAMPLE_LOCATIONS data. Real-data integration planned for future release.",
+  "dataSource": "Demo (static SAMPLE_LOCATIONS)",
+  "realData": false,
+  "free": true,
+  "accent": "pink",
+  "originalFile": "src/components/map/CruisePortActivityMonitor.tsx"
+}
