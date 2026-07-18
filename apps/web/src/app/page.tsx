@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, lazy, Suspense } from 'react'
-import { Activity, Wind, Flame, Waves, Mountain, CloudSun, Snowflake, Fish, Droplets, Sun, Globe, Sparkles, Store, Shield, FileText, Map, Download, Layout, Key, BarChart3, Webhook, Mail, MessageSquare, Eye } from 'lucide-react'
+import { Activity, Wind, Flame, Waves, Mountain, CloudSun, Snowflake, Fish, Droplets, Sun, Globe, Sparkles, Store, Shield, FileText, Map, Download, Layout, Key, BarChart3, Webhook, Mail, MessageSquare, Eye, Code2 } from 'lucide-react'
 import { AIAssistant } from './_components/AIAssistant'
 import { UserMenuWrapper } from './_components/UserMenu'
 import { Marketplace } from './_components/Marketplace'
@@ -17,6 +17,7 @@ import { WebhookManager } from './_components/WebhookManager'
 import { EmailSubscriptionManager } from './_components/EmailSubscriptionManager'
 import { ChatPanel } from './_components/ChatPanel'
 import { VisionAnalyzer } from './_components/VisionAnalyzer'
+import { MonitorCodeEditor } from './_components/MonitorCodeEditor'
 import { useLanguage } from './_components/LanguageProvider'
 
 // Lazy-load monitor packages — only the active monitor is compiled and shipped
@@ -80,6 +81,7 @@ export default function Home() {
   const [showEmailSubs, setShowEmailSubs] = useState(false)
   const [showChat, setShowChat] = useState(false)
   const [showVision, setShowVision] = useState(false)
+  const [showCodeEditor, setShowCodeEditor] = useState(false)
   const [aiQuery, setAiQuery] = useState<{ monitor: MonitorId; params: any } | null>(null)
 
   // When AI assistant returns an action, set the active monitor
@@ -203,6 +205,14 @@ export default function Home() {
             >
               <Store className="h-4 w-4" />
               <span className="hidden sm:inline">{t('btn.marketplace')}</span>
+            </button>
+            <button
+              onClick={() => setShowCodeEditor(true)}
+              className="flex items-center gap-2 rounded-lg bg-zinc-900 px-3 py-1.5 text-xs font-medium text-white hover:bg-zinc-700 dark:bg-zinc-100 dark:text-zinc-900"
+              title="Create your own monitor"
+            >
+              <Code2 className="h-4 w-4" />
+              <span className="hidden sm:inline">Create</span>
             </button>
             <button
               onClick={() => setShowAI(!showAI)}
@@ -352,6 +362,11 @@ export default function Home() {
       {/* AI Vision Analyzer */}
       {showVision && (
         <VisionAnalyzer onClose={() => setShowVision(false)} />
+      )}
+
+      {/* Monitor Code Editor */}
+      {showCodeEditor && (
+        <MonitorCodeEditor onClose={() => setShowCodeEditor(false)} />
       )}
 
       {/* Footer */}

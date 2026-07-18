@@ -249,6 +249,11 @@ async function pollAlerts() {
     recentAlerts.unshift(alert)
     console.log(`[Alerts] NEW ${alert.severity.toUpperCase()} ${alert.type}: ${alert.title}`)
     io.to('subscribed').emit('alert', alert)
+
+    // Trigger multi-channel notifications (push, email, webhooks)
+    notifyChannels(alert).catch((e) => {
+      console.error(`[Alerts] Channel notification failed:`, e.message)
+    })
   }
 
   // Trim recent alerts
@@ -270,12 +275,78 @@ async function pollAlerts() {
   }
 }
 
+/**
+ * Send alert via all notification channels:
+ * 1. Mobile push (Expo)
+ * 2. Email (SMTP)
+ * 3. Webhooks (HMAC signed)
+ */
+async function notifyChannels(alert: Alert): Promise<void> {
+  const INTERNAL_KEY = process.env.INTERNAL_API_KEY || 'envirodash-internal'
+
+  const promises: Promise<any>[] = []
+
+  // 1. Push notifications
+  promises.push(
+    fetch(`${WEB_API_URL}/api/push/send`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'x-internal-api-key': INTERNAL_KEY,
+      },
+      body: JSON.stringify(alert),
+    })
+      .then((r) => r.json())
+      .then((data) => {
+        if (data.sent > 0) console.log(`[Alerts] Push: ${data.sent} sent, ${data.failed} failed`)
+      })
+      .catch((e) => console.error(`[Alerts] Push failed:`, e.message))
+  )
+
+  // 2. Email notifications
+  promises.push(
+    fetch(`${WEB_API_URL}/api/email/send`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'x-internal-api-key': INTERNAL_KEY,
+      },
+      body: JSON.stringify(alert),
+    })
+      .then((r) => r.json())
+      .then((data) => {
+        if (data.sent > 0) console.log(`[Alerts] Email: ${data.sent} sent, ${data.failed} failed`)
+      })
+      .catch((e) => console.error(`[Alerts] Email failed:`, e.message))
+  )
+
+  // 3. Webhooks
+  promises.push(
+    fetch(`${WEB_API_URL}/api/webhooks/trigger`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'x-internal-api-key': INTERNAL_KEY,
+      },
+      body: JSON.stringify(alert),
+    })
+      .then((r) => r.json())
+      .then((data) => {
+        if (data.triggered > 0) console.log(`[Alerts] Webhooks: ${data.triggered} triggered, ${data.succeeded} succeeded`)
+      })
+      .catch((e) => console.error(`[Alerts] Webhooks failed:`, e.message))
+  )
+
+  await Promise.allSettled(promises)
+}
+
 httpServer.listen(PORT, () => {
   console.log(`🌍 EnviroDash Alerts WebSocket Service`)
   console.log(`   Listening on http://localhost:${PORT}`)
   console.log(`   Web API: ${WEB_API_URL}`)
   console.log(`   Poll interval: ${POLL_INTERVAL_MS / 1000}s`)
   console.log(`   Socket.IO path: /socket.io`)
+  console.log(`   Notification channels: WebSocket + Push + Email + Webhooks`)
   console.log()
   // Initial poll
   setTimeout(pollAlerts, 2000)
