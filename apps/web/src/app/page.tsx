@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, lazy, Suspense } from 'react'
-import { Activity, Wind, Flame, Waves, Mountain, CloudSun, Snowflake, Fish, Droplets, Sun, Globe, Sparkles, Store, Shield } from 'lucide-react'
+import { Activity, Wind, Flame, Waves, Mountain, CloudSun, Snowflake, Fish, Droplets, Sun, Globe, Sparkles, Store, Shield, FileText } from 'lucide-react'
 import { AIAssistant } from './_components/AIAssistant'
 import { UserMenuWrapper } from './_components/UserMenu'
 import { Marketplace } from './_components/Marketplace'
@@ -86,6 +86,16 @@ export default function Home() {
           </div>
           <div className="flex items-center gap-3">
             <AlertCenter />
+            <a
+              href="/api/report?lat=46.0569&lng=14.5058&name=Ljubljana&days=7"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 rounded-lg bg-amber-100 px-3 py-1.5 text-xs font-medium text-amber-700 hover:bg-amber-200 dark:bg-amber-950/50 dark:text-amber-300"
+              title="Download Ljubljana environmental report (PDF)"
+            >
+              <FileText className="h-4 w-4" />
+              <span className="hidden sm:inline">PDF Report</span>
+            </a>
             <button
               onClick={() => setShowGeofences(!showGeofences)}
               className={`flex items-center gap-2 rounded-lg px-3 py-1.5 text-xs font-medium transition-colors ${
