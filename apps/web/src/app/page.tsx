@@ -3,6 +3,7 @@
 import { useState, lazy, Suspense } from 'react'
 import { Activity, Wind, Flame, Waves, Mountain, CloudSun, Snowflake, Fish, Droplets, Sun, Globe, Sparkles } from 'lucide-react'
 import { AIAssistant } from './_components/AIAssistant'
+import { UserMenuWrapper } from './_components/UserMenu'
 
 // Lazy-load monitor packages — only the active monitor is compiled and shipped
 const AirQualityMonitor = lazy(() => import('@envirodash/monitor-air-quality').then((m) => ({ default: m.AirQualityMonitor })))
@@ -90,6 +91,7 @@ export default function Home() {
               <Sparkles className="h-4 w-4" />
               AI Assistant
             </button>
+            <UserMenuWrapper />
             <div className="hidden text-xs text-zinc-500 md:block">
               {MONITORS.filter((m) => m.realData).length} real-data monitors · {MONITORS.length} total
             </div>

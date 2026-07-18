@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import './globals.css'
+import { Providers } from './_components/Providers'
 
 export const metadata: Metadata = {
   title: 'EnviroDash — Real-time Environmental Monitoring',
@@ -25,7 +26,9 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className="antialiased bg-background text-foreground">{children}</body>
+      <body className="antialiased bg-background text-foreground">
+        <Providers>{children}</Providers>
+      </body>
     </html>
   )
 }
