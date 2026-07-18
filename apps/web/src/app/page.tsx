@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, lazy, Suspense } from 'react'
-import { Activity, Wind, Flame, Waves, Mountain, CloudSun, Snowflake, Fish, Droplets, Sun, Globe, Sparkles, Store, Shield, FileText, Map, Download, Layout, Key, BarChart3, Webhook, Mail, MessageSquare } from 'lucide-react'
+import { Activity, Wind, Flame, Waves, Mountain, CloudSun, Snowflake, Fish, Droplets, Sun, Globe, Sparkles, Store, Shield, FileText, Map, Download, Layout, Key, BarChart3, Webhook, Mail, MessageSquare, Eye } from 'lucide-react'
 import { AIAssistant } from './_components/AIAssistant'
 import { UserMenuWrapper } from './_components/UserMenu'
 import { Marketplace } from './_components/Marketplace'
@@ -16,6 +16,7 @@ import { AnalyticsDashboard } from './_components/AnalyticsDashboard'
 import { WebhookManager } from './_components/WebhookManager'
 import { EmailSubscriptionManager } from './_components/EmailSubscriptionManager'
 import { ChatPanel } from './_components/ChatPanel'
+import { VisionAnalyzer } from './_components/VisionAnalyzer'
 import { useLanguage } from './_components/LanguageProvider'
 
 // Lazy-load monitor packages — only the active monitor is compiled and shipped
@@ -78,6 +79,7 @@ export default function Home() {
   const [showWebhooks, setShowWebhooks] = useState(false)
   const [showEmailSubs, setShowEmailSubs] = useState(false)
   const [showChat, setShowChat] = useState(false)
+  const [showVision, setShowVision] = useState(false)
   const [aiQuery, setAiQuery] = useState<{ monitor: MonitorId; params: any } | null>(null)
 
   // When AI assistant returns an action, set the active monitor
@@ -213,6 +215,18 @@ export default function Home() {
               <Sparkles className="h-4 w-4" />
               <span className="hidden sm:inline">{t('btn.ai')}</span>
             </button>
+            <button
+              onClick={() => setShowVision(!showVision)}
+              className={`flex items-center gap-2 rounded-lg px-3 py-1.5 text-xs font-medium transition-colors ${
+                showVision
+                  ? 'bg-fuchsia-600 text-white'
+                  : 'bg-fuchsia-100 text-fuchsia-700 hover:bg-fuchsia-200 dark:bg-fuchsia-950/50 dark:text-fuchsia-300'
+              }`}
+              title="AI satellite imagery analysis"
+            >
+              <Eye className="h-4 w-4" />
+              <span className="hidden sm:inline">Vision</span>
+            </button>
             <UserMenuWrapper />
             <div className="hidden text-xs text-zinc-500 md:block">
               {MONITORS.filter((m) => m.realData).length} {t('app.realMonitors')} · {MONITORS.length} {t('app.totalMonitors')}
@@ -333,6 +347,11 @@ export default function Home() {
       {/* Community Chat */}
       {showChat && (
         <ChatPanel onClose={() => setShowChat(false)} />
+      )}
+
+      {/* AI Vision Analyzer */}
+      {showVision && (
+        <VisionAnalyzer onClose={() => setShowVision(false)} />
       )}
 
       {/* Footer */}
