@@ -27,6 +27,7 @@ import { OnboardingWizard } from './_components/OnboardingWizard'
 import { SettingsPanel } from './_components/SettingsPanel'
 import { GlobalSearch } from './_components/GlobalSearch'
 import { HelpDialog } from './_components/HelpDialog'
+import { ThemeToggle } from './_components/ThemeToggle'
 import { useLanguage } from './_components/LanguageProvider'
 
 // Lazy-load monitor packages — only the active monitor is compiled and shipped
@@ -206,6 +207,7 @@ export default function Home() {
             >
               ?
             </button>
+            <ThemeToggle />
             <LanguageSelector />
             <button
               onClick={() => setShowDashboardEditor(true)}

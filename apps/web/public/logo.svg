@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#14b8a6"/>
+    </linearGradient>
+    <linearGradient id="globe" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#d1fae5"/>
+    </linearGradient>
+  </defs>
+  <!-- Background -->
+  <rect width="512" height="512" rx="112" fill="url(#bg)"/>
+  <!-- Globe -->
+  <circle cx="256" cy="256" r="140" fill="url(#globe)" opacity="0.95"/>
+  <!-- Meridians -->
+  <ellipse cx="256" cy="256" rx="140" ry="60" fill="none" stroke="#10b981" stroke-width="4" opacity="0.4"/>
+  <ellipse cx="256" cy="256" rx="60" ry="140" fill="none" stroke="#10b981" stroke-width="4" opacity="0.4"/>
+  <line x1="116" y1="256" x2="396" y2="256" stroke="#10b981" stroke-width="4" opacity="0.4"/>
+  <line x1="256" y1="116" x2="256" y2="396" stroke="#10b981" stroke-width="4" opacity="0.4"/>
+  <!-- Pulse dot -->
+  <circle cx="256" cy="256" r="20" fill="#10b981"/>
+  <circle cx="256" cy="256" r="40" fill="none" stroke="#10b981" stroke-width="3" opacity="0.5">
+    <animate attributeName="r" from="20" to="60" dur="2s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" from="0.6" to="0" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  <!-- Data points -->
+  <circle cx="200" cy="200" r="6" fill="#3b82f6"/>
+  <circle cx="320" cy="220" r="6" fill="#f59e0b"/>
+  <circle cx="180" cy="300" r="6" fill="#ef4444"/>
+  <circle cx="330" cy="310" r="6" fill="#10b981"/>
+</svg>
