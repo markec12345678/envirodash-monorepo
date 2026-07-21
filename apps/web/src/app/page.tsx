@@ -1,6 +1,7 @@
 'use client'
 
-import { useState, lazy, Suspense } from 'react'
+import { useState, lazy, Suspense, useCallback } from 'react'
+import { useKeyboardShortcuts } from '@/hooks/use-keyboard-shortcuts'
 import { Activity, Wind, Flame, Waves, Mountain, CloudSun, Snowflake, Fish, Droplets, Sun, Globe, Sparkles, Store, Shield, FileText, Map, Download, Layout, Key, BarChart3, Webhook, Mail, MessageSquare, Eye, Code2, Share2, TrendingUp, BookOpen, Settings as SettingsIcon, Play, Search } from 'lucide-react'
 import { AIAssistant } from './_components/AIAssistant'
 import { UserMenuWrapper } from './_components/UserMenu'
@@ -25,6 +26,7 @@ import { ApiDocs } from './_components/ApiDocs'
 import { OnboardingWizard } from './_components/OnboardingWizard'
 import { SettingsPanel } from './_components/SettingsPanel'
 import { GlobalSearch } from './_components/GlobalSearch'
+import { HelpDialog } from './_components/HelpDialog'
 import { useLanguage } from './_components/LanguageProvider'
 
 // Lazy-load monitor packages — only the active monitor is compiled and shipped
@@ -96,7 +98,34 @@ export default function Home() {
   const [showOnboarding, setShowOnboarding] = useState(false)
   const [showSettings, setShowSettings] = useState(false)
   const [showSearch, setShowSearch] = useState(false)
+  const [showHelp, setShowHelp] = useState(false)
+  const [refreshKey, setRefreshKey] = useState(0)
   const [aiQuery, setAiQuery] = useState<{ monitor: MonitorId; params: any } | null>(null)
+
+  // Keyboard shortcuts
+  useKeyboardShortcuts({
+    onSearch: () => setShowSearch(true),
+    onSettings: () => setShowSettings(true),
+    onAI: () => setShowAI(!showAI),
+    onMap: () => setShowMap(true),
+    onCollaborate: () => setShowCollabMap(true),
+    onExport: () => setShowExport(true),
+    onMarketplace: () => setShowMarketplace(true),
+    onHelp: () => setShowHelp(true),
+    onClose: () => {
+      setShowSearch(false); setShowSettings(false); setShowHelp(false)
+      setShowAI(false); setShowMap(false); setShowCollabMap(false)
+      setShowExport(false); setShowMarketplace(false); setShowSandbox(false)
+      setShowCodeEditor(false); setShowApiDocs(false); setShowAdvancedAnalytics(false)
+      setShowAnalytics(false); setShowApiKeys(false); setShowWebhooks(false)
+      setShowEmailSubs(false); setShowChat(false); setShowVision(false)
+      setShowGeofences(false); setShowDashboardEditor(false); setShowOnboarding(false)
+    },
+    onMonitorSelect: (index) => {
+      if (index < MONITORS.length) setActiveMonitor(MONITORS[index].id as MonitorId)
+    },
+    onRefresh: () => setRefreshKey(k => k + 1),
+  })
 
   // When AI assistant returns an action, set the active monitor
   const handleAIAction = (monitor: string, params: any) => {
@@ -166,9 +195,16 @@ export default function Home() {
             <button
               onClick={() => setShowSettings(true)}
               className="flex items-center gap-2 rounded-lg bg-zinc-100 px-3 py-1.5 text-xs font-medium text-zinc-700 hover:bg-zinc-200 dark:bg-zinc-800 dark:text-zinc-300"
-              title="Settings"
+              title="Settings (Ctrl+,)"
             >
               <SettingsIcon className="h-4 w-4" />
+            </button>
+            <button
+              onClick={() => setShowHelp(true)}
+              className="flex items-center justify-center rounded-lg bg-zinc-100 px-2.5 py-1.5 text-xs font-bold text-zinc-700 hover:bg-zinc-200 dark:bg-zinc-800 dark:text-zinc-300"
+              title="Help & Shortcuts (Ctrl+H or ?)"
+            >
+              ?
             </button>
             <LanguageSelector />
             <button
@@ -471,6 +507,26 @@ export default function Home() {
       {/* Global Search */}
       {showSearch && (
         <GlobalSearch onClose={() => setShowSearch(false)} />
+      )}
+
+      {/* Help & Shortcuts Dialog */}
+      {showHelp && (
+        <HelpDialog
+          onClose={() => setShowHelp(false)}
+          onAction={(action) => {
+            setShowHelp(false)
+            switch (action) {
+              case 'search': setShowSearch(true); break
+              case 'settings': setShowSettings(true); break
+              case 'ai': setShowAI(true); break
+              case 'map': setShowMap(true); break
+              case 'collaborate': setShowCollabMap(true); break
+              case 'export': setShowExport(true); break
+              case 'marketplace': setShowMarketplace(true); break
+              case 'refresh': setRefreshKey(k => k + 1); break
+            }
+          }}
+        />
       )}
 
       {/* Footer */}
